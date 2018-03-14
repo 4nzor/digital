@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Event map{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    <div class="eventmap_container">
+        <div id="map">
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">
+            </script>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

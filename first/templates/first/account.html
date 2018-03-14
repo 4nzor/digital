@@ -1,0 +1,15 @@
+{% extends 'first/base.html' %}
+
+{% block content %}
+
+
+    <div class="main_menu">
+        <ul>
+            <li><a href="{% url 'stipot' %}">STIPOT</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'eventmap' %}">EVENT MAP</a></li>
+            <li><a href="{% url 'faq' %}">FAQ</a></li>
+            <li><a href="{% url 'partners' %}">PARTNERS</a></li>
+        </ul>
+    </div>
+{% endblock %}

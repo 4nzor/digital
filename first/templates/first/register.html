@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Register{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}REGISTER{% endblock %}
+
+    <div class="register_content">
+        <div class="block_register">
+            <form action="" class="register_form" method="post">
+                {% csrf_token %}
+                <div class="input_register">
+                    <div class="register_text">FULL NAME</div>
+                    <input type="text" class="register_funa" name="full_name">
+                    <div class="register_text">CHOOSE YOUR USERNAME</div>
+                    <input type="text" class="register_usna" name="username">
+                    <div class="register_text">CREAT PASSWORD</div>
+                    <input type="password" class="register_pass" name="pass">
+                    <div class="register_text">CONFIRM PASSWORD</div>
+                    <input type="password" class="register_con_pass">
+                    <div class="register_text">YOUR CURRENT EMAIL</div>
+                    <input type="email" class="register_email" name="email">
+                    <div class="register_text">CONFIRM YOUR CURRENT EMAIL</div>
+                    <input type="email" class="register_con_email">
+                    <div class="register_text">I'M</div>
+                </div>
+
+                <div class="block_whoiam">
+
+                    <label class="iam_lect">
+                        <input type="radio" class="reg_check_lect" checked="checked" name="reg_whoiam" value="lecture">
+                        <span class="check_lect_reg"></span>
+                        <p class="reg_text_lect">LECTURER</p>
+                    </label>
+
+                    <label class="iam_organ">
+                        <input type="radio" class="reg_check_organ" name="reg_whoiam" value="org">
+                        <span class="check_organ_reg"></span>
+                        <p class="reg_text_organ">ORGANIZER</p>
+                    </label>
+
+                </div>
+                <div class="register_signup">
+                    <input type="submit" value="SIGN UP">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="main_footer">
+        <div class="sctein">
+            <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
+        </div>
+        <div class="copyright">
+            {{ form }}
+            <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
+        </div>
+    </footer>
+
+{% endblock %}
+</body>
+</html>

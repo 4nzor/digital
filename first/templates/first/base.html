@@ -1,0 +1,106 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.7.0/css/font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-5.0.8/css/fontawesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/media.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/profile.css' %}"/>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+{% if request.path != '/eventmap/' %}
+    <div class="block_registration">
+        <div class="signin_reg"><a href="{% url 'signin' %}"
+                                   {% if request.path == '/signin/' %}class="active_reg"{% endif %}>SIGN IN</a>
+        </div>
+        <p class="line"></p>
+        <div class="register_reg"><a href="{% url 'register' %}"
+                                     {% if request.path == '/register/' %}class="active_reg"{% endif %}>REGISTER</a>
+        </div>
+    </div>
+
+    <div class="container_profile">
+        <div class="text_profile">
+            <span class="name_profile">WELCOME, NAME</span>
+            <div class="icon_profile"></div>
+        </div>
+        <div class="menu_profile">
+            <ul>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="">LECTURES</a></li>
+                <li><a href="">APPLICATIONS</a></li>
+                <li><a href="">SETTINGS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {% if request.path != '/' %}
+        <div class="block_logo_categ">
+            <img src="../../static/images/image_category.png" alt="logo">
+            <div class="text_logo">{% block text_categ %}{% endblock %}</div>
+            {% if request.path == '/register/' %}
+                <div class="required">*ALL FIELDS ARE REQUIRED</div>
+            {% endif %}
+        </div>
+    {% endif %}
+{% endif %}
+
+<div class="main_menu">
+    <ul>
+        <li><a href="{% url 'stipot' %}" {% if request.path == '/' %}class="active-button"{% endif %}>STIPOT</a></li>
+        <li><a href="{% url 'about' %}" {% if request.path == '/about/' %}class="active-button"{% endif %}>ABOUT</a>
+        </li>
+        <li><a href="{% url 'eventmap' %}" {% if request.path == '/eventmap/' %}class="active-button"{% endif %}>EVENT
+            MAP</a></li>
+        <li><a href="{% url 'faq' %}" {% if request.path == '/faq/' %}class="active-button"{% endif %}>FAQ</a></li>
+        <li><a href="{% url 'partners' %}" {% if request.path == '/partners/' %}class="active-button"{% endif %}>PARTNERS</a>
+        </li>
+    </ul>
+</div>
+
+{% block content %}
+{% endblock %}
+
+{% if request.path != '/eventmap/' %}
+    <footer class="main_footer">
+        <div class="sctein">
+            <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
+        </div>
+    </footer>
+{% endif %}
+
+<script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+
+</body>
+</html>
