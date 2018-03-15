@@ -1,3 +1,64 @@
 .container_profile{
     position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 5000;
+    font-size: 26px;
+    color: #7F7F7F;
+    width: 250px;
+}
+
+.icon_profile{
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    font-size: 50px;
+    color: #00BDE2;
+}
+
+.menu_profile li a{
+    color: #7F7F7F;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.menu_profile li a:hover{
+    color: #2F6E90;
+}
+
+.profile_up_line{
+    height: 5px;
+    width: 100%;
+    background-color: #00BDE2;
+}
+
+ul.submenu_profile{
+    display: none;
+}
+
+ul.submenu > li > a {
+    display: block;
+}
+
+ul.menu_profile > li:hover > ul.submenu_profile {
+    display: block;
+}
+
+.submenu_profile li a{
+    display: block;
+    color: #7F7F7F;
+    padding: 5px 0;
+    background-color: #ffffff;
+    text-align: center;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.submenu_profile li a:hover{
+    background-color: #f4f4f4;
+    color: #00BDE2;
 }
