@@ -36,33 +36,38 @@
 
 {% if request.path != '/eventmap/' %}
 
-    {#    <div class="block_registration">#}
-    {#        <div class="signin_reg"><a href="{% url 'signin' %}"#}
-    {#                                   {% if request.path == '/signin/' %}class="active_reg"{% endif %}>SIGN IN</a>#}
-    {#        </div>#}
-    {#        <p class="line"></p>#}
-    {#        <div class="register_reg"><a href="{% url 'register' %}"#}
-    {#                                     {% if request.path == '/register/' %}class="active_reg"{% endif %}>REGISTER</a>#}
-    {#        </div>#}
-    {#    </div>#}
+    {% if user.is_authenticated %}
 
-    <div class="container_profile">
-        <ul class="menu_profile">
-            <li>
-                <a class="text_profile">
-                    <span class="name_profile">WELCOME, NAME</span>
-                    <div class="icon_profile"><i class="fa fa-user"></i></div>
-                </a>
-                <ul class="submenu_profile">
-                    <li class="profile_up_line"></li>
-                    <li><a href="">PROFILE</a></li>
-                    <li><a href="">LECTURES</a></li>
-                    <li><a href="">APPLICATIONS</a></li>
-                    <li><a href="">SETTINGS</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+        <div class="container_profile">
+            <ul class="menu_profile">
+                <li>
+                    <a href="" class="text_profile">
+                        <span class="name_profile">WELCOME, {{ user }}</span>
+                        <div class="icon_profile"><i class="fa fa-user"></i></div>
+                    </a>
+                    <ul class="submenu_profile">
+                        <li class="profile_up_line"></li>
+                        <li><a href="">PROFILE</a></li>
+                        <li><a href="">LECTURES</a></li>
+                        <li><a href="">APPLICATIONS</a></li>
+                        <li><a href="">SETTINGS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    {% else %}
+
+        <div class="block_registration">
+            <div class="signin_reg"><a href="{% url 'signin' %}"
+                                       {% if request.path == '/signin/' %}class="active_reg"{% endif %}>SIGN IN</a>
+            </div>
+            <p class="line"></p>
+            <div class="register_reg"><a href="{% url 'register' %}"
+                                         {% if request.path == '/register/' %}class="active_reg"{% endif %}>REGISTER</a>
+            </div>
+        </div>
+
+    {% endif %}
 
     {% if request.path != '/' %}
 

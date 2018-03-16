@@ -5,7 +5,11 @@
     z-index: 5000;
     font-size: 26px;
     color: #7F7F7F;
-    width: 250px;
+    min-width: 250px;
+}
+
+.name_profile{
+    margin-right: 60px;
 }
 
 .icon_profile{
