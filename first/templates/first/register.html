@@ -19,17 +19,17 @@
                 {% csrf_token %}
                 <div class="input_register">
                     <div class="register_text">FULL NAME</div>
-                    <input type="text" class="register_funa" name="full_name">
+                    <input required type="text" class="register_funa" name="full_name">
                     <div class="register_text">CHOOSE YOUR USERNAME</div>
-                    <input type="text" class="register_usna" name="username">
+                    <input required type="text" class="register_usna" name="username">
                     <div class="register_text">CREAT PASSWORD</div>
-                    <input type="password" class="register_pass" name="pass">
+                    <input required type="password" class="register_pass" name="pass">
                     <div class="register_text">CONFIRM PASSWORD</div>
-                    <input type="password" class="register_con_pass">
+                    <input required type="password" class="register_con_pass">
                     <div class="register_text">YOUR CURRENT EMAIL</div>
-                    <input type="email" class="register_email" name="email">
+                    <input required type="email" class="register_email" name="email">
                     <div class="register_text">CONFIRM YOUR CURRENT EMAIL</div>
-                    <input type="email" class="register_con_email">
+                    <input required type="email" class="register_con_email">
                     <div class="register_text">I'M</div>
                 </div>
 
