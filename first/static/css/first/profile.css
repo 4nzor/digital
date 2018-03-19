@@ -103,9 +103,68 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     margin-left: 10px;
     height: 160px;
     width: 160px;
-    background-color: #8A8A8A;
+    background-color: #ffffff;
     z-index: 1050;
     border-radius: 190px;
+}
+
+.upl_photo_lec{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    z-index: 1090;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    cursor: pointer;
+}
+
+.upl_photo_lec:hover{
+    background-color: #8A8A8A;
+    opacity: 0.6;
+}
+
+.upl_photo_lec input{
+    display: none;
+}
+
+.text_upl_photo_lect{
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    opacity: 0;
+    top: 85px;
+    left: 40px;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.upl_photo_lec:hover .text_upl_photo_lect{
+    opacity: 1;
+}
+
+.butt_upl_photo_lec{
+    position: absolute;
+    top: 30px;
+    left: 62px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 40px;
+    z-index: 1400;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.upl_photo_lec:hover .butt_upl_photo_lec{
+    opacity: 1;
 }
 
 .backg_name_lecturer {
@@ -124,6 +183,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     font-size: 26px;
     color: #3F76A9;
     z-index: 1050;
+    text-transform: uppercase;
 }
 
 .settings_lecturer {
@@ -211,6 +271,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 
 .block_sex_lect{
     color: #3F76A9;
+    margin-bottom: 10px;
 }
 
 .iam_male{

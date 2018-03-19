@@ -5,7 +5,6 @@ from django.views.decorators.csrf import csrf_protect
 
 from django.views.generic.base import View
 
-
 from first.models import Account, Org
 
 
@@ -48,7 +47,7 @@ class register(View):
 
     def post(self, request):
         type_reg = request.POST.get('reg_whoiam')
-        if type_reg=='lecture':
+        if type_reg == 'lecture':
             Account.objects.create_user(
                 username=request.POST['username'],
                 full_name=request.POST['full_name'],
@@ -74,8 +73,25 @@ def profile(request):
     return render(request, 'first/account.html')
 
 
-def lecturer(request):
-    return render(request, 'first/users/lecturer.html')
+class lecturer(View):
+    def get(self, request):
+        acc = Account.objects.get(username=request.user)
+        return render(request, 'first/users/lecturer.html', {'acc': acc})
+
+    def post(self, request):
+        user = Account.objects.get(username=request.user)
+        user.username = request.POST['name']
+        user.placeOfWork = request.POST['place']
+        user.country = request.POST['countries']
+        user.science_degree = request.POST['degree']
+        user.orc_id = request.POST['orc_id']
+        user.researcher_id = request.POST['res_id']
+        user.scientific_interest = request.POST['interests']
+        user.academic_rank = request.POST['rank']
+        user.sex = request.POST['lect_sex_lect']
+        user.position = request.POST['position']
+        user.save()
+        return redirect('/profile/lecturer/')
 
 
 def organizer(request):
