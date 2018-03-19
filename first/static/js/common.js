@@ -10,11 +10,12 @@ function initMap() {
 }
 
 $(".settings_lecturer").click(function () {
-    $(".lect_sex").show();
-    $(".lect_parag input").show();
-    $(".lect_parag select").show();
-    $(".info_lect").hide();
-    $(".lect_subm").show();
+    $(".lect_sex").toggle();
+    $(".lect_parag input").toggle();
+    $(".lect_parag select").toggle();
+    $(".info_lect").toggle();
+    $(".lect_subm").toggle();
+    $(".lecturer_name").toggle();
 });
 
 $(".lect_subm").click(function () {
@@ -24,17 +25,43 @@ $(".lect_subm").click(function () {
     document.location.reload()
 });
 
+$(".settings_organizer").click(function () {
+    $(".organ_parag input").toggle();
+    $(".organ_parag select").toggle();
+    $(".info_organ").toggle();
+    $(".organ_subm").toggle();
+    $(".organizer_name").toggle();
+});
 
+$(".organ_subm").click(function () {
+    $(".organ_parag input").hide();
+    $(".organ_parag select").hide();
+    document.location.reload()
+});
+
+$(".lect_check_female").click(function () {
+    $(".block_mrs_ms").show();
+    if ($(this).prop('checked')) {
+        $(".block_mrs_ms").show();
+    }
+});
+
+$(".lect_check_male").click(function () {
+    $(".block_mrs_ms").hide();
+    // if ($(this).prop('checked')) {
+    //     $(".block_mrs_ms").hide();
+    // }
+});
 
 function submit_form() {
 
     $('.avatar_form').submit()
 
 }
-function ajax_avatar()
-{
 
-    var avatar_form   = $('.avatar_form');
+function ajax_avatar() {
+
+    var avatar_form = $('.avatar_form');
 
     var form = new FormData(avatar_form.closest('form').get(0));
     jQuery.ajax({
@@ -47,7 +74,7 @@ function ajax_avatar()
         enctype: 'multipart/form-data',
         data: form,
 
-        success: function(data) {
+        success: function (data) {
 
             console.log(data);
             $('.avatar_image').attr("src", data.url);

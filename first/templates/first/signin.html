@@ -18,9 +18,9 @@
             <form action="" class="signin_form" method="post">
                 {% csrf_token%}
                 <p class="sig_text_usna">USERNAME</p>
-                <input required type="text" class="signin_usna" name="username">
+                <input required type="text" class="signin_usna" name="username" pattern="^[a-zA-Z0-9\s]+$">
                 <p class="sig_text_pass">PASSWORD</p>
-                <input required type="password" class="signin_pass" name="pass">
+                <input required type="password" class="signin_pass" name="pass" pattern="^[a-zA-Z0-9\s]+$">
                 <label class="signin_label">
                     <input type="checkbox" class="signin_check" checked="checked">
                     <span class="checkmark"></span>

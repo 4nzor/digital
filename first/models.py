@@ -19,17 +19,17 @@ def avatar_upload_to(instance, filename):
 
 class Account(User):
     full_name = models.CharField(max_length=200)
-    sex = models.CharField(max_length=200, null=True, blank=True)
-    avatar = models.ImageField(upload_to='avatars', null=True, blank=True)
-    country = models.CharField(max_length=200, null=True, blank=True)
-    placeOfWork = models.CharField(max_length=300, null=True, blank=True)
-    position = models.CharField(max_length=200, null=True, blank=True)
-    scientific_interest = models.CharField(max_length=500, null=True, blank=True)
-    science_degree = models.CharField(max_length=200, null=True, blank=True)
-    academic_rank = models.CharField(max_length=200, null=True, blank=True)
+    sex = models.CharField(max_length=200, null=True, blank=True, default='None')
+    avatar = models.ImageField(upload_to=avatar_upload_to, null=True, blank=True)
+    country = models.CharField(max_length=200, null=True, blank=True, default='United States')
+    placeOfWork = models.CharField(max_length=300, null=True, blank=True, default='None')
+    position = models.CharField(max_length=200, null=True, blank=True, default='Professor')
+    scientific_interest = models.CharField(max_length=500, null=True, blank=True, default='None')
+    science_degree = models.CharField(max_length=200, null=True, blank=True, default='None')
+    academic_rank = models.CharField(max_length=200, null=True, blank=True, default='None')
     lectures = models.ManyToManyField(Lecture, null=True, blank=True)
-    researcher_id = models.CharField(max_length=200, null=True, blank=True)
-    orc_id = models.URLField(max_length=300, null=True, blank=True)
+    researcher_id = models.CharField(max_length=200, null=True, blank=True, default='None')
+    orc_id = models.URLField(max_length=300, null=True, blank=True, default='None')
     type = 'user'
 
     def __str__(self):

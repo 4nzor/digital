@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="">
+    <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="Kek">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/First_proj/settings.py" afterPath="$PROJECT_DIR$/First_proj/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/First_proj/urls.py" afterPath="$PROJECT_DIR$/First_proj/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/models.py" afterPath="$PROJECT_DIR$/first/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/profile.css" afterPath="$PROJECT_DIR$/first/static/css/first/profile.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/main.css" afterPath="$PROJECT_DIR$/first/static/css/first/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/common.js" afterPath="$PROJECT_DIR$/first/static/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/base.html" afterPath="$PROJECT_DIR$/first/templates/first/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/eventmap.html" afterPath="$PROJECT_DIR$/first/templates/first/eventmap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/register.html" afterPath="$PROJECT_DIR$/first/templates/first/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/signin.html" afterPath="$PROJECT_DIR$/first/templates/first/signin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/lecturer.html" afterPath="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/urls.py" afterPath="$PROJECT_DIR$/first/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/views.py" afterPath="$PROJECT_DIR$/first/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/organizer.html" afterPath="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/includes/countries.html" afterPath="$PROJECT_DIR$/first/templates/includes/countries.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,18 +41,18 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+            <state relative-caret-position="357">
+              <caret line="93" column="96" lean-forward="false" selection-start-line="93" selection-start-column="96" selection-end-line="93" selection-end-column="96" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/templates/first/index.html">
+      <file leaf-file-name="countries.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="436">
+              <caret line="241" column="42" lean-forward="false" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -61,18 +61,28 @@
       <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state relative-caret-position="374">
+              <caret line="22" column="106" lean-forward="false" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+            <state relative-caret-position="258">
+              <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -81,18 +91,38 @@
       <file leaf-file-name="lecturer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/users/lecturer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="62" column="48" lean-forward="false" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="56" />
+            <state relative-caret-position="170">
+              <caret line="106" column="20" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="112" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lecturer.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/lecturer.css">
+      <file leaf-file-name="organizer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/users/organizer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="169" column="18" lean-forward="false" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
+            <state relative-caret-position="249">
+              <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventmap.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/static/css/first/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="805" column="20" lean-forward="false" selection-start-line="805" selection-start-column="20" selection-end-line="805" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -101,8 +131,8 @@
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            <state relative-caret-position="391">
+              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -132,6 +162,7 @@
       <find>uploa</find>
       <find>.photo_lecturer</find>
       <find>form</find>
+      <find>info_lect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,12 +183,8 @@
         <option value="$PROJECT_DIR$/first/templates/first/account.html" />
         <option value="$PROJECT_DIR$/first/forms.py" />
         <option value="$PROJECT_DIR$/first/templates/first/partners.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/eventmap.html" />
         <option value="$PROJECT_DIR$/first/templates/first/faq.html" />
         <option value="$PROJECT_DIR$/first/templates/first/about.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
-        <option value="$PROJECT_DIR$/first/static/css/first/main.css" />
-        <option value="$PROJECT_DIR$/first/templates/first/register.html" />
         <option value="$PROJECT_DIR$/first/admin.py" />
         <option value="$PROJECT_DIR$/first/templatetags/__init__.py" />
         <option value="$PROJECT_DIR$/templatetags/profile.py" />
@@ -166,18 +193,22 @@
         <option value="$USER_HOME$/untitled/Lib/site-packages/django/templatetags/tz.py" />
         <option value="$PROJECT_DIR$/first/templates/first/index.html" />
         <option value="$PROJECT_DIR$/first/templatetags/profile.py" />
-        <option value="$PROJECT_DIR$/first/templates/includes/countries.html" />
         <option value="$PROJECT_DIR$/first/urls.py" />
         <option value="$PROJECT_DIR$/First_proj/urls.py" />
-        <option value="$PROJECT_DIR$/first/models.py" />
         <option value="$PROJECT_DIR$/First_proj/settings.py" />
-        <option value="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
         <option value="$PROJECT_DIR$/first/views.py" />
-        <option value="$PROJECT_DIR$/first/static/js/common.js" />
-        <option value="$PROJECT_DIR$/first/templates/first/signin.html" />
         <option value="$PROJECT_DIR$/first/static/css/first/profile.css" />
+        <option value="$PROJECT_DIR$/first/models.py" />
+        <option value="$PROJECT_DIR$/first/templates/first/register.html" />
         <option value="$PROJECT_DIR$/first/templates/first/base.html" />
+        <option value="$PROJECT_DIR$/first/static/js/common.js" />
+        <option value="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
+        <option value="$PROJECT_DIR$/first/templates/includes/countries.html" />
+        <option value="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
         <option value="$PROJECT_DIR$/first/static/css/first/lecturer.css" />
+        <option value="$PROJECT_DIR$/first/templates/first/signin.html" />
+        <option value="$PROJECT_DIR$/first/static/css/first/main.css" />
+        <option value="$PROJECT_DIR$/first/templates/first/eventmap.html" />
       </list>
     </option>
   </component>
@@ -312,15 +343,15 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Project/-4--master/main/static/js/common.js" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\static" />
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\templates\first" />
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\CTF\Desktop\digital\first" />
       <recent name="C:\Users\CTF\Desktop\digital" />
       <recent name="C:\Users\CTF\Desktop\digital\first\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\static" />
+      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\templates\first" />
+      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,6 +408,14 @@
       <option name="presentableId" value="Default" />
       <updated>1520754143025</updated>
     </task>
+    <task id="LOCAL-00001" summary="Kek">
+      <created>1521477429276</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521477429276</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -385,11 +424,11 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3794926" sideWeight="0.51197916" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37737843" sideWeight="0.5140625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37737843" sideWeight="0.48802084" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37737843" sideWeight="0.4859375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -436,6 +475,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Kek" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kek" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -537,30 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Project/-4--master/main/static/js/common.js" />
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="492" column="0" lean-forward="false" selection-start-line="492" selection-start-column="0" selection-end-line="513" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/organizer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -579,26 +599,9 @@
     </entry>
     <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/apps/config.py" />
     <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/templatetags/tz.py" />
-    <entry file="file://$PROJECT_DIR$/first/templates/first/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html" />
     <entry file="file://$PROJECT_DIR$/first/templatetags/__init__.py" />
     <entry file="file://$PROJECT_DIR$/first/templatetags/profile.py" />
     <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/template/defaulttags.py" />
-    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="1" lean-forward="false" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="317">
@@ -619,14 +622,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="793">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="29" column="69" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -655,22 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -679,18 +658,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lecturer.html">
+    <entry file="file://$PROJECT_DIR$/first/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="62" column="48" lean-forward="false" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="56" />
+        <state relative-caret-position="504">
+          <caret line="32" column="17" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/static/css/first/lecturer.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="169" column="18" lean-forward="false" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
+        <state relative-caret-position="716">
+          <caret line="275" column="20" lean-forward="false" selection-start-line="275" selection-start-column="20" selection-end-line="275" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lecturer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="106" column="20" lean-forward="true" selection-start-line="106" selection-start-column="20" selection-end-line="112" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="241" column="42" lean-forward="false" selection-start-line="241" selection-start-column="42" selection-end-line="241" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="29" column="84" lean-forward="false" selection-start-line="29" selection-start-column="84" selection-end-line="29" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="106" lean-forward="false" selection-start-line="22" selection-start-column="106" selection-end-line="22" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="93" column="96" lean-forward="false" selection-start-line="93" selection-start-column="96" selection-end-line="93" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/organizer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/css/first/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="805" column="20" lean-forward="false" selection-start-line="805" selection-start-column="20" selection-end-line="805" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding />
         </state>
       </provider>

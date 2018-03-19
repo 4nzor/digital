@@ -13,9 +13,7 @@
 {% block content %}
 
     {% block text_categ %}PROFILE{% endblock %}
-    <script>
 
-    </script>
     <div class="lecturer_content">
         <form class="avatar_form" id="avatar_form"
               action="javascript:void(null);"
@@ -53,64 +51,105 @@
         <form action="." method="post">
             {% csrf_token %}
             <div class="block_info_lecturer">
-                <div class="lect_parag">NAME: <input type="text" class="lect_name" value="{{ acc.full_name }}"
-                                                     name="name">
-                    <div class="info_lect">{{ acc.full_name }}</div>
-                </div>
-                <div class="lect_sex">SEX:
-                    <div class="block_sex_lect">
-                        <label class="iam_male">
-                            <input type="radio" required class="lect_check_male"
-                                   {% if acc.sex == 'male' %}checked="checked"{% endif %} name="lect_sex_lect"
-                                   value="male">
-                            <span class="check_male_lect"></span>
-                            <p class="lect_text_male">MALE</p>
-                        </label>
-
-                        <label class="iam_female">
-                            <input type="radio" required class="lect_check_female"
-                                   {% if acc.sex == 'female' %}checked="checked"{% endif %} name="lect_sex_lect"
-                                   value="female">
-                            <span class="check_female_lect"></span>
-                            <p class="lect_text_female">FEMALE</p>
-                        </label>
-
+                <div class="inputs_lect">
+                    <div class="lecturer_name">
+                        <div class="lect_parag">NAME: <input type="text" class="lect_name" value="{{ acc.full_name }}"
+                                                             name="name">
+                            <div class="info_lect">{{ acc.full_name }}</div>
+                        </div>
                     </div>
-                </div>
+                    <div class="lect_sex">SEX:
+                        <div class="block_sex_lect">
+                            <label class="iam_male">
+                                <input type="radio" required class="lect_check_male"
+                                       {% if acc.sex == 'male' %}checked="checked"{% endif %} name="lect_sex_lect"
+                                       value="male">
+                                <span class="check_male_lect"></span>
+                                <p class="lect_text_male">MALE</p>
+                            </label>
 
-                {% include 'includes/countries.html' %}
+                            <label class="iam_female">
+                                <input type="radio" required class="lect_check_female"
+                                       {% if acc.sex == 'female' %}checked="checked"{% endif %} name="lect_sex_lect"
+                                       value="female">
+                                <span class="check_female_lect"></span>
+                                <p class="lect_text_female">FEMALE</p>
+                            </label>
 
-                <div class="lect_parag">PLACE OF WORK: <input type="text" name="place" value="{{ acc.placeOfWork }}"
-                                                              class="lect_pl_work">
-                    <div class="info_lect">{{ acc.placeOfWork }}</div>
-                </div>
-                <div class="lect_parag">POSITION: <input type="text" name="position" value="{{ acc.position }}"
-                                                         class="lect_posit">
-                    <div class="info_lect">{{ acc.position }}</div>
-                </div>
-                <div class="lect_parag">SCIENTIFIC INTERESTS: <input type="text" name="interests"
-                                                                     value="{{ acc.scientific_interest }}"
-                                                                     class="lect_scien_inter">
-                    <div class="info_lect">{{ acc.scientific_interest }}</div>
-                </div>
-                <div class="lect_parag">SCIENCE DEGREE: <input type="text" name="degree"
-                                                               value="{{ acc.science_degree }}"
-                                                               class="lect_scien_deg">
-                    <div class="info_lect">{{ acc.science_degree }}</div>
-                </div>
-                <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank"
-                                                              value="{{ acc.academic_rank }}"
-                                                              class="lect_acam_rank">
-                    <div class="info_lect">{{ acc.academic_rank }}</div>
-                </div>
-                <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id"
-                                                              value="{{ acc.researcher_id }}"
-                                                              class="lect_resear_id">
-                    <div class="info_lect">{{ acc.researcher_id }}</div>
-                </div>
-                <div class="lect_parag">ORCID.ORG LINK: <input type="text" name="orc_id" value="{{ acc.orc_id }}"
-                                                               class="lect_orcid_li">
-                    <div class="info_lect">{{ acc.orc_id }}</div>
+                            {% if acc.sex == 'female' %}
+
+                                <div class="block_mrs_ms">
+
+                                    <label class="iam_mrs">
+                                        <input type="radio" class="lect_check_mrs"
+                                               {% if acc.sex == 'female' %}checked="checked"{% endif %}
+                                               name="lect_mrs_lect"
+                                               value="mrs">
+                                        <span class="check_mrs_lect"></span>
+                                        <p class="lect_text_mrs">MRS</p>
+                                    </label>
+
+                                    <label class="iam_ms">
+                                        <input type="radio" required class="lect_check_ms"
+                                               {% if acc.sex == 'female' %}checked="checked"{% endif %}
+                                               name="lect_mrs_lect"
+                                               value="ms">
+                                        <span class="check_ms_lect"></span>
+                                        <p class="lect_text_ms">MS</p>
+                                    </label>
+
+                                </div>
+
+                            {% endif %}
+
+                        </div>
+                    </div>
+                    <div class="lect_parag">COUNTRY:
+                        <div class="info_lect">{{ acc.country }}</div>
+                        <select name="countries">
+                            <option selected value="{{ acc.country }}">{{ acc.country }}</option>
+                            {% include 'includes/countries.html' %}
+                        </select>
+                    </div>
+
+                    <div class="lect_parag">PLACE OF WORK: <input type="text" name="place" value="{{ acc.placeOfWork }}"
+                                                                  class="lect_pl_work">
+                        <div class="info_lect">{{ acc.placeOfWork }}</div>
+                    </div>
+
+                    <div class="lect_parag">POSITION: <input type="text" name="position" value="{{ acc.position }}"
+                                                             class="lect_posit">
+                        <div class="info_lect">{{ acc.position }}</div>
+                    </div>
+
+                    <div class="lect_parag">SCIENTIFIC INTERESTS: <input type="text" name="interests"
+                                                                         value="{{ acc.scientific_interest }}"
+                                                                         class="lect_scien_inter">
+                        <div class="info_lect">{{ acc.scientific_interest }}</div>
+                    </div>
+
+                    <div class="lect_parag">SCIENCE DEGREE: <input type="text" name="degree"
+                                                                   value="{{ acc.science_degree }}"
+                                                                   class="lect_scien_deg">
+                        <div class="info_lect">{{ acc.science_degree }}</div>
+                    </div>
+
+                    <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank"
+                                                                  value="{{ acc.academic_rank }}"
+                                                                  class="lect_acam_rank">
+                        <div class="info_lect">{{ acc.academic_rank }}</div>
+                    </div>
+
+                    <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id"
+                                                                  value="{{ acc.researcher_id }}"
+                                                                  class="lect_resear_id">
+                        <div class="info_lect">{{ acc.researcher_id }}</div>
+                    </div>
+
+                    <div class="lect_parag">ORCID.ORG LINK: <input type="text" name="orc_id" value="{{ acc.orc_id }}"
+                                                                   class="lect_orcid_li">
+                        <div class="info_lect">{{ acc.orc_id }}</div>
+                    </div>
                 </div>
                 <div class="lect_subm"><input type="submit" value="APPLY CHANGES"></div>
             </div>
