@@ -23,3 +23,34 @@ $(".lect_subm").click(function () {
     $(".lect_parag select").hide();
     document.location.reload()
 });
+
+
+
+function submit_form() {
+
+    $('.avatar_form').submit()
+
+}
+function ajax_avatar()
+{
+
+    var avatar_form   = $('.avatar_form');
+
+    var form = new FormData(avatar_form.closest('form').get(0));
+    jQuery.ajax({
+        type: 'POST',
+        url: '/upload_avatar/',
+        async: true,
+        cache: false,
+        processData: false,
+        contentType: false,
+        enctype: 'multipart/form-data',
+        data: form,
+
+        success: function(data) {
+
+            console.log(data);
+            $('.avatar_image').attr("src", data.url);
+        }
+    });
+}

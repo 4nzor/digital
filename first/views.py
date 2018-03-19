@@ -1,7 +1,8 @@
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
 
 from django.views.generic.base import View
 
@@ -80,7 +81,7 @@ class lecturer(View):
 
     def post(self, request):
         user = Account.objects.get(username=request.user)
-        user.username = request.POST['name']
+        user.full_name = request.POST['name']
         user.placeOfWork = request.POST['place']
         user.country = request.POST['countries']
         user.science_degree = request.POST['degree']
@@ -96,3 +97,13 @@ class lecturer(View):
 
 def organizer(request):
     return render(request, 'first/users/organizer.html')
+
+
+@csrf_exempt
+def upload_avatar(request):
+
+    user = Account.objects.get(username=request.user)
+    user.avatar = request.FILES['photo']
+    user.save()
+    print(user.avatar)
+    return JsonResponse({'url':user.avatar.url})

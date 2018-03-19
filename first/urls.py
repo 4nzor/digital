@@ -13,5 +13,6 @@ urlpatterns = [
     path('logout/', logout, {'template_name': 'first/index.html'}, name='logout'),
     path('account/', views.profile, name='profile'),
     path('profile/lecturer/', views.lecturer.as_view(), name='lecturer'),
-    path('profile/organizer/', views.organizer, name='organizer')
+    path('profile/organizer/', views.organizer, name='organizer'),
+    path('upload_avatar/', views.upload_avatar, name='upload_avatar')
 ]

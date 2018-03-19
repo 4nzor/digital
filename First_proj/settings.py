@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+import time
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -120,8 +122,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-
+MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR , 'first/static')
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'first/templates/'),
                  )
+UPLOAD_PATH = 'images/uploads/' + time.strftime("%Y/%m/%d/")
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')

@@ -14,13 +14,13 @@ class Lecture(models.Model):
 
 
 def avatar_upload_to(instance, filename):
-    return os.path.join('uploads', instance.user.username + os.path.splitext(filename)[1])
+    return os.path.join('media/uploads', instance.username + os.path.splitext(filename)[1])
 
 
 class Account(User):
     full_name = models.CharField(max_length=200)
     sex = models.CharField(max_length=200, null=True, blank=True)
-    avatar = models.ImageField(upload_to=avatar_upload_to, null=True, blank=True)
+    avatar = models.ImageField(upload_to='avatars', null=True, blank=True)
     country = models.CharField(max_length=200, null=True, blank=True)
     placeOfWork = models.CharField(max_length=300, null=True, blank=True)
     position = models.CharField(max_length=200, null=True, blank=True)

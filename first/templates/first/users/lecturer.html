@@ -13,18 +13,31 @@
 {% block content %}
 
     {% block text_categ %}PROFILE{% endblock %}
+    <script>
 
+    </script>
     <div class="lecturer_content">
-        <form action="." method="post">{% csrf_token %}
+        <form class="avatar_form" id="avatar_form"
+              action="javascript:void(null);"
+              method="post" enctype="multipart/form-data"
+              onsubmit="ajax_avatar()">
+            {% csrf_token %}
             <div class="block_central">
                 <div class="photo_lecturer">
-                    <img src="">
+                    {% if acc.avatar %}
+                        <img class="avatar_image" id="avatar_image" src="{{ acc.avatar.url }}">
+                    {% else %}
+                        <div class="bg_photo_lect"><i class="fa fa-user-circle"></i></div>
+                    {% endif %}
                     <label class="upl_photo_lec">
-                        <input type="file" name="photo" accept="image/*,image/jpeg">
+                        <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar()">
                         <span class="butt_upl_photo_lec"><i class="fa fa-upload"></i></span>
                         <p class="text_upl_photo_lect">UPLOAD</p>
+
                     </label>
                 </div>
+
+
                 <div class="backg_name_lecturer">
                     <div class="name_lecturer">
                         {% if acc.sex != 'male' %}Mrs{% else %}Mr{% endif %}, {{ acc.full_name }}
@@ -35,7 +48,10 @@
                     </div>
                 </div>
             </div>
+        </form>
 
+        <form action="." method="post">
+            {% csrf_token %}
             <div class="block_info_lecturer">
                 <div class="lect_parag">NAME: <input type="text" class="lect_name" value="{{ acc.full_name }}"
                                                      name="name">
@@ -78,14 +94,17 @@
                     <div class="info_lect">{{ acc.scientific_interest }}</div>
                 </div>
                 <div class="lect_parag">SCIENCE DEGREE: <input type="text" name="degree"
-                                                               value="{{ acc.science_degree }}" class="lect_scien_deg">
+                                                               value="{{ acc.science_degree }}"
+                                                               class="lect_scien_deg">
                     <div class="info_lect">{{ acc.science_degree }}</div>
                 </div>
-                <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank" value="{{ acc.academic_rank }}"
+                <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank"
+                                                              value="{{ acc.academic_rank }}"
                                                               class="lect_acam_rank">
                     <div class="info_lect">{{ acc.academic_rank }}</div>
                 </div>
-                <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id" value="{{ acc.researcher_id }}"
+                <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id"
+                                                              value="{{ acc.researcher_id }}"
                                                               class="lect_resear_id">
                     <div class="info_lect">{{ acc.researcher_id }}</div>
                 </div>
@@ -95,6 +114,7 @@
                 </div>
                 <div class="lect_subm"><input type="submit" value="APPLY CHANGES"></div>
             </div>
+
         </form>
         <div class="block_achievements">
             <div class="upper_line_lect"></div>
