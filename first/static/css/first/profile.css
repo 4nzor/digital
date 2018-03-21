@@ -98,7 +98,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 
 .text_activprof {
     position: relative;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
     font-size: 28px;
@@ -189,7 +189,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 
 .icon_congrat {
     position: relative;
-    top: 150px;
+    margin-top: 150px;
     left: 50%;
     width: 190px;
     height: 190px;
@@ -209,7 +209,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 
 .text_congrat {
     position: relative;
-    top: 200px;
+    margin-top: 50px;
     text-align: center;
     font-size: 28px;
     color: white;
@@ -226,7 +226,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     left: 50%;
     width: 300px;
     height: 60px;
-    margin-top: 350px;
+    margin-top: 150px;
     margin-left: -150px;
     padding-top: 10px;
     background-color: #3F76A9;
