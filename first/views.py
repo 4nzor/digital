@@ -123,6 +123,11 @@ class lecturer(View):
 def organizer(request):
     return render(request, 'first/users/organizer.html')
 
+def lectures(request):
+    return render(request, 'first/users/lectures.html')
+
+def applications(request):
+    return render(request, 'first/users/applications.html')
 
 @csrf_exempt
 def upload_avatar(request):

@@ -43,6 +43,8 @@ $(document).ready(function () {
         $(".block_mrs_ms").hide();
     });
 
+    /*--------------------*/
+
     $(".butt_close_erorrs").click(function () {
         $(".block_erorr_sign_in").hide();
         $(".block_erorr_register").hide();
@@ -52,15 +54,22 @@ $(document).ready(function () {
         $(".block_congratulation").hide();
     });
 
+    $(".button_close_activprof").click(function () {
+        $(".block_activate_profile").hide();
+    });
+
     $(this).keydown(function (eventObject) {
         if (eventObject.which == 27) {
             $(".block_erorr_sign_in").hide();
             $(".block_erorr_register").hide();
             $(".block_congratulation").hide();
+            $(".block_activate_profile").hide();
         }
     });
 
     /* ---> Buttons end <--- */
+
+
 
     function submit_form() {
 

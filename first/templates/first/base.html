@@ -80,9 +80,9 @@
                     <ul class="submenu_profile">
                         <li class="profile_up_line"></li>
                         <li><a href="{% profile %}">PROFILE</a></li>
-                        <li><a href="">LECTURES</a></li>
-                        <li><a href="">APPLICATIONS</a></li>
-                        <li><a href="">SETTINGS</a></li>
+                        <li><a href="{% url 'lectures' %}">LECTURES</a></li>
+                        <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
+                        <li><a href="{% profile %}">SETTINGS</a></li>
                         <li><a href="{% url 'logout' %}">EXIT</a></li>
                     </ul>
                 </li>
