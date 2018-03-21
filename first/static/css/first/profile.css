@@ -67,6 +67,101 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     color: #00BDE2;
 }
 
+/* ---> Lectures container <---*/
+
+.lectures_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.block_lectures {
+    position: relative;
+    margin-top: 210px;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    margin-left: -500px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.lectures_menu {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 660px;
+}
+
+.lectures_menu ul li {
+    float: left;
+    text-align: center;
+    font-size: 26px;
+    height: 80px;
+    width: 220px;
+    padding-top: 20px;
+    cursor: pointer;
+    color: #8A8A8A;
+    background-color: #ffffff;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.lectures_menu ul li:hover {
+    color: #ffffff;
+    background-color: #00BDE2;
+}
+
+.lectures_calendar {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#calendar2 {
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 26px;
+    text-align: center;
+}
+
+#calendar2 thead tr:last-child {
+    font-size: 20px;
+    color: #3F76A9;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(2) {
+    color: #00BDE2;
+}
+
+#calendar2 thead tr:nth-child(1) td:nth-child(1):hover, #calendar2 thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+
+#calendar2 tbody td {
+    color: #8A8A8A;
+    padding: 5px;
+}
+
+#calendar2 tbody td:nth-child(n+6), #calendar2 .holiday {
+    color: #8A8A8A;
+}
+
+#calendar2 tbody td.today {
+    background: #ffffff;
+    color: #00BDE2;
+}
+
+/* ---> Lectures container end <---*/
+
+/* ---> Applications container <---*/
+
+/* ---> Applications container end <---*/
+
 /* ---> Block Activate Profile <---*/
 
 .block_activate_profile {
@@ -111,7 +206,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     color: #3F76A9;
 }
 
-.text_activprof p{
+.text_activprof p {
     margin-bottom: 20px;
 }
 
