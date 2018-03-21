@@ -32,14 +32,14 @@ $(document).ready(function () {
         document.location.reload()
     });
 
-    $(".lect_check_female").click(function () {
-        $(".block_mrs_ms").show();
-        if ($(this).prop('checked')) {
+    $(".iam_female").click(function () {
+        // $(".block_mrs_ms").show();
+        if ($(".lect_check_female").prop('checked')) {
             $(".block_mrs_ms").show();
         }
     });
 
-    $(".lect_check_male").click(function () {
+    $(".iam_male").click(function () {
         $(".block_mrs_ms").hide();
     });
 

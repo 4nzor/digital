@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Applications{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}APPLICATIONS{% endblock %}
+
+
+{% endblock %}
 </body>
 </html>

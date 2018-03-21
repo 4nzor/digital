@@ -160,3 +160,6 @@ def activate(request, uidb64, token):
         return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
     else:
         return HttpResponse('Activation link is invalid!')
+
+def pagenotfound(request):
+    return render(request, 'first/404.html')

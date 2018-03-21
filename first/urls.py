@@ -24,4 +24,5 @@ urlpatterns = [
     path('activate/<uidb64>/<token>/',
          views.activate, name='activate'),
 
+    path('404/', views.pagenotfound, name='pagenotfound'),
 ]
