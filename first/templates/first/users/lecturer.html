@@ -22,7 +22,9 @@
             {% csrf_token %}
             <div class="block_central">
                 <div class="photo_lecturer">
+                    <img class="avatar_image2" id="avatar_image" src="" style="display: none">
                     {% if acc.avatar %}
+
                         <img class="avatar_image" id="avatar_image" src="{{ acc.avatar.url }}">
                     {% else %}
                         <div class="bg_photo_lect"><i class="fa fa-user-circle"></i></div>

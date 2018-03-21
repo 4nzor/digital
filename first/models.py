@@ -1,6 +1,9 @@
 import os
+
+import sys
 from django.contrib.auth.models import User
 from django.db import models
+import random
 
 
 class Lecture(models.Model):
@@ -14,7 +17,9 @@ class Lecture(models.Model):
 
 
 def avatar_upload_to(instance, filename):
-    return os.path.join('media/uploads', instance.username + os.path.splitext(filename)[1])
+    rand = random.randrange(0, sys.maxsize)
+    rand = str(rand)
+    return os.path.join('avatars/' + instance.username, rand + os.path.splitext(filename)[1])
 
 
 class Account(User):
@@ -30,6 +35,7 @@ class Account(User):
     lectures = models.ManyToManyField(Lecture, null=True, blank=True)
     researcher_id = models.CharField(max_length=200, null=True, blank=True, default='None')
     orc_id = models.URLField(max_length=300, null=True, blank=True, default='None')
+    is_active = False
     type = 'user'
 
     def __str__(self):

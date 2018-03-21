@@ -72,7 +72,6 @@ TEMPLATES = [
 
             }
 
-
         },
     },
 ]
@@ -124,8 +123,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR , 'first/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'first/static')
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'first/templates/'),
                  )
 UPLOAD_PATH = 'images/uploads/' + time.strftime("%Y/%m/%d/")
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'zorkgb05@gmail.com'
+EMAIL_HOST_PASSWORD = 'qazwsxedc1q'
+EMAIL_PORT = 587

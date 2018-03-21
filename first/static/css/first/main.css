@@ -132,7 +132,7 @@ a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 100000;
+    z-index: 10000;
     font-size: 26px;
 }
 
@@ -179,7 +179,7 @@ a:hover {
     top: 30%;
     padding: 0;
     margin: 0;
-    z-index: 100000;
+    z-index: 10000;
 }
 
 .main_menu ul {
@@ -656,7 +656,7 @@ a:hover {
 
 .block_stipot {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     height: 300px;
     width: 700px;

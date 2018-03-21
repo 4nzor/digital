@@ -28,11 +28,42 @@
     <link rel="stylesheet" href="{% static 'css/first/media.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/profile.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/lecturer.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/erorrs.css' %}"/>
 
 </head>
 <body>
 
 <div class="bg"></div>
+
+{#<div class="block_erorr_sign_in">#}
+{#    <div class="bg_erorrs">#}
+{#    </div>#}
+{#    <div class="icon_erorrs">#}
+{#        <i class="fa fa-exclamation-circle"></i>#}
+{#    </div>#}
+{#    <div class="text_erorrs">#}
+{#        <p class="text_act_erorrs">ERORR:</p>#}
+{#        <p>THIS USERNAME ALREADY EXIST</p>#}
+{#    </div>#}
+{#    <div class="butt_close_erorrs">CLOSE</div>#}
+{#</div>#}
+
+{#<div class="block_erorr_register">#}
+{#    <div class="bg_erorrs">#}
+{#    </div>#}
+{#    <div class="icon_erorrs">#}
+{#        <i class="fa fa-exclamation-circle"></i>#}
+{#    </div>#}
+{#    <div class="text_erorrs">#}
+{#        <p class="text_act_erorrs">ERORR:</p>#}
+{#        <p>THIS USER DOESN'T EXIST</p>#}
+{#        <p>OR YOU ENTERED INCORRECT DATA</p>#}
+{#        <div class="note_erorrs">#}
+{#            <p><span class="text_act_erorrs">NOTE: </span>POSSIBLE YOU HAVEN'T CONFIMED YOUR EMAIL</p>#}
+{#        </div>#}
+{#    </div>#}
+{#    <div class="butt_close_erorrs">CLOSE</div>#}
+{#</div>#}
 
 {% if request.path != '/eventmap/' %}
 
@@ -100,21 +131,24 @@
 {% endblock %}
 
 {% if request.path != '/eventmap/' %}
+    {% if request.path != '/partners/' %}
 
-    <footer class="main_footer">
-        <div class="sctein">
-            <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
-        </div>
-    </footer>
+        <footer class="main_footer">
+            <div class="sctein">
+                <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
+            </div>
+        </footer>
 
+    {% endif %}
 {% endif %}
 
 <script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
 <script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
 <script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/maps.js' %}"></script>
 
 </body>
 </html>

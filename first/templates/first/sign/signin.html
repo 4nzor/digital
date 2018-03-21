@@ -16,7 +16,7 @@
     <div class="signin_content">
         <div class="block_signin">
             <form action="" class="signin_form" method="post">
-                {% csrf_token%}
+                {% csrf_token %}
                 <p class="sig_text_usna">USERNAME</p>
                 <input required type="text" class="signin_usna" name="username" pattern="^[a-zA-Z0-9\s]+$">
                 <p class="sig_text_pass">PASSWORD</p>
@@ -33,11 +33,16 @@
                     <u><a href="">FORGOT PASSWORD?</a></u>
                 </div>
                 <div class="forgot_usna">
+
                     <u><a href="">FORGOT USERNAME?</a></u>
                 </div>
             </div>
         </div>
     </div>
+
+    {% block congratulation %}
+
+    {% endblock %}
 
 {% endblock %}
 </body>
