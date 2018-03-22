@@ -740,7 +740,7 @@ a:hover {
 .text_about {
     text-align: justify;
     font-size: 22px;
-    color: #7F7F7F;
+    color: #595959;
 }
 
 .first_parag a {
@@ -871,7 +871,7 @@ a:hover {
     z-index: 500;
     text-align: center;
     font-size: 24px;
-    color: #8A8A8A;
+    color: #595959;
 }
 
 .text_int_part span {

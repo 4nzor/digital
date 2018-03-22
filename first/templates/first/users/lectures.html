@@ -15,45 +15,51 @@
 
     <div class="lectures_content">
         <div class="block_lectures">
-            <div class="lectures_menu">
-                <ul>
-                    <li>planned</li>
-                    <li>completed</li>
-                    <li>canceled</li>
-                </ul>
+            <div class="block_up_lectures">
+                <div class="lectures_menu">
+                    <ul>
+                        <li>planned</li>
+                        <li>completed</li>
+                        <li>canceled</li>
+                    </ul>
+                </div>
+                {#            <div class="planned_lectures">#}
+                {##}
+                {#            </div>#}
+                {#            <div class="complended_lectures">#}
+                {##}
+                {#            </div>#}
+                {#            <div class="canceled_lectures">#}
+                {##}
+                {#            </div>#}
+                <div class="lectures_calendar">
+                    <table id="calendar2">
+                        <thead>
+                        <tr>
+                            <td><span>‹</span>
+                            <td colspan="5">
+                            <td><span>›</span>
+                        <tr>
+{#                            <td>Mo#}
+{#                            <td>Tu#}
+{#                            <td>We#}
+{#                            <td>Th#}
+{#                            <td>Fr#}
+{#                            <td>Sa#}
+{#                            <td>Su#}
+                        <tbody>
+                    </table>
+                </div>
+                <div class="buttom_line_lectures"></div>
             </div>
-            {#            <div class="planned_lectures">#}
-            {##}
-            {#            </div>#}
-            {#            <div class="complended_lectures">#}
-            {##}
-            {#            </div>#}
-            {#            <div class="canceled_lectures">#}
-            {##}
-            {#            </div>#}
-            <div class="lectures_calendar">
-                <table id="calendar2">
-                    <thead>
-                    <tr>
-                        <td>‹
-                        <td colspan="5">
-                        <td>›
-                    <tr>
-                        <td>Пн
-                        <td>Вт
-                        <td>Ср
-                        <td>Чт
-                        <td>Пт
-                        <td>Сб
-                        <td>Вс
-                    <tbody>
-                </table>
+            <div class="lectures_eventmap">
+                <div class="text_map_lectures">world map</div>
+                <div id="map_lec">
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap1">
+                    </script>
+                </div>
             </div>
-            {#            <div class="lectures_eventmap">#}
-            {#                <script async defer#}
-            {#                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">#}
-            {#                </script>#}
-            {#            </div>#}
         </div>
     </div>
 

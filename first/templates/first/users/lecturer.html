@@ -56,8 +56,8 @@
                 <div class="inputs_lect">
                     <div class="lecturer_name">
                         <div class="lect_parag">NAME: <input type="text" class="lect_name" value="{{ acc.full_name }}"
-                                                             name="name">
-                            <div class="info_lect">{{ acc.full_name }}</div>
+                                                             name="name" pattern="^[a-zA-Z0-9\s]+$">
+                            <div class=" info_lect">{{ acc.full_name }}</div>
                         </div>
                     </div>
                     <div class="lect_sex">SEX:
@@ -115,54 +115,55 @@
                     </div>
 
                     <div class="lect_parag">PLACE OF WORK: <input type="text" name="place" value="{{ acc.placeOfWork }}"
-                                                                  class="lect_pl_work">
-                        <div class="info_lect">{{ acc.placeOfWork }}</div>
-                    </div>
-
-                    <div class="lect_parag">POSITION: <input type="text" name="position" value="{{ acc.position }}"
-                                                             class="lect_posit">
-                        <div class="info_lect">{{ acc.position }}</div>
-                    </div>
-
-                    <div class="lect_parag">SCIENTIFIC INTERESTS: <input type="text" name="interests"
-                                                                         value="{{ acc.scientific_interest }}"
-                                                                         class="lect_scien_inter">
-                        <div class="info_lect">{{ acc.scientific_interest }}</div>
-                    </div>
-
-                    <div class="lect_parag">SCIENCE DEGREE: <input type="text" name="degree"
-                                                                   value="{{ acc.science_degree }}"
-                                                                   class="lect_scien_deg">
-                        <div class="info_lect">{{ acc.science_degree }}</div>
-                    </div>
-
-                    <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank"
-                                                                  value="{{ acc.academic_rank }}"
-                                                                  class="lect_acam_rank">
-                        <div class="info_lect">{{ acc.academic_rank }}</div>
-                    </div>
-
-                    <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id"
-                                                                  value="{{ acc.researcher_id }}"
-                                                                  class="lect_resear_id">
-                        <div class="info_lect">{{ acc.researcher_id }}</div>
-                    </div>
-
-                    <div class="lect_parag">ORCID.ORG LINK: <input type="text" name="orc_id" value="{{ acc.orc_id }}"
-                                                                   class="lect_orcid_li">
-                        <div class="info_lect">{{ acc.orc_id }}</div>
-                    </div>
+                                                                  class="lect_pl_work" pattern="^[a-zA-Z0-9\s]+$">
+                        <div class=" info_lect">{{ acc.placeOfWork }}</div>
                 </div>
-                <div class="lect_subm"><input type="submit" value="APPLY CHANGES"></div>
-            </div>
 
-        </form>
-        <div class="block_achievements">
-            <div class="upper_line_lect"></div>
-            <div class="text_lect_achiev">ACHIEVEMENTS</div>
-            <div class="achiev_lect"></div>
-            <div class="down_line_lect"></div>
-        </div>
+                <div class="lect_parag">POSITION: <input type="text" name="position" value="{{ acc.position }}"
+                                                         class="lect_posit" pattern="^[a-zA-Z0-9\s]+$">
+                    <div class=" info_lect">{{ acc.position }}</div>
+                </div>
+
+                <div class="lect_parag">SCIENTIFIC INTERESTS: <input type="text" name="interests"
+                                                                     value="{{ acc.scientific_interest }}"
+                                                                     class="lect_scien_inter"
+                                                                     pattern="^[a-zA-Z0-9\s]+$">
+                    <div class=" info_lect">{{ acc.scientific_interest }}</div>
+                </div>
+
+                <div class="lect_parag">SCIENCE DEGREE: <input type="text" name="degree"
+                                                               value="{{ acc.science_degree }}"
+                                                               class="lect_scien_deg" pattern="^[a-zA-Z0-9\s]+$">
+                    <div class="info_lect">{{ acc.science_degree }}</div>
+                </div>
+
+                <div class="lect_parag">ACADEMIC RANK: <input type="text" name="rank"
+                                                              value="{{ acc.academic_rank }}"
+                                                              class="lect_acam_rank" pattern="^[a-zA-Z0-9\s]+$">
+                    <div class="info_lect">{{ acc.academic_rank }}</div>
+                </div>
+
+                <div class="lect_parag">RESEARCHER ID: <input type="text" name="res_id"
+                                                              value="{{ acc.researcher_id }}"
+                                                              class="lect_resear_id" pattern="^[a-zA-Z0-9\s]+$">
+                    <div class="info_lect">{{ acc.researcher_id }}</div>
+                </div>
+
+                <div class="lect_parag">ORCID.ORG LINK: <input type="text" name="orc_id" value="{{ acc.orc_id }}"
+                                                               class="lect_orcid_li" pattern="^[a-zA-Z0-9\s]+$">
+                    <div class="info_lect">{{ acc.orc_id }}</div>
+                </div>
+            </div>
+            <div class="lect_subm"><input type="submit" value="APPLY CHANGES"></div>
+    </div>
+
+    </form>
+    <div class="block_achievements">
+        <div class="upper_line_lect"></div>
+        <div class="text_lect_achiev">ACHIEVEMENTS</div>
+        <div class="achiev_lect"></div>
+        <div class="down_line_lect"></div>
+    </div>
     </div>
 
 {% endblock %}

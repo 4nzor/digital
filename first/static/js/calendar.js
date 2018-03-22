@@ -4,7 +4,7 @@ function Calendar2(id, year, month) {
         DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
         DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
         calendar = '<tr>',
-        month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+        month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     if (DNfirst !== 0) {
         for (var i = 1; i < DNfirst; i++) calendar += '<td>';
     } else {
