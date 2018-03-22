@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/404.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/maps/lect.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/maps/organ.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/profile.css" afterPath="$PROJECT_DIR$/first/static/css/first/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/common.js" afterPath="$PROJECT_DIR$/first/static/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/maps.js" afterPath="$PROJECT_DIR$/first/static/js/maps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/404.html" afterPath="$PROJECT_DIR$/first/templates/first/404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/base.html" afterPath="$PROJECT_DIR$/first/templates/first/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/lectures.html" afterPath="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,10 +31,10 @@
         <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-329">
-              <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
-                <marker date="1521761418525" expanded="true" signature="1555:2667" ph="..." />
-                <marker date="1521761418525" expanded="true" signature="2008:2667" ph="..." />
+                <marker date="1521761429913" expanded="true" signature="1555:2667" ph="..." />
+                <marker date="1521761429913" expanded="true" signature="2008:2667" ph="..." />
               </folding>
             </state>
           </provider>
@@ -592,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521740986467</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Start lectures">
+      <created>1521761431939</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1521761431939</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -971,10 +966,10 @@
     <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-329">
-          <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <marker date="1521761418525" expanded="true" signature="1555:2667" ph="..." />
-            <marker date="1521761418525" expanded="true" signature="2008:2667" ph="..." />
+            <marker date="1521761429913" expanded="true" signature="1555:2667" ph="..." />
+            <marker date="1521761429913" expanded="true" signature="2008:2667" ph="..." />
           </folding>
         </state>
       </provider>
