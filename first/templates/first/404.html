@@ -1,27 +1,20 @@
-{% load staticfiles %}
-
 <!DOCTYPE html>
 
-<html lang="en">
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-
-    <title>404</title>
-
-    <meta name="description" content=""/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-
-    <link rel="stylesheet" href="{% static 'css/first/fonts.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/first/main.css' %}"/>
+    {% block title %}About{% endblock %}
 </head>
+
 <body>
-<div class="pnf_content">
-    <div class="bg"></div>
-    <div class="pnf_icon"><img src="../../static/images/404.png"></div>
-    <div class="text_pnf">PAGE NOT FOUND</div>
-</div>
+{% block content %}
+    <div class="pnf_content">
+        <div class="bg"></div>
+        <div class="pnf_icon"><img src="../../static/images/404.png"></div>
+        <div class="text_pnf">PAGE NOT FOUND</div>
+    </div>
+{% endblock %}
 </body>
 </html>

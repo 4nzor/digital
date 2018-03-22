@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/js/map_lectures.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/404.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/maps/lect.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/images/maps/organ.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/main.css" afterPath="$PROJECT_DIR$/first/static/css/first/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/profile.css" afterPath="$PROJECT_DIR$/first/static/css/first/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/calendar.js" afterPath="$PROJECT_DIR$/first/static/js/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/common.js" afterPath="$PROJECT_DIR$/first/static/js/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/maps.js" afterPath="$PROJECT_DIR$/first/static/js/maps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/404.html" afterPath="$PROJECT_DIR$/first/templates/first/404.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/base.html" afterPath="$PROJECT_DIR$/first/templates/first/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/lecturer.html" afterPath="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/lectures.html" afterPath="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/organizer.html" afterPath="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,24 +39,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="84" column="69" lean-forward="true" selection-start-line="84" selection-start-column="69" selection-end-line="84" selection-end-column="69" />
+            <state relative-caret-position="-329">
+              <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
               <folding>
-                <marker date="1521734473218" expanded="true" signature="1517:2517" ph="..." />
-                <marker date="1521734473218" expanded="true" signature="1918:2517" ph="..." />
+                <marker date="1521761418525" expanded="true" signature="1555:2667" ph="..." />
+                <marker date="1521761418525" expanded="true" signature="2008:2667" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventmap.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
+      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="374">
+              <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -70,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lectures.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lectures.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+            <state relative-caret-position="952">
+              <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -83,8 +85,28 @@
       <file leaf-file-name="profile.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="169" column="1" lean-forward="false" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="197" column="20" lean-forward="true" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="404.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/404.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -93,19 +115,53 @@
       <file leaf-file-name="calendar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/static/js/calendar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+              <folding>
+                <marker date="1521739381935" expanded="true" signature="36:1771" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="471:540" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="546:609" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="647:1014" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="779:840" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="846:893" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="965:1008" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="1524:1769" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="1972:2166" ph="{...}" />
+                <marker date="1521739381935" expanded="true" signature="2292:2486" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map_lectures.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/js/map_lectures.js">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="1955">
+              <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+              <folding>
+                <marker date="1521759441307" expanded="true" signature="30:1995" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="37:50" ph="/*...*/" />
+                <marker date="1521759441307" expanded="true" signature="98:327" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="369:521" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="572:773" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="816:939" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="982:1131" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1075:1125" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1172:1214" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1222:1246" ph="/*...*/" />
+                <marker date="1521759441307" expanded="true" signature="1294:1386" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1433:1483" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1538:1590" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1637:1882" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1676:1876" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="1890:1917" ph="/*...*/" />
+                <marker date="1521759441307" expanded="true" signature="1948:1992" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="2022:2889" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="2160:2881" ph="{&quot;type&quot;: 'POST'...}" />
+                <marker date="1521759441307" expanded="true" signature="2445:2869" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="2489:2686" ph="{...}" />
+                <marker date="1521759441307" expanded="true" signature="2708:2853" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/first/templates/first/home.html" />
         <option value="$PROJECT_DIR$/first/static/css/first/about.css" />
         <option value="$PROJECT_DIR$/first/static/css/first/faq.css" />
         <option value="$PROJECT_DIR$/first/static/css/first/partners.css" />
@@ -180,7 +235,6 @@
         <option value="$PROJECT_DIR$/first/tokens.py" />
         <option value="$PROJECT_DIR$/First_proj/settings.py" />
         <option value="$PROJECT_DIR$/first/templates/first/acc_active_email.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/eventmap.html" />
         <option value="$PROJECT_DIR$/first/templates/first/register.html" />
         <option value="$PROJECT_DIR$/first/templates/first/signin.html" />
         <option value="$PROJECT_DIR$/first/templates/includes/countries.html" />
@@ -191,25 +245,39 @@
         <option value="$PROJECT_DIR$/first/static/css/first/organizer.css" />
         <option value="$PROJECT_DIR$/first/static/css/first/erorrs.css" />
         <option value="$PROJECT_DIR$/first/templates/first/sign/register.html" />
-        <option value="$PROJECT_DIR$/first/static/js/common.js" />
         <option value="$PROJECT_DIR$/first/templates/first/users/applications.html" />
         <option value="$PROJECT_DIR$/first/views.py" />
         <option value="$PROJECT_DIR$/first/urls.py" />
-        <option value="$PROJECT_DIR$/first/templates/first/404.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/base.html" />
-        <option value="$PROJECT_DIR$/first/static/js/maps.js" />
         <option value="$PROJECT_DIR$/first/static/js/map_lectures.js" />
         <option value="$PROJECT_DIR$/first/static/css/first/main.css" />
         <option value="$PROJECT_DIR$/first/static/js/calendar.js" />
         <option value="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
         <option value="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
-        <option value="$PROJECT_DIR$/first/static/css/first/profile.css" />
+        <option value="$PROJECT_DIR$/first/templates/first/eventmap.html" />
         <option value="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
+        <option value="$PROJECT_DIR$/first/static/js/map.js" />
+        <option value="$PROJECT_DIR$/first/static/js/common.js" />
+        <option value="$PROJECT_DIR$/first/static/js/maps.js" />
+        <option value="$PROJECT_DIR$/first/static/css/first/profile.css" />
+        <option value="$PROJECT_DIR$/first/templates/first/404.html" />
+        <option value="$PROJECT_DIR$/first/templates/first/base.html" />
       </list>
     </option>
   </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path />
+    <config-path />
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -295,6 +363,21 @@
               <item name="First_proj" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="first" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
+              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="first" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -350,8 +433,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="last_opened_file_path" value="$USER_HOME$/Project/-4--master/main/static/js/common.js" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -491,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1521670939506</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Start lectures">
+      <created>1521740986467</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1521740986467</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -599,8 +700,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/first/static/images/favicon.ico" />
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/media.css" />
     <entry file="file://$PROJECT_DIR$/first/forms.py" />
     <entry file="file://$PROJECT_DIR$/first/templates/first/faq.html" />
     <entry file="file://$USER_HOME$/Project/-4--master/main/static/js/common.js" />
@@ -620,7 +719,6 @@
     <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/db/models/base.py" />
     <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/contrib/auth/models.py" />
     <entry file="file://$PROJECT_DIR$/first/models.py" />
-    <entry file="file://$PROJECT_DIR$/first/templates/first/about.html" />
     <entry file="file://$PROJECT_DIR$/first/tokens.py" />
     <entry file="file://$PROJECT_DIR$/First_proj/settings.py" />
     <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html" />
@@ -695,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -718,26 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/first/static/js/map_lectures.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -776,20 +851,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state relative-caret-position="215">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
+    <entry file="file://$PROJECT_DIR$/first/static/js/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="84" column="69" lean-forward="true" selection-start-line="84" selection-start-column="69" selection-end-line="84" selection-end-column="69" />
+        <state relative-caret-position="68">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="5" lean-forward="false" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
           <folding>
-            <marker date="1521734473218" expanded="true" signature="1517:2517" ph="..." />
-            <marker date="1521734473218" expanded="true" signature="1918:2517" ph="..." />
+            <marker date="1521759441307" expanded="true" signature="30:1995" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="37:50" ph="/*...*/" />
+            <marker date="1521759441307" expanded="true" signature="98:327" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="369:521" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="572:773" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="816:939" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="982:1131" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1075:1125" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1172:1214" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1222:1246" ph="/*...*/" />
+            <marker date="1521759441307" expanded="true" signature="1294:1386" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1433:1483" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1538:1590" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1637:1882" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1676:1876" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="1890:1917" ph="/*...*/" />
+            <marker date="1521759441307" expanded="true" signature="1948:1992" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="2022:2889" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="2160:2881" ph="{&quot;type&quot;: 'POST'...}" />
+            <marker date="1521759441307" expanded="true" signature="2445:2869" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="2489:2686" ph="{...}" />
+            <marker date="1521759441307" expanded="true" signature="2708:2853" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/calendar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="15" lean-forward="false" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+          <folding>
+            <marker date="1521739381935" expanded="true" signature="36:1771" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="471:540" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="546:609" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="647:1014" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="779:840" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="846:893" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="965:1008" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="1524:1769" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="1972:2166" ph="{...}" />
+            <marker date="1521739381935" expanded="true" signature="2292:2486" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="37" column="11" lean-forward="true" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -801,27 +931,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/calendar.js">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state relative-caret-position="952">
+          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/images/404.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="169" column="1" lean-forward="false" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+        <state relative-caret-position="238">
+          <caret line="197" column="20" lean-forward="true" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <caret line="34" column="7" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329">
+          <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <folding>
+            <marker date="1521761418525" expanded="true" signature="1555:2667" ph="..." />
+            <marker date="1521761418525" expanded="true" signature="2008:2667" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

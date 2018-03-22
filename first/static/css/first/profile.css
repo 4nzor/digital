@@ -8,7 +8,7 @@
     min-width: 250px;
 }
 
-.text_profile{
+.text_profile {
     text-transform: uppercase;
 }
 
@@ -90,13 +90,13 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     z-index: 1000;
 }
 
-.block_up_lectures{
+.block_up_lectures {
     width: 100%;
     height: 400px;
     background-color: #ffffff;
 }
 
-.buttom_line_lectures{
+.buttom_line_lectures {
     position: absolute;
     margin-top: 315px;
     width: 100%;
@@ -160,12 +160,12 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     cursor: pointer;
 }
 
-#calendar2 thead td span{
+#calendar2 thead td span {
     color: #595959;
     cursor: pointer;
 }
 
-#calendar2 thead td span:hover{
+#calendar2 thead td span:hover {
     color: #00BDE2;
 }
 
@@ -183,13 +183,13 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     color: #00BDE2;
 }
 
-.lectures_eventmap{
+.lectures_eventmap {
     position: relative;
     width: 100%;
     height: 700px;
 }
 
-.text_map_lectures{
+.text_map_lectures {
     position: relative;
     height: 100px;
     width: 100%;
@@ -199,13 +199,15 @@ ul.menu_profile > li:hover > ul.submenu_profile {
     color: #595959;
 }
 
-#map_lec{
+#map2 {
     position: relative;
     width: 100%;
     height: 600px;
     z-index: 1050;
     border-top: 5px solid #3F76A9;
     border-bottom: 5px solid #3F76A9;
+    border-right: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
 }
 
 /* ---> Lectures container end <---*/

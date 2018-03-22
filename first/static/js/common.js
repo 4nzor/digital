@@ -77,7 +77,9 @@ $(document).ready(function () {
 
     }
 
-    function ajax_avatar() {
+});
+
+function ajax_avatar() {
 
         var avatar_form = $('.avatar_form');
 
@@ -112,4 +114,3 @@ $(document).ready(function () {
 
         });
     }
-});
