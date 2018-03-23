@@ -39,6 +39,20 @@ $(document).ready(function () {
         }
     });
 
+    $(".iam_lect").click(function () {
+        $(".block_sexus").show();
+    });
+
+    $(".iam_organ").click(function () {
+        $(".block_sexus").hide();
+    });
+
+    if ($('#check_organ').prop('checked')) {
+            $(".block_sexus").hide();
+        }
+
+    /*---------- reg ----------*/
+
     $(".iam_male").click(function () {
         $(".block_mrs_ms").hide();
     });
@@ -70,7 +84,6 @@ $(document).ready(function () {
     /* ---> Buttons end <--- */
 
 
-
     function submit_form() {
 
         $('.avatar_form').submit()
@@ -81,36 +94,36 @@ $(document).ready(function () {
 
 function ajax_avatar() {
 
-        var avatar_form = $('.avatar_form');
+    var avatar_form = $('.avatar_form');
 
-        var form = new FormData(avatar_form.closest('form').get(0));
-        jQuery.ajax({
-            type: 'POST',
-            url: '/upload_avatar/',
-            async: true,
-            cache: false,
-            processData: false,
-            contentType: false,
-            enctype: 'multipart/form-data',
-            data: form,
+    var form = new FormData(avatar_form.closest('form').get(0));
+    jQuery.ajax({
+        type: 'POST',
+        url: '/upload_avatar/',
+        async: true,
+        cache: false,
+        processData: false,
+        contentType: false,
+        enctype: 'multipart/form-data',
+        data: form,
 
-            success: function (data) {
+        success: function (data) {
 
-                if (data.msg === 'None') {
-                    $('.bg_photo_lect').remove();
-                    $('.avatar_image2').attr("src", data.url)
-                    $('.avatar_image2').css('display', 'block');
+            if (data.msg === 'None') {
+                $('.bg_photo_lect').remove();
+                $('.avatar_image2').attr("src", data.url)
+                $('.avatar_image2').css('display', 'block');
 
-                }
-                else {
+            }
+            else {
 
-                    $('.avatar_image2').css('display', 'none');
-                    $('.avatar_image').attr("src", data.url)
-                }
-
-
+                $('.avatar_image2').css('display', 'none');
+                $('.avatar_image').attr("src", data.url)
             }
 
 
-        });
-    }
+        }
+
+
+    });
+}

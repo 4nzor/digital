@@ -419,32 +419,38 @@ a:hover {
     flex: 1 0 auto;
     position: relative;
     width: 100%;
-    height: 1000px;
 }
 
 .block_register {
-    position: absolute;
-    top: 210px;
+    position: relative;
+    margin-top: 210px;
     left: 50%;
     width: 500px;
     margin-left: -250px;
+    margin-bottom: 50px;
     z-index: 500;
     text-align: center;
 }
 
 .register_text {
-    position: absolute;
+    position: relative;
     left: 0;
-    margin-top: 15px;
-    margin-bottom: 50px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-size: 22px;
     color: #7F7F7F;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.input_register{
+    position: relative;
 }
 
 .input_register input {
+    position: relative;
     height: 50px;
     width: 500px;
-    margin-top: 50px;
     background-color: #E0E0E0;
     border: 1px solid #8A8A8A;
     padding: 0 20px;
@@ -454,6 +460,23 @@ a:hover {
     -o-transition: all .5s ease;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
+    text-transform: uppercase;
+}
+
+.block_whoiam{
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    height: 25px;
+}
+
+
+.register_text_whoiam{
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    color: #7F7F7F;
+    text-transform: uppercase;
 }
 
 .iam_lect {
@@ -462,14 +485,14 @@ a:hover {
 
 .reg_check_lect {
     position: absolute;
-    top: 620px;
+    top: 5px;
     left: 40px;
     opacity: 0;
 }
 
 .reg_text_lect {
     position: absolute;
-    top: 615px;
+    top: 0;
     left: 70px;
     font-size: 22px;
     color: #7F7F7F;
@@ -477,7 +500,7 @@ a:hover {
 
 .check_lect_reg {
     position: absolute;
-    top: 618px;
+    top: 3px;
     left: 35px;
     height: 25px;
     width: 25px;
@@ -521,14 +544,14 @@ a:hover {
 
 .reg_check_organ {
     position: absolute;
-    top: 620px;
+    top: 5px;
     left: 180px;
     opacity: 0;
 }
 
 .check_organ_reg {
     position: absolute;
-    top: 618px;
+    top: 3px;
     left: 173px;
     height: 25px;
     width: 25px;
@@ -566,16 +589,152 @@ a:hover {
 
 .reg_text_organ {
     position: absolute;
-    top: 615px;
+    top: 0;
     left: 210px;
     font-size: 22px;
     color: #7F7F7F;
 }
 
-.register_signup input {
+/* block sex user */
+
+.block_sexus{
+    position: relative;
+    margin-top: 7px;
+    margin-left: 35px;
+    margin-bottom: 7px;
+    height: 25px;
+}
+
+
+.register_text_sexus{
+    position: relative;
+    text-align: left;
+    font-size: 22px;
+    color: #7F7F7F;
+    text-transform: uppercase;
+}
+
+.reg_male {
+    cursor: pointer;
+}
+
+.reg_check_male {
     position: absolute;
-    top: 660px;
-    left: 0;
+    top: 5px;
+    left: 40px;
+    opacity: 0;
+}
+
+.reg_text_male {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    font-size: 22px;
+    color: #7F7F7F;
+    text-transform: uppercase;
+}
+
+.check_male_reg {
+    position: absolute;
+    top: 3px;
+    left: 45px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.reg_male:hover input ~ .check_male_reg {
+    background-color: #ccc;
+}
+
+.check_male_reg:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.reg_male input:checked ~ .check_male_reg:after {
+    display: block;
+}
+
+.reg_male .check_male_reg:after {
+    left: 4px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #2F6E90;
+    border-radius: 15px;
+}
+
+/*-----*/
+
+.reg_female {
+    cursor: pointer;
+}
+
+.reg_check_female {
+    position: absolute;
+    top: 5px;
+    left: 130px;
+    opacity: 0;
+}
+
+.check_female_reg {
+    position: absolute;
+    top: 3px;
+    left: 138px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.reg_text_female {
+    position: absolute;
+    top: 0;
+    left: 175px;
+    font-size: 22px;
+    color: #7F7F7F;
+    text-transform: uppercase;
+}
+
+.reg_female:hover input ~ .check_female_reg {
+    background-color: #ccc;
+}
+
+.check_female_reg:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.reg_female input:checked ~ .check_female_reg:after {
+    display: block;
+}
+
+.reg_female .check_female_reg:after {
+    left: 4px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #2F6E90;
+    border-radius: 15px;
+}
+
+.register_signup input {
+    position: relative;
+    margin-top: 30px;
     height: 60px;
     width: 500px;
     background-color: #2F6E90;
