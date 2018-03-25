@@ -18,6 +18,7 @@ urlpatterns = [
     path('profile/lecturer/', views.lecturer.as_view(), name='lecturer'),
     path('profile/organizer/', views.organizer, name='organizer'),
     path('profile/lectures', views.lectures, name='lectures'),
+    path('profile/platforms', views.platforms, name='platforms'),
     path('profile/applications', views.applications, name='applications'),
 
     path('upload_avatar/', views.upload_avatar, name='upload_avatar'),

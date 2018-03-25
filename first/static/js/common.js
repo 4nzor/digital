@@ -2,6 +2,18 @@ $(document).ready(function () {
 
     /* Buttons */
 
+    /*---------- event map ----------*/
+
+    $(".button_eventmap_more").click(function () {
+        $(this).click(".i_more")
+    });
+
+    $(".i_more").click(function () {
+        $(this).toggleClass('i_active')
+    });
+
+    /*---------- event map end ----------*/
+
     $(".settings_lecturer").click(function () {
         $(".lect_sex").toggle();
         $(".lect_parag input").toggle();
@@ -48,8 +60,8 @@ $(document).ready(function () {
     });
 
     if ($('#check_organ').prop('checked')) {
-            $(".block_sexus").hide();
-        }
+        $(".block_sexus").hide();
+    }
 
     /*---------- reg ----------*/
 
@@ -80,6 +92,26 @@ $(document).ready(function () {
             $(".block_activate_profile").hide();
         }
     });
+
+    /*---------- platforms ----------*/
+
+    $(".platf_li_yo").click(function () {
+        $(".platf_li_cr").removeClass('platf_active');
+        $(this).addClass('platf_active');
+        $('.platf_your_platf').show();
+        $('.platf_create').hide();
+        $('.platf_map_layer').hide();
+    });
+
+    $(".platf_li_cr").click(function () {
+        $(".platf_li_yo").removeClass('platf_active');
+        $(this).addClass('platf_active');
+        $('.platf_create').show();
+        $('.platf_your_platf').hide();
+        $('.platf_map_layer').show();
+    });
+
+    /*---------- platforms end ----------*/
 
     /* ---> Buttons end <--- */
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Lectures{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}PLATFORMS{% endblock %}
+
+    <div class="platforms_content">
+        <div class="platforms_block">
+            <div class="block_plat_menu">
+                <ul>
+                    <li class="platf_li_yo ">your platforms</li>
+                    <li class="platf_li_cr platf_active">create platforms</li>
+                </ul>
+            </div>
+            <form class="platf_create_platf">
+                <div class="platf_create">
+                    <div class="platf_text">platform name:
+                        <input required type="text" class="platf_place_name">
+                    </div>
+                    <div class="platf_text">platform country:
+                        <input required type="text" class="platf_country">
+                    </div>
+                    <div class="platf_text">platform city:
+                        <input required type="text" class="platf_city">
+                    </div>
+                    <div class="platf_text">platfoem adress:
+                        <input required type="text" class="platf_adress">
+                    </div>
+                    <div class="platf_text_set">set the marker with the address above:</div>
+                </div>
+                <div class="platf_your_platf">
+                    your platforms:
+                </div>
+                <div class="platf_map">
+                    <div id="map_platf">
+                        <script async defer
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">
+                        </script>
+                    </div>
+                    <div class="platf_map_layer"></div>
+                </div>
+                <div class="platf_create">
+                    <div class="button_platf">
+                        <input type="submit" value="create">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

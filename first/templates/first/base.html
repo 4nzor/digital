@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="{% static 'css/first/lecturer.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/organizer.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/erorrs.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/calendar/calendar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/calendar/eventCalendar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/calendar/eventCalendar_theme_responsive.css' %}"/>
 
 </head>
 <body>
@@ -85,6 +88,7 @@
                         <li class="profile_up_line"></li>
                         <li><a href="{% profile %}">PROFILE</a></li>
                         <li><a href="{% url 'lectures' %}">LECTURES</a></li>
+                        <li><a href="{% url 'platforms' %}">PLATFORMs</a></li>
                         <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
                         <li><a href="{% profile %}">SETTINGS</a></li>
                         <li><a href="{% url 'logout' %}">EXIT</a></li>
@@ -162,6 +166,8 @@
 <script src="{% static 'js/common.js' %}"></script>
 <script src="{% static 'js/maps.js' %}"></script>
 <script src="{% static 'js/calendar.js' %}"></script>
+<script src="{% static 'libs/calendar/jquery.eventCalendar.js' %}"></script>
+<script src="{% static 'libs/calendar/moment.js' %}"></script>
 
 </body>
 </html>

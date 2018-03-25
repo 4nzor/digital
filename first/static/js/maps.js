@@ -53,3 +53,17 @@ function initMap2() {
 }
 
 google.maps.event.addDomListener(window, 'load', initMap2);
+
+function initMapPlatf() {
+
+    var centr_platf = {lat: 43.457, lng: 34.311};
+
+    var map_platf = new google.maps.Map(document.getElementById('map_platf'), {
+        zoom: 4,
+        maxZoom: 10,
+        center: centr_platf
+    });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initMapPlatf);

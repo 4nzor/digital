@@ -270,6 +270,7 @@ a:hover {
     border: 1px solid #8A8A8A;
     font-size: 22px;
     color: #2F6E90;
+    text-transform: uppercase;
 }
 
 .signin_usna:hover {
@@ -295,6 +296,7 @@ a:hover {
     padding: 0 20px;
     font-size: 22px;
     color: #2F6E90;
+    text-transform: uppercase;
 }
 
 .signin_pass:hover {
@@ -309,6 +311,7 @@ a:hover {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .signin_check {
@@ -443,7 +446,7 @@ a:hover {
     text-transform: uppercase;
 }
 
-.input_register{
+.input_register {
     position: relative;
 }
 
@@ -463,15 +466,14 @@ a:hover {
     text-transform: uppercase;
 }
 
-.block_whoiam{
+.block_whoiam {
     position: relative;
     margin-top: 7px;
     margin-bottom: 7px;
     height: 25px;
 }
 
-
-.register_text_whoiam{
+.register_text_whoiam {
     position: relative;
     text-align: left;
     font-size: 22px;
@@ -597,7 +599,7 @@ a:hover {
 
 /* block sex user */
 
-.block_sexus{
+.block_sexus {
     position: relative;
     margin-top: 7px;
     margin-left: 35px;
@@ -605,8 +607,7 @@ a:hover {
     height: 25px;
 }
 
-
-.register_text_sexus{
+.register_text_sexus {
     position: relative;
     text-align: left;
     font-size: 22px;
@@ -948,7 +949,7 @@ a:hover {
 }
 
 .block_events_map {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 80%;
@@ -994,6 +995,7 @@ a:hover {
     right: 0;
     width: 20%;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .events_parag {
@@ -1006,9 +1008,77 @@ a:hover {
     color: #00BDE2;
 }
 
+.eventmap_event_lecture, .eventmap_event_platform {
+    position: relative;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%;
+    margin-top: 30px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.eventmap_event_lecture {
+    border: 2px solid #00BDE2;
+}
+
+.eventmap_event_platform {
+    border: 2px solid #3F76A9;
+}
+
+.name_of_event {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+.eventmap_event_lecture .name_of_event {
+    color: #00BDE2;
+}
+
+.button_eventmap_more {
+    position: absolute;
+    right: 30px;
+    bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.button_eventmap_more:hover {
+    color: #3F76A9;
+}
+
+.button_eventmap_more i {
+    position: absolute;
+    font-size: 26px;
+    padding-left: 10px;
+}
+
+.i_active {
+    top: -5px;
+    right: -25px;
+    transform: rotate(90deg);
+}
+
 /* ---> event map end <---*/
 
 /* ---> FAQ <---*/
+
+.faq_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+}
 
 /* ---> FAQ end <---*/
 
@@ -1118,7 +1188,7 @@ a:hover {
 /* ---> footer end <---*/
 
 /* ---> 404 <---*/
-.pnf_content{
+.pnf_content {
     width: 100%;
     height: 100%;
 }
@@ -1132,11 +1202,11 @@ a:hover {
     z-index: 10001;
 }
 
-.pnf_icon img{
+.pnf_icon img {
     width: 400px;
 }
 
-.text_pnf{
+.text_pnf {
     position: relative;
     top: 55%;
     height: 50px;

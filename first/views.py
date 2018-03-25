@@ -126,6 +126,9 @@ def organizer(request):
 def lectures(request):
     return render(request, 'first/users/lectures.html')
 
+def platforms(request):
+    return render(request, 'first/users/platforms.html')
+
 def applications(request):
     return render(request, 'first/users/applications.html')
 
