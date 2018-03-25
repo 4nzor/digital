@@ -416,6 +416,492 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 
 /* ---> Applications container <---*/
 
+.applications_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.app_block_lecturer {
+    position: relative;
+    left: 50%;
+    margin-top: 210px;
+    margin-left: -450px;
+    width: 900px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.app_block_create_app{
+    position: relative;
+    width: 450px;
+    height: 200px;
+    font-size: 26px;
+}
+
+.app_parag_create_app{
+    width: 400px;
+    height: 80px;
+    padding-top: 20px;
+    text-align: center;
+    color: #595959;
+}
+
+.app_text_create_app{
+    position: relative;
+    text-transform: uppercase;
+    color: #595959;
+    margin-bottom: 15px;
+}
+
+.app_text_create_app select{
+    width: 400px;
+    text-transform: uppercase;
+    color: #595959;
+}
+
+.app_text_create_app input{
+    width: 400px;
+    text-transform: uppercase;
+    color: #595959;
+}
+
+.app_anycity_create_app{
+    color: #595959;
+    margin-bottom: 12px;
+    width: 400px;
+    text-align: justify;
+}
+
+.app_lect_this_lect{
+    position: relative;
+    width: 400px;
+    height: 135px;
+}
+
+.app_text_this_lect{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    color: #595959;
+}
+
+/*------*/
+
+.app_check_anycity {
+    cursor: pointer;
+    position: absolute;
+    right: 72px;
+}
+
+.app_check_anycity input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.signin_check {
+    position: absolute;
+    right: 45px;
+}
+
+.check_app_anycity {
+    position: absolute;
+    top: 6px;
+    right: 50px;
+    height: 25px;
+    width: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.app_check_anycity:hover input ~ .check_app_anycity {
+    background-color: #ccc;
+}
+
+.check_app_anycity:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.app_check_anycity input:checked ~ .check_app_anycity:after {
+    display: block;
+}
+
+.app_check_anycity .check_app_anycity:after {
+    left: 7.5px;
+    top: 3px;
+    width: 9px;
+    height: 14px;
+    border: solid #2F6E90;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.sig_text_remem {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    font-size: 22px;
+    color: #7F7F7F;
+}
+
+/*------*/
+
+.is_scientific{
+    cursor: pointer;
+}
+
+.app_text_scientific{
+    position: absolute;
+    top: 0;
+    left: 185px;
+    color: #595959;
+}
+
+.app_check_scientific{
+    position: relative;
+    display: none;
+}
+
+.check_scientific_app{
+    position: absolute;
+    top: 7px;
+    left: 150px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.is_scientific:hover input ~ .check_scientific_app {
+    background-color: #ccc;
+}
+
+.check_scientific_app:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.is_scientific input:checked ~ .check_scientific_app:after {
+    display: block;
+}
+
+.is_scientific .check_scientific_app:after {
+    left: 4px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #2F6E90;
+    border-radius: 15px;
+}
+
+/*------*/
+
+.is_educational{
+    cursor: pointer;
+}
+
+.app_text_educational{
+    position: relative;
+    top: 40px;
+    left: 185px;
+    color: #595959;
+}
+
+.app_check_educational{
+    position: relative;
+    display: none;
+}
+
+.check_educational_app{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.is_educational:hover input ~ .check_educational_app {
+    background-color: #ccc;
+}
+
+.check_educational_app:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.is_educational input:checked ~ .check_educational_app:after {
+    display: block;
+}
+
+.is_educational .check_educational_app:after {
+    left: 4px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #2F6E90;
+    border-radius: 15px;
+}
+
+/*------*/
+
+.is_popular{
+    cursor: pointer;
+}
+
+.app_text_popular{
+    position: absolute;
+    top: 80px;
+    left: 185px;
+    color: #595959;
+}
+
+.app_check_popular{
+    position: relative;
+    display: none;
+}
+
+.check_popular_app{
+    position: absolute;
+    top: 87px;
+    left: 150px;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.is_popular:hover input ~ .check_popular_app {
+    background-color: #ccc;
+}
+
+.check_popular_app:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.is_popular input:checked ~ .check_popular_app:after {
+    display: block;
+}
+
+.is_popular .check_popular_app:after {
+    left: 4px;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #2F6E90;
+    border-radius: 15px;
+}
+
+/*------*/
+
+.app_button_create_app{
+    width: 400px;
+    height: 60px;
+    font-size: 26px;
+    text-transform: uppercase;
+    background-color: #3F76A9;
+    color: #ffffff;
+    border: none;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.app_button_create_app:hover{
+    background-color: #00BDE2;
+}
+
+.app_lecturer_block_apps{
+    position: relative;
+    width: 450px;
+}
+
+.app_lect_menu{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+.app_lect_menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.app_lect_menu ul li{
+    position: relative;
+    width: 225px;
+    height: 80px;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 23px;
+    color: #595959;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.app_lect_menu ul .app_li_active{
+    color: #ffffff;
+    background-color: #00BDE2;
+}
+
+.app_lect_your_apps{
+    position: relative;
+    width: 100%;
+    min-height: 760px;
+    font-size: 26px;
+    color: #595959;
+    background-color: #ffffff;
+}
+
+.app_lect_considered_apps{
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    font-size: 26px;
+    color: #595959;
+    background-color: #ffffff;
+    display: none;
+}
+
+/* -----> app organizer <----- */
+
+.app_block_organizer {
+    position: relative;
+    left: 50%;
+    margin-top: 210px;
+    margin-left: -450px;
+    width: 900px;
+    z-index: 1000;
+    display: none;
+}
+
+.app_organ_menu {
+    position: relative;
+    width: 900px;
+    height: 80px;
+    z-index: 1010;
+}
+
+.app_organ_menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.app_organ_menu ul li {
+    position: relative;
+    width: 225px;
+    height: 80px;
+    color: #595959;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    padding-top: 23px;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.app_organ_menu ul li:hover{
+    color: #ffffff;
+    background-color: #00BDE2;
+}
+
+.app_organ_menu ul .app_li_active{
+    color: #ffffff;
+    background-color: #00BDE2;
+}
+
+.app_block_organ_apps{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    z-index: 1010;
+}
+
+.app_organ_submitted_apps{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 800px;
+    background-color: #ffffff;
+    overflow-y: scroll;
+}
+
+.app_organ_confirmed_apps{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 800px;
+    background-color: #cccccc;
+    overflow-y: scroll;
+    display: none;
+}
+
+.app_organ_completed_apps{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 800px;
+    background-color: #3F76A9;
+    overflow-y: scroll;
+    display: none;
+}
+
+.app_organ_rejected_apps{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 800px;
+    background-color: yellow;
+    overflow-y: scroll;
+    display: none;
+}
+
 /* ---> Applications container end <---*/
 
 /* ---> Block Activate Profile <---*/

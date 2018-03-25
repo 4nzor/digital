@@ -148,6 +148,68 @@ $(document).ready(function () {
     });
 
     /*---------- platforms end ----------*/
+    $(".app_lect_li_your").click(function () {
+        $(this).addClass('app_li_active');
+        $(".app_lect_li_con").removeClass('app_li_active');
+        $('.app_lect_your_apps').show();
+        $('.app_lect_considered_apps').hide();
+    });
+
+    $(".app_lect_li_con").click(function () {
+        $(".app_lect_li_your").removeClass('app_li_active');
+        $(this).addClass('app_li_active');
+        $('.app_lect_your_apps').hide();
+        $('.app_lect_considered_apps').show();
+    });
+
+
+    $(".app_organ_li_sub").click(function () {
+        $(this).addClass('app_li_active');
+        $(".app_organ_li_con").removeClass('app_li_active');
+        $(".app_organ_li_com").removeClass('app_li_active');
+        $(".app_organ_li_rej").removeClass('app_li_active');
+        $('.app_organ_submitted_apps').show();
+        $('.app_organ_confirmed_apps').hide();
+        $('.app_organ_completed_apps').hide();
+        $('.app_organ_rejected_apps').hide();
+    });
+
+    $(".app_organ_li_con").click(function () {
+        $(".app_organ_li_sub").removeClass('app_li_active');
+        $(this).addClass('app_li_active');
+        $(".app_organ_li_com").removeClass('app_li_active');
+        $(".app_organ_li_rej").removeClass('app_li_active');
+        $('.app_organ_submitted_apps').hide();
+        $('.app_organ_confirmed_apps').show();
+        $('.app_organ_completed_apps').hide();
+        $('.app_organ_rejected_apps').hide();
+    });
+
+    $(".app_organ_li_com").click(function () {
+        $(".app_organ_li_sub").removeClass('app_li_active');
+        $(".app_organ_li_con").removeClass('app_lin_active');
+        $(this).addClass('app_li_active');
+        $(".app_organ_li_rej").removeClass('app_li_active');
+        $('.app_organ_submitted_apps').hide();
+        $('.app_organ_confirmed_apps').hide();
+        $('.app_organ_completed_apps').show();
+        $('.app_organ_rejected_apps').hide();
+    });
+
+    $(".app_organ_li_rej").click(function () {
+        $(".app_organ_li_sub").removeClass('app_li_active');
+        $(".app_organ_li_con").removeClass('app_li_active');
+        $(".app_organ_li_com").removeClass('app_li_active');
+        $(this).addClass('app_li_active');
+        $('.app_organ_submitted_apps').hide();
+        $('.app_organ_confirmed_apps').hide();
+        $('.app_organ_completed_apps').hide();
+        $('.app_organ_rejected_apps').show();
+    });
+
+    /*---------- applications ----------*/
+
+    /*---------- applications end ----------*/
 
     /* ---> Buttons end <--- */
 

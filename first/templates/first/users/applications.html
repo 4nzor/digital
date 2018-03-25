@@ -13,8 +13,96 @@
 
     {% block text_categ %}APPLICATIONS{% endblock %}
 
-    <div class="content_applications">
-    .block
+    <div class="applications_content">
+        <div class="app_block_lecturer">
+            <div class="app_block_create_app">
+                <form>
+                    <div class="app_parag_create_app">create your application</div>
+                    <div class="app_text_create_app">country: <select name="" id=""></select></div>
+                    <div class="app_text_create_app">select platform: <select name="" id=""></select></div>
+                    <div class="app_anycity_create_app">can you go to another platform in the selected country:
+                        <label class="app_check_anycity">
+                            <input type="checkbox" class="app_anycity_check">
+                            <span class="check_app_anycity"></span>
+                            <p class="app_text_anycity">yes</p>
+                        </label>
+                    </div>
+                    <div class="app_text_create_app">date: <input type="date"></div>
+                    <div class="app_text_create_app">name of lecture: <input type="text"></div>
+                    <div class="app_text_create_app">language <select name="" id=""></select></div>
+                    <div class="app_lect_this_lect">
+                        <div class="app_text_this_lect">this lect is</div>
+                        <label class="is_scientific">
+                            <input type="radio" class="app_check_scientific"
+                                   checked="checked"
+                                   name="app_create_is"
+                                   value="scien">
+                            <span class="check_scientific_app"></span>
+                            <p class="app_text_scientific">scientific</p>
+                        </label>
+                        <label class="is_educational">
+                            <input type="radio" class="app_check_educational"
+                                   name="app_create_is"
+                                   value="educational">
+                            <span class="check_educational_app"></span>
+                            <p class="app_text_educational">educational</p>
+                        </label>
+                        <label class="is_popular">
+                            <input type="radio" class="app_check_popular"
+                                   name="app_create_is"
+                                   value="popular">
+                            <span class="check_popular_app"></span>
+                            <p class="app_text_popular">popular</p>
+                        </label>
+                    </div>
+                    <input class="app_button_create_app" type="submit" value="create">
+                </form>
+            </div>
+            <div class="app_lecturer_block_apps">
+                <div class="app_lect_menu">
+                    <ul>
+                        <li class="app_lect_li_your app_li_active">your app</li>
+                        <li class="app_lect_li_con">considered</li>
+                    </ul>
+                </div>
+                <div class="app_lect_your_apps">
+                    sad
+                </div>
+                <div class="app_lect_considered_apps">
+                    asd
+                </div>
+            </div>
+        </div>
+
+        <div class="app_block_organizer">
+            <div class="app_organ_menu">
+                <ul>
+                    <li class="app_organ_li_sub app_li_active">submitted</li>
+                    <li class="app_organ_li_con">confirmed</li>
+                    <li class="app_organ_li_com">completed</li>
+                    <li class="app_organ_li_rej">rejected</li>
+                </ul>
+            </div>
+
+            <div class="app_block_organ_apps">
+                <div class="app_organ_submitted_apps">
+
+                </div>
+
+                <div class="app_organ_confirmed_apps">
+
+                </div>
+
+                <div class="app_organ_completed_apps">
+
+                </div>
+
+                <div class="app_organ_rejected_apps">
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
 {% endblock %}
