@@ -4,13 +4,13 @@ $(document).ready(function () {
 
     /*---------- event map ----------*/
 
-    $(".button_eventmap_more").click(function () {
-        $(this).click(".i_more")
-    });
-
-    $(".i_more").click(function () {
-        $(this).toggleClass('i_active')
-    });
+    // $(".button_eventmap_more").click(function () {
+    //     if($(this).hover()){
+    //         $(".i_more").each(function () {
+    //             $(this).toggleClass('i_active')
+    //         })
+    //     }
+    // });
 
     /*---------- event map end ----------*/
 
@@ -93,6 +93,37 @@ $(document).ready(function () {
         }
     });
 
+    /*---------- lectures ----------*/
+
+    $(".lectures_plan").click(function () {
+        $(this).addClass('lectures_active');
+        $(".lectures_comp").removeClass('lectures_active');
+        $(".lectures_canc").removeClass('lectures_active');
+        $(".planned_lectures").show();
+        $(".complended_lectures").hide();
+        $(".canceled_lectures").hide();
+    });
+
+    $(".lectures_comp").click(function () {
+        $(".lectures_plan").removeClass('lectures_active');
+        $(this).addClass('lectures_active');
+        $(".lectures_canc").removeClass('lectures_active');
+        $(".planned_lectures").hide();
+        $(".complended_lectures").show();
+        $(".canceled_lectures").hide();
+    });
+
+    $(".lectures_canc").click(function () {
+        $(".lectures_plan").removeClass('lectures_active');
+        $(".lectures_comp").removeClass('lectures_active');
+        $(this).addClass('lectures_active');
+        $(".planned_lectures").hide();
+        $(".complended_lectures").hide();
+        $(".canceled_lectures").show();
+    });
+
+    /*---------- lectures end ----------*/
+
     /*---------- platforms ----------*/
 
     $(".platf_li_yo").click(function () {
@@ -101,6 +132,7 @@ $(document).ready(function () {
         $('.platf_your_platf').show();
         $('.platf_create').hide();
         $('.platf_map_layer').hide();
+        $(".platf_text_map_layer").hide()
     });
 
     $(".platf_li_cr").click(function () {
@@ -109,6 +141,10 @@ $(document).ready(function () {
         $('.platf_create').show();
         $('.platf_your_platf').hide();
         $('.platf_map_layer').show();
+    });
+
+    $(".platf_map_layer").click(function () {
+        $(".platf_text_map_layer").show()
     });
 
     /*---------- platforms end ----------*/

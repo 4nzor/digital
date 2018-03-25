@@ -1042,11 +1042,13 @@ a:hover {
 
 .button_eventmap_more {
     position: absolute;
-    right: 30px;
+    right: 10px;
     bottom: 5px;
+    width: 65px;
     font-size: 20px;
     cursor: pointer;
     color: #8A8A8A;
+    text-align: left;
     transition: all .5s ease;
     -o-transition: all .5s ease;
     -webkit-transition: all .5s ease;
@@ -1059,12 +1061,14 @@ a:hover {
 
 .button_eventmap_more i {
     position: absolute;
+    right: 0;
+    bottom: 2px;
     font-size: 26px;
     padding-left: 10px;
 }
 
 .i_active {
-    top: -5px;
+    top: -8px;
     right: -25px;
     transform: rotate(90deg);
 }

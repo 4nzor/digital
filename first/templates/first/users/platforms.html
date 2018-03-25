@@ -15,14 +15,14 @@
 
     <div class="platforms_content">
         <div class="platforms_block">
-            <div class="block_plat_menu">
+            <div class="block_platf_menu">
                 <ul>
                     <li class="platf_li_yo ">your platforms</li>
                     <li class="platf_li_cr platf_active">create platforms</li>
                 </ul>
             </div>
-            <form class="platf_create_platf">
-                <div class="platf_create">
+            <form class="platf_block_create_platf">
+                <div id="platf_form" class="platf_create">
                     <div class="platf_text">platform name:
                         <input required type="text" class="platf_place_name">
                     </div>
@@ -37,8 +37,10 @@
                     </div>
                     <div class="platf_text_set">set the marker with the address above:</div>
                 </div>
-                <div class="platf_your_platf">
-                    your platforms:
+                <div class="platf_block_your_platf">
+                    <div class="platf_your_platf">
+                        your platforms:
+                    </div>
                 </div>
                 <div class="platf_map">
                     <div id="map_platf">
@@ -47,6 +49,9 @@
                         </script>
                     </div>
                     <div class="platf_map_layer"></div>
+                    <div class="platf_text_map_layer">
+                        <span>erorr: </span>input data!
+                    </div>
                 </div>
                 <div class="platf_create">
                     <div class="button_platf">
