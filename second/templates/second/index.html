@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Datebase{% endblock %}
+</head>
+
+<body>
+
+{% block content %}
+
+    <div class="home_content">
+        <div class="home_block">
+            <div class="home_logo">
+                <img src="../../static/images/puzzles.png" alt="">
+            </div>
+            <div class="home_text_logo">
+                <div class="line_text_logo line_top"></div>
+                <div class="line_text_logo line_right"></div>
+                <div class="line_text_logo line_bottom"></div>
+                <div class="line_text_logo line_left"></div>
+                research infrastuctures database
+            </div>
+            <div class="home_text_region">
+                BSEC Region
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>
