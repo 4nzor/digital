@@ -6,7 +6,7 @@
 <!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
 <!--<![endif]-->
-
+{% load forstatic %}
 <html lang="en">
 {% load profile %}
 <head>
@@ -79,7 +79,7 @@
             <ul class="menu_profile">
                 <li>
                     <a href="" class="text_profile">
-                        <span class="name_profile">WELCOME, {{ acc.full_name }}</span>
+                        <span class="name_profile">WELCOME, {% get_full_name %}</span>
                         <div class="icon_profile"><i class="fa fa-user"></i></div>
                     </a>
                     <ul class="submenu_profile">
@@ -161,10 +161,11 @@
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-<script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static ''%}{% jquery_set_1_1 %}"></script>
 <script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
 <script src="{% static 'js/common.js' %}"></script>
 <script src="{% static 'js/maps.js' %}"></script>
+<script src="{% static 'js/stipot_api.js' %}"></script>
 <script src="{% static 'js/calendar.js' %}"></script>
 
 </body>

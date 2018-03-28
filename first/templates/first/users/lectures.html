@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 
 {% extends 'first/base.html' %}
-
+{% load staticfiles %}
 <html lang="ru">
 
 <head>
+
     {% block title %}Lectures{% endblock %}
 </head>
 
 <body>
 {% block content %}
 
+    <link rel="stylesheet" href="{% static 'jalendar/style/jalendar.css' %}"/>
+    <script type="text/javascript" src="{% static 'jalendar/js/jalendar.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jalendar/js/jquery-1.11.3.min.js' %}"></script>
     {% block text_categ %}LECTURES{% endblock %}
 
     <div class="lectures_content">
@@ -18,7 +22,7 @@
             <div class="block_up_lectures">
 
                 <div class="lectures_menu">
-                    <ul>
+                    <ul onclick="get_apps('{% url 'api:get_apps' %}','{{ csrf_token }}')">
                         <li class="lectures_plan lectures_active">planned</li>
                         <li class="lectures_comp">completed</li>
                         <li class="lectures_canc">canceled</li>
@@ -26,39 +30,36 @@
                 </div>
 
                 <div class="planned_lectures">
-                    <div class="lectures_block_lecture">
-                        <div class="lectures_date_lecture">sdf</div>
-                        <div class="lectures_name_lecture">
-                            sdf
-                        </div>
-                    </div>
-                    <div class="lectures_block_lecture">
-                        <div class="lectures_date_lecture">sdf</div>
-                        <div class="lectures_name_lecture">sdf</div>
-                    </div>
-                    <div class="lectures_block_lecture">
-                        <div class="lectures_date_lecture">sdf</div>
-                        <div class="lectures_name_lecture">
-                            sdfsdf
-                        </div>
-                    </div>
+
                 </div>
 
                 <div class="complended_lectures">
                     <div class="lectures_block_lecture">
-                        <div class="lectures_date_lecture">asd</div>
-                        <div class="lectures_name_lecture">
-                            asd asdsad sad as dasd sa das dasd as dasd asd asd asd asd asd asd asd asd asd
                         </div>
                     </div>
-                </div>
-
                 <div class="canceled_lectures">
-
+                    <div class="lectures_block_lecture">
+                    </div>
                 </div>
-
                 <div class="lectures_calendar">
-                </div>
+                    <script>
+                        $(function () {
+                            $('#yourId3').jalendar({
+                                type: 'selector',
+                                dateType: 'yyyy-mm-dd',
+                                dayWithZero: false,
+                                done: function () {
+                                    get_apps('{% url 'api:get_apps' %}', '{{csrf_token}}')
+                                }
+                            });
+                        });
+                    </script>
+                    <br> <br>
+                    {#дороу#}
+                    <div id="yourId3" class="jalendar">
+                        <div class="added-event" data-date="28-03-2018" data-title="Hazal ve Bora Nikah Töreni"></div><div>
+
+                                    </div>
 
                 <div class="bottom_line_lectures"></div>
             </div>
@@ -73,6 +74,47 @@
         </div>
     </div>
 
+    <link rel="stylesheet" href="{% static  'jalendar/style/jalendar.css' %}" type="text/css"/>
+    <script type="text/javascript" src="{% static  'jalendar/js/jquery-1.11.3.min.js' %}"></script><!--jQuery-->
+    <script type="text/javascript" src="{% static  'jalendar/js/jalendar.min.js' %}"></script>
+    <script>
+        $(function () {
+
+
+        today = new Date();
+        let dd = today.getDate();
+        let mm = today.getMonth() + 1;
+        let yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+        let date = yyyy + '-' + mm + '-' + dd;
+        jQuery.ajax({
+            type: 'POST',
+            url: '{% url 'api:get_apps' %}',
+            data: {
+                'csrfmiddlewaretoken':'{{ csrf_token }}',
+                'date': date,
+                'type_command': 'planned'
+            },
+            success: function (data) {
+                dat = '';
+                title = '';
+
+                for (var i = 0; i < data.date.length; i++) {
+                    dat += '<div class="lectures_block_lecture">' + '<div class="lectures_date_lecture">' +
+                        data.date[i] + '</div>' + '<div class="lectures_name_lecture">' + data.titles[i] + '</div>' + '</div>';
+                }
+                $('.planned_lectures').html(dat)
+            }
+
+        });
+        })
+    </script>
 {% endblock %}
 </body>
 </html>

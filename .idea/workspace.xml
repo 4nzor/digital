@@ -1,15 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/first/templates/first/users/lectures.html" line="34" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="">
+    <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="production test">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/CTF.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0007_auto_20180327_0138.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0008_auto_20180327_0223.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0009_person.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0010_auto_20180327_0447.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0011_auto_20180328_0142.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0012_app_check_anycity.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0013_app_is_planed.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0014_auto_20180328_1623.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/migrations/0015_app_is_canceled.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/jalendar/js/jalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/jalendar/js/jquery-1.11.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/jalendar/style/jalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/jalendar/style/jalendar.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/jalendar/style/jalendar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/static/js/stipot_api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/templates/first/app_confir.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/templates/includes/languages.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/first/templatetags/forstatic.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/First_proj.iml" afterPath="$PROJECT_DIR$/.idea/First_proj.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/First_proj/settings.py" afterPath="$PROJECT_DIR$/First_proj/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/First_proj/urls.py" afterPath="$PROJECT_DIR$/First_proj/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/admin.py" afterPath="$PROJECT_DIR$/first/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/migrations/__init__.py" afterPath="$PROJECT_DIR$/first/migrations/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/models.py" afterPath="$PROJECT_DIR$/first/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/css/first/profile.css" afterPath="$PROJECT_DIR$/first/static/css/first/profile.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/common.js" afterPath="$PROJECT_DIR$/first/static/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/map_lectures.js" afterPath="$PROJECT_DIR$/first/static/js/map_lectures.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/static/js/maps.js" afterPath="$PROJECT_DIR$/first/static/js/maps.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/base.html" afterPath="$PROJECT_DIR$/first/templates/first/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/applications.html" afterPath="$PROJECT_DIR$/first/templates/first/users/applications.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/lectures.html" afterPath="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templates/first/users/platforms.html" afterPath="$PROJECT_DIR$/first/templates/first/users/platforms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/templatetags/profile.py" afterPath="$PROJECT_DIR$/first/templatetags/profile.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/urls.py" afterPath="$PROJECT_DIR$/first/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/first/views.py" afterPath="$PROJECT_DIR$/first/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +66,17 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="db" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="db" type="e3449647:DbNodeDescriptor" />
+        <item name="main" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -34,31 +84,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="platforms.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/templates/first/users/platforms.html">
+      <file leaf-file-name="app_confir.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/templates/first/app_confir.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="305" column="0" lean-forward="false" selection-start-line="305" selection-start-column="0" selection-end-line="368" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lecturer.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/lecturer.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="457" column="9" lean-forward="false" selection-start-line="457" selection-start-column="9" selection-end-line="457" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,58 +97,82 @@
       <file leaf-file-name="applications.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/first/templates/first/users/applications.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+            <state relative-caret-position="678">
+              <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
+      <file leaf-file-name="maps.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="787" column="18" lean-forward="false" selection-start-line="787" selection-start-column="18" selection-end-line="787" selection-end-column="18" />
+            <state relative-caret-position="-900">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lectures.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-408">
+              <caret line="176" column="61" lean-forward="false" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="77" column="15" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stipot_api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/first/static/js/stipot_api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="864">
+              <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lectures.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendar.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/css/first/calendar/calendar.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calendar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/js/calendar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+            <state relative-caret-position="259">
+              <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -129,9 +183,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -150,6 +204,9 @@
       <find>.photo_lecturer</find>
       <find>form</find>
       <find>z-in</find>
+      <find>ero</find>
+      <find>initmap</find>
+      <find>btn-success</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,26 +215,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/first/static/css/first/registration.css" />
-        <option value="$PROJECT_DIR$/first/static/css/first/index.css" />
-        <option value="$PROJECT_DIR$/first/templates/first/registration.html" />
-        <option value="$PROJECT_DIR$/first/static/css/first/fonts.css" />
-        <option value="$PROJECT_DIR$/first/templates/first/account.html" />
-        <option value="$PROJECT_DIR$/first/forms.py" />
-        <option value="$PROJECT_DIR$/first/templates/first/partners.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/about.html" />
-        <option value="$PROJECT_DIR$/first/admin.py" />
-        <option value="$PROJECT_DIR$/first/templatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/templatetags/profile.py" />
-        <option value="$PROJECT_DIR$/first/temlplatetags/__init__.py" />
-        <option value="$PROJECT_DIR$/first/temlplatetags/profile.py" />
         <option value="$USER_HOME$/untitled/Lib/site-packages/django/templatetags/tz.py" />
         <option value="$PROJECT_DIR$/first/templates/first/index.html" />
-        <option value="$PROJECT_DIR$/first/templatetags/profile.py" />
-        <option value="$PROJECT_DIR$/First_proj/urls.py" />
-        <option value="$PROJECT_DIR$/first/models.py" />
         <option value="$PROJECT_DIR$/first/tokens.py" />
-        <option value="$PROJECT_DIR$/First_proj/settings.py" />
         <option value="$PROJECT_DIR$/first/templates/first/acc_active_email.html" />
         <option value="$PROJECT_DIR$/first/templates/first/register.html" />
         <option value="$PROJECT_DIR$/first/templates/first/signin.html" />
@@ -188,27 +228,44 @@
         <option value="$PROJECT_DIR$/first/static/css/first/lecturer.css" />
         <option value="$PROJECT_DIR$/first/static/css/first/organizer.css" />
         <option value="$PROJECT_DIR$/first/static/css/first/erorrs.css" />
-        <option value="$PROJECT_DIR$/first/static/js/map_lectures.js" />
         <option value="$PROJECT_DIR$/first/templates/first/users/organizer.html" />
         <option value="$PROJECT_DIR$/first/templates/first/users/lecturer.html" />
         <option value="$PROJECT_DIR$/first/static/js/map.js" />
         <option value="$PROJECT_DIR$/first/templates/first/404.html" />
         <option value="$PROJECT_DIR$/first/templates/first/sign/register.html" />
         <option value="$PROJECT_DIR$/first/static/css/first/calendar/eventCalendar_theme_responsive.css" />
-        <option value="$PROJECT_DIR$/first/urls.py" />
-        <option value="$PROJECT_DIR$/first/views.py" />
         <option value="$PROJECT_DIR$/first/templates/first/faq.html" />
-        <option value="$PROJECT_DIR$/first/static/js/maps.js" />
         <option value="$PROJECT_DIR$/first/static/css/first/main.css" />
         <option value="$PROJECT_DIR$/first/templates/first/eventmap.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
-        <option value="$PROJECT_DIR$/first/templates/first/base.html" />
         <option value="$PROJECT_DIR$/first/static/js/calendar.js" />
         <option value="$PROJECT_DIR$/first/static/css/first/calendar/calendar.css" />
-        <option value="$PROJECT_DIR$/first/templates/first/users/platforms.html" />
         <option value="$PROJECT_DIR$/first/static/js/common.js" />
-        <option value="$PROJECT_DIR$/first/templates/first/users/applications.html" />
+        <option value="$PROJECT_DIR$/First_proj/urls.py" />
+        <option value="$PROJECT_DIR$/first/static/js/map_lectures.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bd755b9e-b304-4ec7-895d-49589269bec0/console.sql" />
+        <option value="$PROJECT_DIR$/first/migrations/__init__.py" />
+        <option value="$PROJECT_DIR$/first/templates/file.html" />
+        <option value="$PROJECT_DIR$/first/templates/first/users/platforms.html" />
+        <option value="$PROJECT_DIR$/first/templates/changelog.html" />
+        <option value="$PROJECT_DIR$/first/templatetags/profile.py" />
+        <option value="$PROJECT_DIR$/first/templatetags/forstatic.py" />
+        <option value="$PROJECT_DIR$/first/templates/includes/languages.html" />
+        <option value="$PROJECT_DIR$/first/static/js/maps.js" />
+        <option value="$PROJECT_DIR$/first/templates/first/base.html" />
+        <option value="$PROJECT_DIR$/first/templates/app_confir.html" />
+        <option value="$PROJECT_DIR$/First_proj/settings.py" />
+        <option value="$PROJECT_DIR$/api/urls.py" />
+        <option value="$PROJECT_DIR$/first/templates/loader.html" />
         <option value="$PROJECT_DIR$/first/static/css/first/profile.css" />
+        <option value="$PROJECT_DIR$/first/models.py" />
+        <option value="$PROJECT_DIR$/first/admin.py" />
+        <option value="$PROJECT_DIR$/first/templates/first/app_confir.html" />
+        <option value="$PROJECT_DIR$/first/urls.py" />
+        <option value="$PROJECT_DIR$/first/views.py" />
+        <option value="$PROJECT_DIR$/first/templates/first/users/applications.html" />
+        <option value="$PROJECT_DIR$/api/views.py" />
+        <option value="$PROJECT_DIR$/first/static/js/stipot_api.js" />
+        <option value="$PROJECT_DIR$/first/templates/first/users/lectures.html" />
       </list>
     </option>
   </component>
@@ -230,9 +287,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="37" />
-    <option name="y" value="-25" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
     <option name="width" value="1448" />
     <option name="height" value="868" />
   </component>
@@ -273,124 +330,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="calendar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="maps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="sign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="digital" type="b2602c69:ProjectViewProjectNode" />
+              <item name="digital" type="462c0819:PsiDirectoryNode" />
               <item name="first" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="First_proj" type="b2602c69:ProjectViewProjectNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
-              <item name="First_proj" type="462c0819:PsiDirectoryNode" />
+              <item name="views.py" type="8704e2dd:PyFileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -398,7 +400,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Project/-4--master/main/static/js/common.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../za4et/-4--master" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.selected.package.jscs" value="" />
@@ -412,17 +414,19 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\static" />
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\templates\first" />
-      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\CTF\Desktop\Поработать с JS\digital\first\templates\first" />
       <recent name="C:\Users\м\Desktop\Digital Initiatives\First_proj\first\templates\first\sign" />
       <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\templates\first" />
       <recent name="C:\Users\CTF\Desktop\digital\first" />
       <recent name="C:\Users\CTF\Desktop\digital" />
-      <recent name="C:\Users\CTF\Desktop\digital\first\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\CTF\Desktop\Поработать с JS\digital" />
+      <recent name="C:\Users\CTF\Desktop\Поработать с JS\digital\first\templates" />
+      <recent name="C:\Users\CTF\Desktop\Поработать с JS\digital\first\static" />
+      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\static" />
+      <recent name="C:\Users\CTF\Desktop\Digital Initiatives\digital\first\templates\first" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -595,18 +599,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1448" height="868" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37737843" sideWeight="0.52239585" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37737843" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42837837" sideWeight="0.47760418" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@First_proj" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33513513" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18624642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,7 +618,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@First_proj" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -695,27 +698,264 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/first/templatetags/profile.py" />
-    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/template/defaulttags.py" />
-    <entry file="file://$PROJECT_DIR$/First_proj/urls.py" />
-    <entry file="file://$PROJECT_DIR$/first/migrations/0001_initial.py" />
-    <entry file="file://$PROJECT_DIR$/media/avatars/3uV_hQ2tkDA_NBihtMx.jpg" />
-    <entry file="file://$PROJECT_DIR$/media/avatars/3uV_hQ2tkDA_ui39yRg.jpg" />
-    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/db/models/base.py" />
-    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django/contrib/auth/models.py" />
-    <entry file="file://$PROJECT_DIR$/first/models.py" />
-    <entry file="file://$PROJECT_DIR$/first/tokens.py" />
-    <entry file="file://$PROJECT_DIR$/First_proj/settings.py" />
-    <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html" />
-    <entry file="file://$PROJECT_DIR$/first/templates/first/index.html">
+    <entry file="file://$PROJECT_DIR$/first/migrations/0008_auto_20180327_0134.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First_proj/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django_countries/release.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django_countries/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/untitled/Lib/site-packages/django_countries/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First_proj/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/map_lectures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="234" column="27" lean-forward="false" selection-start-line="234" selection-start-column="27" selection-end-line="234" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/file.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/jalendar/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="1" column="1051" lean-forward="false" selection-start-line="1" selection-start-column="1051" selection-end-line="1" selection-end-column="1051" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/jalendar/js/jalendar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/jalendar/style/jalendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jalendar/js/jalendar.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templatetags/profile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templatetags/forstatic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#27#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jalendar/js/jquery-1.11.3.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="1" column="7548" lean-forward="false" selection-start-line="1" selection-start-column="7546" selection-end-line="1" selection-end-column="7548" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Jalendar/jalendar2/changelog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/changelog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/images/image_category.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/images/world.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First_proj/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="137" column="44" lean-forward="true" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="213" column="17" lean-forward="true" selection-start-line="213" selection-start-column="17" selection-end-line="213" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/loader.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/congrat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lecturer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="90" column="63" lean-forward="false" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/organizer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="98" column="120" lean-forward="false" selection-start-line="98" selection-start-column="120" selection-end-line="98" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -728,277 +968,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../Project/-4--master/main/static/js/common.js">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/account.html" />
-    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/acc_active_email.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/organizer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2533">
-          <caret line="28" column="21" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="230">
+          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/congrat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="58" lean-forward="false" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/erorrs.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="44" column="15" lean-forward="false" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/map_lectures.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/map.js" />
-    <entry file="file://$PROJECT_DIR$/first/static/images/404.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../calendar/css/eventCalendar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../calendar/css/eventCalendar_theme_responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5661">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../calendar/js/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="339" column="9" lean-forward="false" selection-start-line="339" selection-start-column="9" selection-end-line="339" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/libs/calendar/jquery.eventCalendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6222">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/libs/calendar/moment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10455">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/calendar/eventCalendar.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/calendar/eventCalendar_theme_responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2023">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/organizer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="98" column="120" lean-forward="false" selection-start-line="98" selection-start-column="120" selection-end-line="98" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="65" column="138" lean-forward="false" selection-start-line="65" selection-start-column="138" selection-end-line="65" selection-end-column="138" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="82" lean-forward="false" selection-start-line="32" selection-start-column="82" selection-end-line="32" selection-end-column="82" />
-          <folding>
-            <marker date="1521998129032" expanded="true" signature="1638:2750" ph="..." />
-            <marker date="1521998129032" expanded="true" signature="2091:2750" ph="..." />
-          </folding>
+        <state relative-caret-position="174">
+          <caret line="114" column="77" lean-forward="true" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/eventmap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/calendar/calendar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/calendar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="160" column="40" lean-forward="true" selection-start-line="160" selection-start-column="40" selection-end-line="160" selection-end-column="40" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/users/platforms.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="171">
+          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lecturer.html">
+    <entry file="file://$PROJECT_DIR$/first/templates/includes/countries.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="91" column="44" lean-forward="true" selection-start-line="84" selection-start-column="36" selection-end-line="91" selection-end-column="44" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/lecturer.css">
+    <entry file="file://$PROJECT_DIR$/first/templates/includes/languages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="457" column="9" lean-forward="false" selection-start-line="457" selection-start-column="9" selection-end-line="457" selection-end-column="9" />
+        <state relative-caret-position="364">
+          <caret line="602" column="37" lean-forward="true" selection-start-line="602" selection-start-column="37" selection-end-line="602" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/acc_active_email.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="59" column="47" lean-forward="false" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/main.css">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="305" column="0" lean-forward="false" selection-start-line="305" selection-start-column="0" selection-end-line="368" selection-end-column="1" />
+        <state relative-caret-position="139">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/templates/first/sign/signin.html">
+    <entry file="file://$PROJECT_DIR$/first/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        <state relative-caret-position="245">
+          <caret line="23" column="58" lean-forward="true" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/maps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/templates/first/app_confir.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="77" column="15" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="176" column="61" lean-forward="false" selection-start-line="176" selection-start-column="61" selection-end-line="176" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/first/static/js/stipot_api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="61" column="7" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/first/templates/first/users/applications.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+        <state relative-caret-position="678">
+          <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first/static/css/first/profile.css">
+    <entry file="file://$PROJECT_DIR$/first/templates/first/users/lectures.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="787" column="18" lean-forward="false" selection-start-line="787" selection-start-column="18" selection-end-line="787" selection-end-column="18" />
+        <state relative-caret-position="259">
+          <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
           <folding />
         </state>
       </provider>

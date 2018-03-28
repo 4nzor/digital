@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'first',
+    'api',
+    'django_countries'
 ]
 
 MIDDLEWARE = [
@@ -133,3 +135,4 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'zorkgb05@gmail.com'
 EMAIL_HOST_PASSWORD = 'qazwsxedc1q'
 EMAIL_PORT = 587
+DATE_INPUT_FORMATS = ('%d-%m-%Y','%Y-%m-%d')

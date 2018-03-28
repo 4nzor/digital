@@ -203,7 +203,7 @@ ul.menu_profile > li:hover > ul.submenu_profile {
 .lectures_date_lecture {
     position: relative;
     left: 0;
-    width: 120px;
+    width: 200px;
     color: #00BDE2;
     padding: 10px;
 }

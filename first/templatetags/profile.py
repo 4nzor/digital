@@ -1,8 +1,6 @@
 from django import template
 
-from delorean import parse
-
-from first.models import Account
+from first.models import Account, Org
 
 register = template.Library()
 
@@ -27,3 +25,13 @@ def url_reg(context, url):
 def url_menu(context, url):
     if context.request.path == url:
         return 'active-button'
+
+
+@register.simple_tag(takes_context=True)
+def get_full_name(context):
+    try:
+        acc = Account.objects.get(username=context.request.user)
+        return acc.full_name
+    except Account.DoesNotExist:
+        org = Org.objects.get(username=context.request.user)
+        return org.full_name

@@ -4,11 +4,12 @@ from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMessage
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
-from django.template.loader import render_to_string
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic.base import View
-
-from first.models import Account, Org
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
+from django.utils.html import strip_tags
+from first.models import Account, Org, Platform, App
 from first.tokens import account_activation_token
 
 
@@ -28,7 +29,7 @@ def partners(request):
     return render(request, 'first/partners.html')
 
 
-class signin(View):
+class Signin(View):
     def get(self, request):
         return render(request, 'first/sign/signin.html')
 
@@ -49,7 +50,8 @@ class signin(View):
 def congrat(request):
     return render(request, 'first/sign/congrat.html')
 
-class register(View):
+
+class Register(View):
     def get(self, request):
         return render(request, 'first/sign/register.html')
 
@@ -63,7 +65,7 @@ class register(View):
                 password=request.POST['pass'],
                 is_active=False
             )
-            user = User.objects.get(username=request.POST['username'])
+            user = Account.objects.get(username=request.POST['username'])
             current_site = get_current_site(request)
 
             mail_subject = 'STIPOT:Activate your account.'
@@ -85,20 +87,41 @@ class register(View):
             email.send()
             return HttpResponse('Please confirm your email address to complete the registration')
 
-        else:
+        elif type_reg == 'org':
             Org.objects.create_user(
                 username=request.POST['username'],
                 full_name=request.POST['full_name'],
                 email=request.POST['email'],
                 password=request.POST['pass'],
+                is_active=False
             )
-            return redirect('/signin')
+            user = Org.objects.get(username=request.POST['username'])
+            current_site = get_current_site(request)
+            mail_subject = 'STIPOT:Activate your account.'
+            domain = current_site.domain
+            uid = user.id
+            token = account_activation_token.make_token(user)
+            message = render_to_string('first/sign/acc_active_email.html',
+                                       {
+                                           'user': user,
+                                           'domain': domain,
+                                           'token': token,
+                                           'uid': uid,
+
+                                       })
+            to_email = user.email
+            email = EmailMessage(
+                mail_subject, message, from_email='zokgb05@gmaail.com', to=[to_email]
+            )
+            email.send()
+            return HttpResponse('Please confirm your email address to complete the registration')
 
 
 def eventmap(request):
     return render(request, 'first/eventmap.html')
 
-class lecturer(View):
+
+class Lecturer(View):
     def get(self, request):
         acc = Account.objects.get(username=request.user)
 
@@ -123,14 +146,68 @@ class lecturer(View):
 def organizer(request):
     return render(request, 'first/users/organizer.html')
 
+
 def lectures(request):
     return render(request, 'first/users/lectures.html')
 
-def platforms(request):
-    return render(request, 'first/users/platforms.html')
 
-def applications(request):
-    return render(request, 'first/users/applications.html')
+class Platforms(View):
+    def get(self, request):
+        return render(request, 'first/users/platforms.html')
+
+    @csrf_exempt
+    def post(self, request):
+        print(request.POST)
+
+        Platform.objects.create(
+            name=request.POST['name'],
+            platform_city=request.POST['city'],
+            platform_country=request.POST['country'],
+            platform_adress=request.POST['adress'],
+            lat=request.POST['lat'],
+            lng=request.POST['lng'],
+            Org=Org.objects.get(username=request.user)
+        )
+        return redirect('.')
+
+
+class Applications(View):
+    def get(self, request):
+        return render(request, 'first/users/applications.html', {
+            'cons_app':App.objects.filter(is_consired=False),
+            'platform': Platform.objects.all(),
+            'apps': App.objects.filter(user__username=request.user)
+        })
+
+    @csrf_exempt
+    def post(self, request):
+        current_site = get_current_site(request)
+        App.objects.create(
+            user=Account.objects.get(username=request.user),
+            country=request.POST['country'],
+            platform=Platform.objects.get(name=request.POST['platform']),
+            date=request.POST['date'],
+            lecture_title=request.POST['title_app'],
+            language=request.POST['language'],
+            is_consired=False
+        )
+
+        app_email = Account.objects.get(username=request.user).email
+        platform_email = Platform.objects.get(name=request.POST['platform']).Org
+        subject, from_email, to = 'Application from STIPOT', app_email, platform_email.email
+        html_content = render_to_string('first/app_confir.html',
+                                        {'username': Account.objects.get(username=request.user),
+                                         'date': request.POST['date'],
+                                         'title': request.POST['title_app'], 'platform': request.POST['platform'],
+                                         'domain': current_site.domain,
+                                         'id': App.objects.get(lecture_title=request.POST['title_app']).id})
+
+        text_content = strip_tags(html_content)
+        msg = EmailMultiAlternatives(subject, text_content, from_email, [platform_email.email])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
+        return redirect('.')
+
 
 @csrf_exempt
 def upload_avatar(request):
@@ -154,9 +231,7 @@ def activate(request, uidb64, token):
 
     except(TypeError, ValueError, OverflowError, User.DoesNotExist):
         user = None
-        print(12)
     if user is not None and account_activation_token.check_token(user, token):
-        print(3)
         user.is_active = True
         user.save()
         login(request, user)
@@ -164,5 +239,13 @@ def activate(request, uidb64, token):
     else:
         return HttpResponse('Activation link is invalid!')
 
+
 def pagenotfound(request):
     return render(request, 'first/404.html')
+
+
+def yes_app(request, app_id):
+    app = App.objects.get(id=app_id)
+    app.is_consired = True
+    app.save()
+    return render(request, 'first/index.html')

@@ -16,20 +16,31 @@
     <div class="applications_content">
         <div class="app_block_lecturer">
             <div class="app_block_create_app">
-                <form>
+                <form action="." method="post">
+                {% csrf_token %}
                     <div class="app_parag_create_app">create your application</div>
-                    <div class="app_text_create_app">country: <select name="" id=""></select></div>
-                    <div class="app_text_create_app">select platform: <select name="" id=""></select></div>
+                    <div class="app_text_create_app">country: <select
+                            onchange="get_platform(this.value,'{% url 'api:get_platform' %}')" name="country">
+                        <option selected="selected">-</option>
+                        {% for plat in platform %}
+                            <option id="{{ plat.id }}">{{ plat.platform_country }}</option>
+                        {% endfor %}
+                    </select></div>
+                    <div class="app_text_create_app">select platform:<select id="async_platform" name="platform">
+
+                    </select></div>
                     <div class="app_anycity_create_app">can you go to another platform in the selected country:
                         <label class="app_check_anycity">
-                            <input type="checkbox" class="app_anycity_check">
+                            <input type="checkbox" class="app_anycity_check" name="is_can">
                             <span class="check_app_anycity"></span>
                             <p class="app_text_anycity">yes</p>
                         </label>
                     </div>
-                    <div class="app_text_create_app">date: <input type="date"></div>
-                    <div class="app_text_create_app">name of lecture: <input type="text"></div>
-                    <div class="app_text_create_app">language <select name="" id=""></select></div>
+                    <div class="app_text_create_app">date: <input type="date" name="date"></div>
+                    <div class="app_text_create_app">name of lecture: <input type="text" name="title_app"></div>
+                    <div class="app_text_create_app">language <select name="language" id="">
+                        {% include 'includes/languages.html' %}
+                    </select></div>
                     <div class="app_lect_this_lect">
                         <div class="app_text_this_lect">this lect is</div>
                         <label class="is_scientific">
@@ -66,10 +77,14 @@
                     </ul>
                 </div>
                 <div class="app_lect_your_apps">
-                    sad
+                    {% for app in apps %}
+                        <p>{{ app }}</p>
+                    {% endfor %}
                 </div>
                 <div class="app_lect_considered_apps">
-                    asd
+                   {% for cons in cons_app %}
+                       <p> {{ cons }}</p>
+                   {% endfor %}
                 </div>
             </div>
         </div>

@@ -17,28 +17,31 @@
         <div class="platforms_block">
             <div class="block_platf_menu">
                 <ul>
-                    <li class="platf_li_yo ">your platforms</li>
-                    <li class="platf_li_cr platf_active">create platforms</li>
+                    <li class="platf_li_yo " onclick="async_check_coords()">your platforms</li>
+                    <li class="platf_li_cr platf_active" onclick="initMapPlatf()">create platforms</li>
                 </ul>
             </div>
-            <form class="platf_block_create_platf">
+            <form class="platf_block_create_platf" method="post" action=".">
+                {% csrf_token %}
                 <div id="platf_form" class="platf_create">
+                    <input type="text" id="input_lat" name="lat" style="display: none;">
+                    <input type="text" id="input_lng" name="lng" style="display: none">
                     <div class="platf_text">platform name:
-                        <input required type="text" class="platf_place_name">
+                        <input required type="text" class="platf_place_name" name="name">
                     </div>
                     <div class="platf_text">platform country:
-                        <input required type="text" class="platf_country">
+                        <input required type="text" class="platf_country" name="country">
                     </div>
                     <div class="platf_text">platform city:
-                        <input required type="text" class="platf_city">
+                        <input required type="text" class="platf_city" name="city">
                     </div>
                     <div class="platf_text">platfoem adress:
-                        <input required type="text" class="platf_adress">
+                        <input required type="text" class="platf_adress" name="adress">
                     </div>
                     <div class="platf_text_set">set the marker with the address above:</div>
                 </div>
-                <div class="platf_block_your_platf">
-                    <div class="platf_your_platf">
+                <div class="platf_block_your_platf" onclick="async_check_coords()">
+                    <div class="platf_your_platf" onclick="async_check_coords()">
                         your platforms:
                     </div>
                 </div>
@@ -48,10 +51,11 @@
                                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">
                         </script>
                     </div>
-                    <div class="platf_map_layer"></div>
-                    <div class="platf_text_map_layer">
-                        <span>erorr: </span>input data!
-                    </div>
+{#                    <div class="platf_map_layer">#}
+{#                    </div>#}
+{#                    <div class="platf_text_map_layer">#}
+{#                        <span>erorr: </span>input data!#}
+{#                    </div>#}
                 </div>
                 <div class="platf_create">
                     <div class="button_platf">
