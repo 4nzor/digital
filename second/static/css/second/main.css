@@ -715,6 +715,106 @@ div.msg, ul li i:before, ul li i:after {
 /* ---> about end <--- */
 
 /* ---> sign in <--- */
+
+.signin_content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+.signin_block{
+    position: relative;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
+    margin-top: 150px;
+}
+
+.signin_block input{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.signin_block input::placeholder{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block_signin_label{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.signin_check_rem{
+    cursor: pointer;
+}
+
+.text_signin_rem{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-size: 28px;
+}
+
+.signin_check{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.check_signin_rem{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border: 1px solid #8A8A8A;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.signin_check_rem:hover input ~ .check_signin_rem {
+    background-color: #ccc;
+}
+
+.check_signin_rem:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.signin_check_rem input:checked ~ .check_signin_rem:after {
+    display: block;
+}
+
+.signin_check_rem .check_signin_rem:after {
+    left: 20px;
+    top: 5px;
+    width: 20px;
+    height: 40px;
+    border: solid #0070C0;
+    border-width: 0 7px 7px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signin_submit{
+    position: relative;
+    color: #ffffff;
+    background-color: #0070C0;
+    border: none;
+}
+
 /* ---> sign in end <--- */
 
 /* ---> profile <--- */
