@@ -30,9 +30,22 @@
 </head>
 <body>
 
-<div class="bg">
-    <div class="bg_bottom_line"></div>
-</div>
+<div class="bg"></div>
+<div class="bg_bottom_line"></div>
+
+{% if request.path != '/second/' %}
+
+    <div class="logo_parag_content">
+        <div class="logo_parag_img">
+            <img src="{% static 'images/puzzles.png' %}" alt="">
+        </div>
+        <div class="logo_parag_text">
+            {% block parag %}
+            {% endblock %}
+        </div>
+    </div>
+
+{% endif %}
 
 <div class="menu_content">
     <div class="menu_button_show"><i class="fa fa-chevron-up"></i></div>
@@ -43,17 +56,17 @@
             <div class="hide_second"></div>
         </div>
         <div class="menu_info_datebase">
-            <div class="menu_text_logo"><a href="{% url 'database' %}">research infrastuctures datebase</a></div>
+            <div class="menu_text_logo"><a href="{% url 'sec_database' %}">research infrastuctures datebase</a></div>
             <div class="menu_text_info">
                 <p>Initiative of the BSEC Working Group</p>
                 <p>on Cooperation in Science & Techonology</p>
             </div>
         </div>
         <ul>
-            <li><a href="{% url 'search' %}">Search</a></li>
-            <li><a href="{% url 'questionnaire' %}">Qustionaire</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li class="menu_li_sign"><a href="{% url 'signin' %}">Sign in</a></li>
+            <li><a href="{% url 'sec_search' %}">Search</a></li>
+            <li><a href="{% url 'sec_questionnaire' %}">Qustionaire</a></li>
+            <li><a href="{% url 'sec_about' %}">About</a></li>
+            <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign in</a></li>
         </ul>
     </div>
 </div>
@@ -66,6 +79,7 @@
 
 <script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
 <script src="{% static 'js/second/common.js' %}"></script>
+<script src="{% static 'js/second/map.js' %}"></script>
 
 </body>
 </html>

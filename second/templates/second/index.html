@@ -2,6 +2,8 @@
 
 {% extends 'second/base.html' %}
 
+{% load staticfiles %}
+
 <html lang="ru">
 
 <head>
@@ -15,7 +17,7 @@
     <div class="home_content">
         <div class="home_block">
             <div class="home_logo">
-                <img src="../../static/images/puzzles.png" alt="">
+                <img src="{% static 'images/puzzles.png' %}" alt="">
             </div>
             <div class="home_text_logo">
                 <div class="line_text_logo line_top"></div>

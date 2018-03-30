@@ -2,6 +2,8 @@
 
 {% extends 'second/base.html' %}
 
+{% load staticfiles %}
+
 <html lang="ru">
 
 <head>
@@ -10,9 +12,55 @@
 
 <body>
 
+{% block parag %}Search{% endblock %}
+
 {% block content %}
 
-
+    <div class="search_content">
+        <div class="search_block">
+            <div class="search_logo">
+                <img src="{% static 'images/search.png' %}" alt="">
+            </div>
+            <div class="search_block_input">
+                <form action="">
+                    <div class="search_under_label"></div>
+                    <label class="search_checked_map">
+                        <input type="checkbox" class="search_check">
+                        <span class="search_check_map"></span>
+                        <p class="search_text_check_map">Map</p>
+                    </label>
+                    <label class="search_checked_advsearch">
+                        <input type="checkbox" class="search_check">
+                        <span class="search_check_advsearch"></span>
+                        <p class="search_text_check_advsearch">Advanced search</p>
+                    </label>
+                    <input type="text" placeholder="NAME">
+                    <input required type="text" placeholder="COUNTRY">
+                    <input type="text" placeholder="SCIENTIFIC AREA">
+                    <div class="search_adv_block">
+                        <input type="text" placeholder="FUNDING ORGANIZATION">
+                        <input type="text" placeholder="CITY">
+                        <input type="text" placeholder="CONTACT PERSON">
+                        <input type="text" placeholder="INSTITUTION TYPE">
+                        <input type="text" placeholder="CONDITIONS FOR ACCESS">
+                        <input type="text" placeholder="ACTIVITIES UNDERTAKEN">
+                        <input type="text" placeholder="KEYWORDS">
+                    </div>
+                    <input type="submit" value="display results" class="search_block_submit">
+                </form>
+            </div>
+        </div>
+        <div class="search_map_block">
+            <div id="search_map">
+                <div class="map_text">
+                    #map
+                </div>
+                {#                <script async defer#}
+                {#                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">#}
+                {#                </script>#}
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 
