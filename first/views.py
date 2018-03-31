@@ -2,7 +2,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.models import User
 from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMessage
-from django.http import JsonResponse, HttpResponse
+from django.db import IntegrityError
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic.base import View
@@ -39,12 +40,14 @@ class Signin(View):
         password = request.POST['pass']
         user = authenticate(username=user, password=password)
 
-        login(request, user)
         try:
+            login(request, user)
             Org.objects.get(username=user)
-            return redirect('/profile/organizer/')
+            return redirect('/stipot/profile/organizer/')
         except Org.DoesNotExist:
-            return redirect('/profile/lecturer/')
+            return redirect('/stipot/profile/lecturer/')
+        except AttributeError:
+            return render(request, 'first/sign/signin.html', {'error_login': "1", 'username_error': user})
 
 
 def congrat(request):
@@ -58,13 +61,16 @@ class Register(View):
     def post(self, request):
         type_reg = request.POST.get('reg_whoiam')
         if type_reg == 'lecture':
-            Account.objects.create_user(
-                username=request.POST['username'],
-                full_name=request.POST['full_name'],
-                email=request.POST['email'],
-                password=request.POST['pass'],
-                is_active=False
-            )
+            try:
+                Account.objects.create_user(
+                    username=request.POST['username'],
+                    full_name=request.POST['full_name'],
+                    email=request.POST['email'],
+                    password=request.POST['pass'],
+                    is_active=False
+                )
+            except IntegrityError:
+                return render(request, 'first/404.html')
             user = Account.objects.get(username=request.POST['username'])
             current_site = get_current_site(request)
 
@@ -85,7 +91,7 @@ class Register(View):
                 mail_subject, message, from_email='zokgb05@gmaail.com', to=[to_email]
             )
             email.send()
-            return HttpResponse('Please confirm your email address to complete the registration')
+            return render(request, 'first/sign/register.html', {'success': 'success'})
 
         elif type_reg == 'org':
             Org.objects.create_user(
@@ -114,19 +120,21 @@ class Register(View):
                 mail_subject, message, from_email='zokgb05@gmaail.com', to=[to_email]
             )
             email.send()
-            return HttpResponse('Please confirm your email address to complete the registration')
+            return render(request, 'first/sign/register.html', {'success': 'success'})
 
 
 def eventmap(request):
-    return render(request, 'first/eventmap.html')
+    return render(request, 'first/eventmap.html',
+                  {'platform': Platform.objects.all(), 'lecture': App.objects.filter(is_consired=True)}
+                  )
 
 
 class Lecturer(View):
     def get(self, request):
         acc = Account.objects.get(username=request.user)
-
         return render(request, 'first/users/lecturer.html', {'acc': acc})
 
+    @csrf_exempt
     def post(self, request):
         user = Account.objects.get(username=request.user)
         user.full_name = request.POST['name']
@@ -138,17 +146,25 @@ class Lecturer(View):
         user.scientific_interest = request.POST['interests']
         user.academic_rank = request.POST['rank']
         user.sex = request.POST['lect_sex_lect']
+        try:
+            user.female = request.POST['lect_mrs_lect']
+        except:
+            pass
         user.position = request.POST['position']
         user.save()
-        return redirect('/profile/lecturer/')
+        return redirect('/stipot/profile/lecturer/')
 
 
-def organizer(request):
-    return render(request, 'first/users/organizer.html')
+class Organizer(View):
+    def get(self, request):
+        return render(request, 'first/users/organizer.html', {'org': Org.objects.get(username=request.user)})
+
+    def post(self, request):
+        pass
 
 
 def lectures(request):
-    return render(request, 'first/users/lectures.html')
+    return render(request, 'first/users/lectures.html', {'lect': Account.objects.get(username=request.user)})
 
 
 class Platforms(View):
@@ -174,7 +190,7 @@ class Platforms(View):
 class Applications(View):
     def get(self, request):
         return render(request, 'first/users/applications.html', {
-            'cons_app':App.objects.filter(is_consired=False),
+            'cons_app': App.objects.filter(is_consired=False),
             'platform': Platform.objects.all(),
             'apps': App.objects.filter(user__username=request.user)
         })
@@ -228,16 +244,15 @@ def activate(request, uidb64, token):
     try:
 
         user = User.objects.get(id=uidb64)
-
     except(TypeError, ValueError, OverflowError, User.DoesNotExist):
         user = None
     if user is not None and account_activation_token.check_token(user, token):
         user.is_active = True
         user.save()
-        login(request, user)
-        return HttpResponse('Thank you for your email confirmation. Now you can login your account.')
+        # login(request, user)
+        return render(request, 'first/sign/congrat.html', {'succes': 'success'})
     else:
-        return HttpResponse('Activation link is invalid!')
+        return render(request, 'first/404.html')
 
 
 def pagenotfound(request):

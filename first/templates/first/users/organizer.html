@@ -21,7 +21,7 @@
             {% csrf_token %}
             <div class="block_central">
                 <div class="photo_organizer">
-                    {% if acc.avatar %}
+                    {% if org.avatar %}
                         <img class="avatar_image" id="avatar_image" src="{{ acc.avatar.url }}">
                     {% else %}
                         <div class="bg_photo_organ"><i class="fa fa-user-circle"></i></div>
@@ -30,14 +30,13 @@
                         <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar()">
                         <span class="butt_upl_photo_organ"><i class="fa fa-upload"></i></span>
                         <p class="text_upl_photo_organ">UPLOAD</p>
-
                     </label>
                 </div>
 
 
                 <div class="backg_name_organizer">
                     <div class="name_organizer">
-
+                        {{ org.full_name }}
                     </div>
 
                     <div class="settings_organizer">
@@ -96,7 +95,8 @@
 
                     <div class="organ_parag">PREFERRED THEMES: <input type="text" name="rank"
                                                                       value=""
-                                                                      class="organ_pref_them" pattern="^[a-zA-Z0-9\s]+$">
+                                                                      class="organ_pref_them"
+                                                                      pattern="^[a-zA-Z0-9\s]+$">
                         <div class="info_organ"></div>
                     </div>
 

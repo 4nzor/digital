@@ -1,0 +1,249 @@
+/*---> organizer profile <---*/
+
+.organizer_content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.photo_organizer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+    background-color: #00BDE2;
+    z-index: 1010;
+}
+
+.bg_photo_organ{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 160px;
+    width: 160px;
+    background-color: #ffffff;
+    color: #8A8A8A;
+    z-index: 1050;
+    border-radius: 190px;
+    font-size: 120px;
+}
+
+.bg_photo_organ i{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.photo_organizer img {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 160px;
+    width: 160px;
+    background-color: #ffffff;
+    z-index: 1050;
+    border-radius: 190px;
+}
+
+.upl_photo_organ{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    z-index: 1090;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    cursor: pointer;
+}
+
+.upl_photo_organ:hover{
+    background-color: #8A8A8A;
+    opacity: 0.6;
+}
+
+.upl_photo_organ input{
+    display: none;
+}
+
+.text_upl_photo_organ{
+    position: absolute;
+    font-size: 26px;
+    color: #ffffff;
+    opacity: 0;
+    top: 85px;
+    left: 40px;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.upl_photo_organ:hover .text_upl_photo_organ{
+    opacity: 1;
+}
+
+.butt_upl_photo_organ{
+    position: absolute;
+    top: 30px;
+    left: 62px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 40px;
+    z-index: 1400;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.upl_photo_organ:hover .butt_upl_photo_organ{
+    opacity: 1;
+}
+
+.backg_name_organizer {
+    position: absolute;
+    margin-top: 100px;
+    right: 0;
+    width: 700px;
+    height: 80px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.name_organizer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+    color: #3F76A9;
+    z-index: 1050;
+    text-transform: uppercase;
+}
+
+.settings_organizer {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 40px;
+    color: #3F76A9;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.settings_organizer:hover {
+    color: #00BDE2;
+    cursor: pointer;
+}
+
+.block_info_organizer{
+    position: relative;
+    left: 50%;
+    width: 800px;
+    margin-left: -400px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    padding-bottom: 20px;
+    font-size: 26px;
+    z-index: 1000;
+}
+
+.organ_parag {
+    position: relative;
+    left: 0;
+    color: #00BDE2;
+    margin-bottom: 10px;
+}
+
+.organizer_name{
+    display: none;
+}
+
+.inputs_organ{
+    width: 595px;
+}
+
+.organ_parag input {
+    position: relative;
+    float: right;
+    color: #3F76A9;
+    text-transform:uppercase;
+    display: none;
+    padding: 0 10px;
+}
+
+.organ_parag select{
+    position: relative;
+    float: right;
+    text-transform:uppercase;
+    color: #3F76A9;
+    display: none;
+    width: 480px;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+.organ_parag_name{
+    display: none;
+}
+
+.organ_name{
+    width: 325px;
+}
+
+.organ_repres{
+    width: 393px;
+}
+
+.organ_phon_num{
+    width: 415px;
+}
+
+.organ_email{
+    width: 515px;
+}
+
+.organ_direc{
+    width: 481px;
+}
+
+.organ_email_direc{
+    width: 370px;
+}
+
+.organ_pref_them{
+    width: 360px;
+}
+
+.organ_subm{
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    color: #3F76A9;
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    display: none;
+}
+
+.organ_subm:hover{
+    color: #00BDE2;
+}
+
+.organ_subm input{
+    border: none;
+    background: none;
+}
+
+.info_organ{
+    display: inline-block;
+    color: #3F76A9;
+    text-transform:uppercase;
+}
+
+/*---> organizer profile end <---*/

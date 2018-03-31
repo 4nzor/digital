@@ -12,8 +12,13 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+from django.http import HttpResponse
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import time
+
+from django.views.defaults import page_not_found
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,9 +29,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qg$(-ausm)ki3%07ze%idi5656j(0y)(r#@v1@a+^(6-@!(8ar'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -123,9 +128,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-MEDIA_URL = '/media/'
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'first/static')
+MEDIA_URL = u'/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = u'/static/'
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'first/templates/'),
                  )
 UPLOAD_PATH = 'images/uploads/' + time.strftime("%Y/%m/%d/")

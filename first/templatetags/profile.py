@@ -10,9 +10,9 @@ def profile(context):
     user = context.request.user
     try:
         Account.objects.get(username=user)
-        return '/profile/lecturer/'
+        return '/stipot/profile/lecturer/'
     except Account.DoesNotExist:
-        return '/profile/organizer/'
+        return '/stipot/profile/organizer/'
 
 
 @register.simple_tag(takes_context=True)

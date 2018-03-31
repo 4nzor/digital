@@ -39,7 +39,24 @@
             </div>
         </div>
     </div>
-
+    {% if error_login %}
+        <div class="block_erorr_register">
+            <div class="bg_erorrs">
+            </div>
+            <div class="icon_erorrs">
+                <i class="fa fa-exclamation-circle"></i>
+            </div>
+            <div class="text_erorrs">
+                <p class="text_act_erorrs">ERORR:</p>
+                <p>THIS USER DOESN'T EXIST</p>
+                <p>OR YOU ENTERED INCORRECT DATA</p>
+                <div class="note_erorrs">
+                    <p><span class="text_act_erorrs">NOTE: </span>POSSIBLE YOU HAVEN'T CONFIMED YOUR EMAIL</p>
+                </div>
+            </div>
+            <div class="butt_close_erorrs">CLOSE</div>
+        </div>
+    {% endif %}
     {% block congratulation %}
 
     {% endblock %}

@@ -5,7 +5,15 @@ from django.contrib.auth.models import User
 from django.db import models
 import random
 
-from First_proj import settings
+
+class Input(models.Model):
+    input = models.TextField()
+
+
+class Form(models.Model):
+    ...
+    inputs = models.ManyToManyField(Input)
+    ...
 
 
 def avatar_upload_to(instance, filename):
@@ -26,6 +34,13 @@ class Account(User):
     academic_rank = models.CharField(max_length=200, null=True, blank=True, default='None')
     researcher_id = models.CharField(max_length=200, null=True, blank=True, default='None')
     orc_id = models.URLField(max_length=300, null=True, blank=True, default='None')
+    female = models.CharField(max_length=200, null=True, blank=True, default='None')
+    marker = models.URLField(max_length=500,
+                             default='https://psv4.userapi.com/c834502/u187881541' +
+                                     '/docs/d5/7cdea22a5d38/lect.png?extra=3ik8bvlrIhS' +
+                                     'UjQe0kw8JkVTdyTrVsBdOtgHqtdRjkPb4WlNqcd7OLfQRJcuK2pUh' +
+                                     'XjxY7Rjx65NhtX4EJDfd389sEG3ZhpnrJoNZ8LKT7a-6_nfBKlFm_lF' +
+                                     'VXQ3bAYJFMHtNFfirA0OC5tRD')
     is_active = False
     type = 'user'
 
@@ -86,9 +101,12 @@ class Language(models.Model):
     language = models.CharField(max_length=200, blank=True, null=True)
 
 
-from django_countries.fields import CountryField
+class CMS(models.Model):
+    class Meta:
+        verbose_name_plural = 'CMS'
 
+    title = models.CharField(max_length=200)
+    content = models.TextField()
 
-class Person(models.Model):
-    name = models.CharField(max_length=100)
-    country = CountryField()
+    def __str__(self):
+        return self.title

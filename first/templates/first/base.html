@@ -38,40 +38,9 @@
 <div class="bg"></div>
 
 {% if request.path != '/404/' %}
-
-    {#<div class="block_erorr_register">#}
-    {#    <div class="bg_erorrs">#}
-    {#    </div>#}
-    {#    <div class="icon_erorrs">#}
-    {#        <i class="fa fa-exclamation-circle"></i>#}
-    {#    </div>#}
-    {#    <div class="text_erorrs">#}
-    {#        <p class="text_act_erorrs">ERORR:</p>#}
-    {#        <p>THIS USERNAME ALREADY EXIST</p>#}
-    {#    </div>#}
-    {#    <div class="butt_close_erorrs">CLOSE</div>#}
-    {#</div>#}
-    {##}
-    {#<div class="block_erorr_sign_in">#}
-    {#    <div class="bg_erorrs">#}
-    {#    </div>#}
-    {#    <div class="icon_erorrs">#}
-    {#        <i class="fa fa-exclamation-circle"></i>#}
-    {#    </div>#}
-    {#    <div class="text_erorrs">#}
-    {#        <p class="text_act_erorrs">ERORR:</p>#}
-    {#        <p>THIS USER DOESN'T EXIST</p>#}
-    {#        <p>OR YOU ENTERED INCORRECT DATA</p>#}
-    {#        <div class="note_erorrs">#}
-    {#            <p><span class="text_act_erorrs">NOTE: </span>POSSIBLE YOU HAVEN'T CONFIMED YOUR EMAIL</p>#}
-    {#        </div>#}
-    {#    </div>#}
-    {#    <div class="butt_close_erorrs">CLOSE</div>#}
-    {#</div>#}
-
 {% endif %}
 
-{% if request.path != '/eventmap/' %}
+{% if request.path != '/stipot/eventmap/' %}
 
     {% if user.is_authenticated %}
 
@@ -98,10 +67,10 @@
 
         <div class="block_registration">
             <div class="signin_reg"><a href="{% url 'signin' %}"
-                                       class="{% url_reg '/signin/' %}">SIGN IN</a>
+                                       class="{% url_reg '/stipot/signin/' %}">SIGN IN</a>
             </div>
             <p class="line"></p>
-            <div class="register_reg"><a href="{% url 'register' %}" class="{% url_reg '/register/' %}">REGISTER</a>
+            <div class="register_reg"><a href="{% url 'register' %}" class="{% url_reg '/stipot/register/' %}">REGISTER</a>
             </div>
         </div>
 
@@ -112,10 +81,10 @@
         {% if request.path != '/' %}
 
             <div class="block_logo_categ">
-                <img src="../../static/images/image_category.png" alt="logo">
+                <img src="{%  static 'images/image_category.png'%}" alt="logo">
                 <div class="text_logo">{% block text_categ %}{% endblock %}</div>
 
-                {% if request.path == '/register/' %}
+                {% if request.path == 'stipot/register/' %}
                     <div class="required">*ALL FIELDS ARE REQUIRED</div>
                 {% endif %}
 
@@ -128,11 +97,11 @@
 
 <div class="main_menu">
     <ul>
-        <li><a href="{% url 'stipot' %}" class="{% url_menu '/' %}">STIPOT</a></li>
-        <li><a href="{% url 'about' %}" class="{% url_menu '/about/' %}">ABOUT</a></li>
-        <li><a href="{% url 'eventmap' %}" class="{% url_menu '/eventmap/' %}">EVENT MAP</a></li>
-        <li><a href="{% url 'faq' %}" class="{% url_menu '/faq/' %}">FAQ</a></li>
-        <li><a href="{% url 'partners' %}" class="{% url_menu '/partners/' %}">PARTNERS</a></li>
+        <li><a href="{% url 'stipot' %}" class="{% url_menu '/stipot/' %}">STIPOT</a></li>
+        <li><a href="{% url 'about' %}" class="{% url_menu '/stipot/about/' %}">ABOUT</a></li>
+        <li><a href="{% url 'eventmap' %}" class="{% url_menu '/stipot/eventmap/' %}">EVENT MAP</a></li>
+        <li><a href="{% url 'faq' %}" class="{% url_menu '/stipot/faq/' %}">FAQ</a></li>
+        <li><a href="{% url 'partners' %}" class="{% url_menu '/stipot/partners/' %}">PARTNERS</a></li>
     </ul>
 </div>
 
@@ -140,10 +109,9 @@
 {% endblock %}
 
 
-{% if request.path != '/404/' %}
-    {% if request.path != '/eventmap/' %}
-        {% if request.path != '/partners/' %}
 
+    {% if request.path != '/stipot/eventmap/' %}
+        {% if request.path != '/stipot/partners/' %}
             <footer class="main_footer">
                 <div class="sctein">
                     <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
@@ -152,10 +120,8 @@
                     <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
                 </div>
             </footer>
-
-        {% endif %}
-    {% endif %}
 {% endif %}
+        {% endif %}
 
 <script src="https://use.fontawesome.com/484df5253e.js"></script>
 

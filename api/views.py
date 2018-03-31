@@ -1,4 +1,7 @@
+from django.contrib.auth.models import User
 from django.http import JsonResponse
+from django.shortcuts import redirect
+from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from first.models import Org, Platform, App
 
@@ -40,26 +43,77 @@ def get_apps(request):
     if request.is_ajax():
         app_list = []
         date_list = []
-        if request.POST['type_command'] == 'planned':
+        cord_list = []
 
+        if request.POST['type_command'] == 'planned':
             apps = App.objects.filter(date=request.POST['date'], is_consired=True)
+
             for app in apps:
                 app_list.append(app.lecture_title)
                 date_list.append(app.date)
+                cord_list.append({'lat': app.platform.lat, 'lng': app.platform.lng, 'name': app.lecture_title}, )
         elif request.POST['type_command'] == 'completed':
-            print(request.POST)
+
             apps = App.objects.filter(is_complete=True, date=request.POST['date'])
-            print(apps)
+
             for app in apps:
                 app_list.append(app.lecture_title)
                 date_list.append(app.date)
+                cord_list.append({'lat': app.platform.lat, 'lng': app.platform.lng, 'name': app.lecture_title}, )
+
         elif request.POST['type_command'] == 'canceled':
             apps = App.objects.filter(date=request.POST['date'], is_canceled=True)
+
             for app in apps:
                 app_list.append(app.lecture_title)
                 date_list.append(app.date)
+                cord_list.append({'lat': app.platform.lat, 'lng': app.platform.lng, 'name': app.lecture_title}, )
+
         data = {'titles': app_list,
                 'date': date_list,
+                'cords': cord_list
                 }
-        print(data)
         return JsonResponse(data)
+
+
+@csrf_exempt
+def check_user(request):
+    data = {}
+    try:
+        User.objects.get(username=request.POST['user'])
+        data = {
+            'data': 'reg_error'
+        }
+    except:
+        pass
+    return JsonResponse(data)
+
+
+def eventmap(request):
+    data = {}
+    if request.is_ajax():
+        platform_list = []
+        platforms = Platform.objects.all()
+        for platform in platforms:
+            platform_list.append({'lat': platform.lat, 'lng': platform.lng})
+
+        data = {
+
+            'event_coords': platform_list
+        }
+    return JsonResponse(data)
+
+
+def morep(request, id):
+    coords = Platform.objects.get(id=id)
+    titles = Platform.objects.filter(id=id, app__is_consired=True).values('app__lecture_title', 'app__user__full_name')
+    titles_list = []
+    for title in titles:
+        titles_list.append(title)
+    data = {
+        'lat': coords.lat,
+        'lng': coords.lng,
+        'titles_list': titles_list
+    }
+    print(data)
+    return JsonResponse(data)
