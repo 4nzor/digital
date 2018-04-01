@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class FirstConfig(AppConfig):
-    name = 'first'
+    name = 'digital.first'
+    verbose_name = _("Authentication and Authorization")

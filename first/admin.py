@@ -7,4 +7,4 @@ admin.site.register(Account)
 admin.site.register(Org)
 admin.site.register(Platform)
 admin.site.register(App)
-admin.site.register(CMS)
+

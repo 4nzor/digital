@@ -23,6 +23,10 @@ def avatar_upload_to(instance, filename):
 
 
 class Account(User):
+    class Meta:
+        verbose_name = 'Lecture'
+        verbose_name_plural = 'Lectures'
+
     full_name = models.CharField(max_length=200)
     sex = models.CharField(max_length=200, null=True, blank=True, default='None')
     avatar = models.ImageField(upload_to=avatar_upload_to, null=True, blank=True)
@@ -56,6 +60,10 @@ class Account(User):
 
 
 class Org(User):
+    class Meta:
+        verbose_name = 'Org'
+        verbose_name_plural = 'Orgs'
+
     full_name = models.CharField(max_length=200)
     logo = models.ImageField(upload_to=avatar_upload_to, null=True, blank=True)
     country = models.CharField(max_length=200, blank=True, null=True)
@@ -65,6 +73,9 @@ class Org(User):
     director_email = models.EmailField(max_length=200, blank=True, null=True)
     lecture_themes = models.CharField(max_length=200, blank=True, null=True)
     type = 'org'
+
+    def __str__(self):
+        return self.full_name
 
 
 class Platform(models.Model):
