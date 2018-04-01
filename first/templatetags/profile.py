@@ -1,4 +1,5 @@
 from django import template
+from django.contrib.auth.models import User
 
 from first.models import Account, Org
 
@@ -29,9 +30,12 @@ def url_menu(context, url):
 
 @register.simple_tag(takes_context=True)
 def get_full_name(context):
-    try:
-        acc = Account.objects.get(username=context.request.user)
-        return acc.full_name
-    except Account.DoesNotExist:
-        org = Org.objects.get(username=context.request.user)
-        return org.full_name
+    if context.request.user.is_superuser == False:
+        try:
+            acc = Account.objects.get(username=context.request.user)
+            return acc.full_name
+        except Account.DoesNotExist:
+            org = Org.objects.get(username=context.request.user)
+            return org.full_name
+    else:
+        return User.objects.get(username=context.request.user).username

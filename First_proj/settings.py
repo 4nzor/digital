@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+
 from django.http import HttpResponse
 
 
@@ -29,9 +30,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'qg$(-ausm)ki3%07ze%idi5656j(0y)(r#@v1@a+^(6-@!(8ar'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['127.0.0.1']
+DEBUG = True
+ADMINS = (('Some name', 'Some email'),)
+ALLOWED_HOSTS = ['127.0.0.1','127.0.0.1/admin']
 
 # Application definition
 
@@ -128,12 +129,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
-MEDIA_URL = u'/media/'
+MEDIA_URL = '/media/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = u'/static/'
+STATIC_URL = '/static/'
 TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'first/templates/'),
                  )
+
+
 UPLOAD_PATH = 'images/uploads/' + time.strftime("%Y/%m/%d/")
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 EMAIL_USE_TLS = True
