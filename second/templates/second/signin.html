@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Sign in{% endblock %}
+</head>
+
+<body>
+
+{% block parag %}Sign in{% endblock %}
+
+{% block content %}
+
+    <div class="signin_container">
+        <div class="signin_block">
+            <div class="signin_logo">
+                <img src="{% static 'images/sign_in.png' %}">
+            </div>
+            <form>
+                <input type="text" class="signin_log" placeholder="login">
+                <input type="password" class="signin_pass" placeholder="password">
+                <div class="block_signin_label">
+                    <label class="signin_check_rem">
+                        <input type="checkbox" class="signin_check">
+                        <span class="check_signin_rem"></span>
+                        <p class="text_signin_rem">Remember this computer</p>
+                    </label>
+                </div>
+                <input type="submit" class="signin_submit" value="SIGN IN">
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

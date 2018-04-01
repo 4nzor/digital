@@ -25,7 +25,8 @@ from first import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
-    path('stipot/', include('first.urls'))
+    path('stipot/', include('first.urls')),
+    path('database/',include('second.urls'))
 
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

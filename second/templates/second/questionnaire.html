@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Questionnaire{% endblock %}
+</head>
+
+<body>
+
+{% block parag %}Questionnaire{% endblock %}
+
+{% block content %}
+
+    <div class="quest_content">
+        <div class="quest_block">
+            <div class="quest_text">
+                To add your organization to the database of national innovation related structures you have to fill the
+                following form
+            </div>
+            <div class="quest_block_inputs">
+                <div class="quest_req_text">*all fields are required</div>
+                <form>
+                    <div class="quest_create_quest">
+                        <div class="quest_plus_first"></div>
+                        <div class="quest_plus_second"></div>
+                    </div>
+                    <input type="text" class="quest_input_mod">
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

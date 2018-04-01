@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto thin';
+    src: url('../../fonts/Robotothin/roboto-thin.ttf');
+    src: local('Roboto thin'),
+    url('../../fonts/Robotothin/roboto-thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto light';
+    src: url('../../fonts/Robotolight/3962.ttf');
+    src: local('Roboto light'),
+    url('../../fonts/Robotolight/3962.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
