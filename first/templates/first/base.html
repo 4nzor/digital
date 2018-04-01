@@ -56,11 +56,15 @@
                         {% if request.user.is_superuser == False %}
                         <li class="profile_up_line"></li>
                         <li><a href="{% profile %}">PROFILE</a></li>
+                            <div style="display: {% reg_or_lect %}">
                         <li><a href="{% url 'lectures' %}">LECTURES</a></li>
+                                <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
+                            </div>
+                            <div style="display: {% lect_or_reg %}">
                         <li><a href="{% url 'platforms' %}">PLATFORMs</a></li>
-                        <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
-                        <li><a href="{% profile %}">SETTINGS</a></li>
 
+                            </div>
+                        <li><a href="{% profile %}">SETTINGS</a></li>
                     {% endif %}
                         <li><a href="{% url 'logout' %}">EXIT</a></li>
                     </ul>
@@ -81,9 +85,9 @@
 
     {% endif %}
 
-    {% if request.path != '/404/' %}
+    {% if request.path != '/stipot/404/' %}
 
-        {% if request.path != '/' %}
+        {% if request.path != '/stipot/' %}
 
             <div class="block_logo_categ">
                 <img src="{%  static 'images/image_category.png'%}" alt="logo">

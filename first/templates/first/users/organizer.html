@@ -17,17 +17,18 @@
         <form class="avatar_form" id="avatar_form"
               action="javascript:void(null);"
               method="post" enctype="multipart/form-data"
-              onsubmit="ajax_avatar()">
+              onsubmit="ajax_avatar_org()">
             {% csrf_token %}
             <div class="block_central">
                 <div class="photo_organizer">
-                    {% if org.avatar %}
-                        <img class="avatar_image" id="avatar_image" src="{{ acc.avatar.url }}">
+                    <img class="avatar_image2" id="avatar_image" src="" style="display: none">
+                    {% if org.logo %}
+                        <img class="avatar_image" id="avatar_image" src="{{ org.logo.url }}">
                     {% else %}
                         <div class="bg_photo_organ"><i class="fa fa-user-circle"></i></div>
                     {% endif %}
                     <label class="upl_photo_organ">
-                        <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar()">
+                        <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar_org()">
                         <span class="butt_upl_photo_organ"><i class="fa fa-upload"></i></span>
                         <p class="text_upl_photo_organ">UPLOAD</p>
                     </label>
@@ -51,53 +52,54 @@
             <div class="block_info_organizer">
                 <div class="inputs_organ">
                     <div class="organizer_name">
-                        <div class="organ_parag">NAME OF ORGANIZATION: <input type="text" class="organ_name" value=""
+                        <div class="organ_parag">NAME OF ORGANIZATION: <input type="text" class="organ_name" value="{{ org.full_name }}"
                                                                               name="name" pattern="^[a-zA-Z0-9\s]+$">
                             <div class="info_organ"></div>
                         </div>
                     </div>
 
                     <div class="organ_parag">COUNTRY:
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.country }}</div>
                         <select name="countries">
-                            <option selected value=""></option>
+
                             {% include 'includes/countries.html' %}
                         </select>
                     </div>
 
-                    <div class="organ_parag">REPRESENTATIVE: <input type="text" name="rank"
-                                                                    value=""
-                                                                    class="organ_repres" pattern="^[a-zA-Z0-9\s]+$">
-                        <div class="info_organ"></div>
+                    <div class="organ_parag">REPRESENTATIVE:
+                        <input type="text" name="rep"
+                               value="{{ org.resperative }}"
+                               class="organ_repres" pattern="^[a-zA-Z0-9\s]+$">
+                        <div class="info_organ">{{ org.resperative }}</div>
                     </div>
 
-                    <div class="organ_parag">PHONE NUMBER: <input type="text" name="place" value=""
+                    <div class="organ_parag">PHONE NUMBER: <input type="text" name="number" value="{{ org.phone_number }}"
                                                                   class="organ_phon_num" pattern="^[a-zA-Z0-9\s]+$">
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.phone_number }}</div>
                     </div>
 
-                    <div class="organ_parag">EMAIL: <input type="email" name="position" value=""
+                    <div class="organ_parag">EMAIL: <input type="email" name="email" value="{{ org.email }}"
                                                            class="organ_email">
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.email }}</div>
                     </div>
 
-                    <div class="organ_parag">DIRECTOR: <input type="text" name="interests"
-                                                              value=""
+                    <div class="organ_parag">DIRECTOR: <input type="text" name="director"
+                                                              value="{{ org.director }}"
                                                               class="organ_direc" pattern="^[a-zA-Z0-9\s]+$">
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.director }}</div>
                     </div>
 
-                    <div class="organ_parag">EMAIL OF DIRECTOR: <input type="email" name="degree"
-                                                                       value=""
+                    <div class="organ_parag">EMAIL OF DIRECTOR: <input type="email" name="email_dir"
+                                                                       value="{{ org.director_email }}"
                                                                        class="organ_email_direc">
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.director_email }}</div>
                     </div>
 
-                    <div class="organ_parag">PREFERRED THEMES: <input type="text" name="rank"
-                                                                      value=""
+                    <div class="organ_parag">PREFERRED THEMES: <input type="text" name="thems"
+                                                                      value="{{ org.lecture_themes }}"
                                                                       class="organ_pref_them"
                                                                       pattern="^[a-zA-Z0-9\s]+$">
-                        <div class="info_organ"></div>
+                        <div class="info_organ">{{ org.lecture_themes }}</div>
                     </div>
 
                 </div>

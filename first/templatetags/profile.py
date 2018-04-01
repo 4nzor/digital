@@ -7,6 +7,22 @@ register = template.Library()
 
 
 @register.simple_tag(takes_context=True)
+def reg_or_lect(context):
+    try:
+        Account.objects.get(username=context.request.user)
+        return 'block'
+    except Account.DoesNotExist:
+        return 'none'
+@register.simple_tag(takes_context=True)
+def lect_or_reg(context):
+    try:
+        Org.objects.get(username=context.request.user)
+        return 'block'
+    except Org.DoesNotExist:
+        return 'none'
+
+
+@register.simple_tag(takes_context=True)
 def profile(context):
     user = context.request.user
     try:

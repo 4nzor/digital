@@ -256,3 +256,38 @@ function ajax_avatar() {
 
     });
 }
+
+function ajax_avatar_org() {
+
+    let avatar_form = $('.avatar_form');
+
+    let form = new FormData(avatar_form.closest('form').get(0));
+    jQuery.ajax({
+        type: 'POST',
+        url: '/stipot/upload_avatar_org/',
+        async: true,
+        cache: false,
+        processData: false,
+        contentType: false,
+        enctype: 'multipart/form-data',
+        data: form,
+
+        success: function (data) {
+
+            if (data.msg === 'None') {
+                $('.bg_photo_organ').remove();
+                $('.avatar_image2').attr("src", data.url);
+                $('.avatar_image2').css('display', 'block');
+            }
+            else {
+
+                $('.avatar_image2').css('display', 'none');
+                $('.avatar_image').attr("src", data.url)
+            }
+
+
+        }
+
+
+    });
+}

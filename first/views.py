@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.sites.shortcuts import get_current_site
 from django.core.mail import EmailMessage
@@ -131,9 +132,13 @@ def eventmap(request):
 
 class Lecturer(View):
     def get(self, request):
-        acc = Account.objects.get(username=request.user)
-        return render(request, 'first/users/lecturer.html', {'acc': acc})
+        try:
+            acc = Account.objects.get(username=request.user)
+            return render(request, 'first/users/lecturer.html', {'acc': acc})
+        except:
+            return render(request, 'first/404.html')
 
+    @login_required
     @csrf_exempt
     def post(self, request):
         user = Account.objects.get(username=request.user)
@@ -157,24 +162,45 @@ class Lecturer(View):
 
 class Organizer(View):
     def get(self, request):
-        return render(request, 'first/users/organizer.html', {'org': Org.objects.get(username=request.user)})
+        try:
+            return render(request, 'first/users/organizer.html', {'org': Org.objects.get(username=request.user)})
+        except:
+            return render(request, 'first/404')
 
+    @csrf_exempt
     def post(self, request):
-        pass
+        org = Org.objects.get(username=request.user)
+        org.lecture_themes = request.POST['thems']
+        org.full_name = request.POST['name']
+        org.director = request.POST['director']
+        org.director_email = request.POST['email_dir']
+        org.email = request.POST['email']
+        org.country = request.POST['countries']
+        org.phone_number = request.POST['number']
+        org.resperative = request.POST['rep']
+        org.save()
+        print('cdsc')
+        return redirect('.')
 
 
 def lectures(request):
-    return render(request, 'first/users/lectures.html', {'lect': Account.objects.get(username=request.user)})
+    try:
+        Account.objects.get(username=request.user)
+        return render(request, 'first/users/lectures.html', {'lect': Account.objects.get(username=request.user)})
+    except:
+        return render(request, 'first/404.html')
 
 
 class Platforms(View):
     def get(self, request):
-        return render(request, 'first/users/platforms.html')
+        try:
+            Org.objects.get(username=request.user)
+            return render(request, 'first/users/platforms.html')
+        except:
+            return render(request, 'first/404.html')
 
     @csrf_exempt
     def post(self, request):
-        print(request.POST)
-
         Platform.objects.create(
             name=request.POST['name'],
             platform_city=request.POST['city'],
@@ -189,11 +215,15 @@ class Platforms(View):
 
 class Applications(View):
     def get(self, request):
-        return render(request, 'first/users/applications.html', {
-            'cons_app': App.objects.filter(is_consired=False),
-            'platform': Platform.objects.all(),
-            'apps': App.objects.filter(user__username=request.user)
-        })
+        try:
+            Account.objects.get(username=request.user)
+            return render(request, 'first/users/applications.html', {
+                'cons_app': App.objects.filter(is_consired=False),
+                'platform': Platform.objects.all(),
+                'apps': App.objects.filter(user__username=request.user)
+            })
+        except:
+            return render(request, 'first/404.html')
 
     @csrf_exempt
     def post(self, request):
@@ -264,3 +294,18 @@ def yes_app(request, app_id):
     app.is_consired = True
     app.save()
     return render(request, 'first/index.html')
+
+
+@csrf_exempt
+def upload_avatar_org(request):
+    user = Org.objects.get(username=request.user)
+    msg = 'notNone'
+    try:
+        user.logo.url
+    except:
+        msg = 'None'
+
+    user.logo.delete()
+    user.logo = request.FILES['photo']
+    user.save()
+    return JsonResponse({'url': user.logo.url, 'msg': msg})

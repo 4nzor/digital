@@ -109,7 +109,9 @@ function async_check_coords() {
                     animation: google.maps.Animation.DROP,
                     position: data.data[i],
                     map: map,
-                    label: data.name[i].name
+                    label: data.name[i].name,
+                    icon:'https://psv4.userapi.com/c834502/u187881541/docs/d8/78ba7c89e29c/organ.png?extra=CfoTufJ7Rgk41WOUqi7RXQAZTYEXYMz_Lp16fB0Y-I9XW0FShs1f8vkSsf9gPTXH__0jkIkcAQXZ2Zi36VGYAoO2zHuaFw2P1Oa-s4rJVffs9heQDAFOOvQiv2B9IZeW3jMwsDKVRlEHhg0-',
+
                 });
 
 
@@ -154,6 +156,8 @@ function addMarker(location) {
         animation: google.maps.Animation.DROP,
         position: location,
         map: map,
+        icon:'https://psv4.userapi.com/c834502/u187881541/docs/d8/78ba7c89e29c/organ.png?extra=CfoTufJ7Rgk41WOUqi7RXQAZTYEXYMz_Lp16fB0Y-I9XW0FShs1f8vkSsf9gPTXH__0jkIkcAQXZ2Zi36VGYAoO2zHuaFw2P1Oa-s4rJVffs9heQDAFOOvQiv2B9IZeW3jMwsDKVRlEHhg0-',
+
 
     });
 

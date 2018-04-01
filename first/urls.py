@@ -19,6 +19,7 @@ urlpatterns = [
     path('profile/platforms/', views.Platforms.as_view(), name='platforms'),
     path('profile/applications/', views.Applications.as_view(), name='applications'),
     path('upload_avatar/', views.upload_avatar, name='upload_avatar'),
+    path('upload_avatar_org/', views.upload_avatar_org, name='upload_avatar_org'),
     path('activate/<uidb64>/<token>/',
          views.activate, name='activate'),
     path('404/', views.pagenotfound, name='pagenotfound'),
