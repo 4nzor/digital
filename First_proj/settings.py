@@ -26,7 +26,7 @@ SECRET_KEY = 'qg$(-ausm)ki3%07ze%idi5656j(0y)(r#@v1@a+^(6-@!(8ar'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bsec-projects.sfedu.ru']
+ALLOWED_HOSTS = ['bsec-projects.sfedu.ru','*']
 
 # Application definition
 
