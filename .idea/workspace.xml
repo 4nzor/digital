@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2214098e-009f-406d-a41a-a96834eb1524" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/maps.js" afterPath="$PROJECT_DIR$/static/js/maps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/stipot_api.js" afterPath="$PROJECT_DIR$/static/js/stipot_api.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -633,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522675623700</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="loadstatic">
+      <created>1522675871242</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1522675871242</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -742,7 +747,8 @@
     <MESSAGE value="delete events" />
     <MESSAGE value="add app-databs" />
     <MESSAGE value="fix other bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix other bugs" />
+    <MESSAGE value="loadstatic" />
+    <option name="LAST_COMMIT_MESSAGE" value="loadstatic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
