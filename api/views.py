@@ -100,6 +100,7 @@ def eventmap(request):
         data = {
 
             'event_coords': platform_list
+
         }
     return JsonResponse(data)
 

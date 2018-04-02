@@ -79,11 +79,7 @@ function get_apps(url, token) {
                     animation: google.maps.Animation.DROP,
                     position: LatLng,
                     map: map2,
-                    icon: 'https://psv4.userapi.com/c834502/u187881541' +
-                    '/docs/d5/7cdea22a5d38/lect.png?extra=3ik8bvlrIhS' +
-                    'UjQe0kw8JkVTdyTrVsBdOtgHqtdRjkPb4WlNqcd7OLfQRJcuK2pUh' +
-                    'XjxY7Rjx65NhtX4EJDfd389sEG3ZhpnrJoNZ8LKT7a-6_nfBKlFm_lF' +
-                    'VXQ3bAYJFMHtNFfirA0OC5tRD',
+                    icon: 'https://habrastorage.org/webt/ml/ye/dd/mlyeddoapn8ynunspbtaw4ga7mi.png',
                     label: data.cords[i].name,
                 });
                 markers.push(marker)
@@ -150,7 +146,7 @@ function more_platf(id) {
                                 position: LatLng,
                                 map: map,
                                 title: 'Click to info',
-                                icon: 'https://habrastorage.org/webt/ma/2q/yh/ma2qyh1kzm5wx54ruxq7uf9h240.png'
+                                icon: 'https://habrastorage.org/webt/ki/ru/nw/kirunwnagzq2tnrgxcaqaktv9ia.png'
 
                             });
 

@@ -1,4 +1,4 @@
-function initMap() {
+function initMap(url) {
     jQuery.ajax({
        type:'GET',
         url:'/api/v1/eventmap/',
@@ -21,7 +21,7 @@ function initMap() {
                    animation: google.maps.Animation.DROP,
                    position: LatLng,
                    map: map,
-                   icon:'https://habrastorage.org/webt/ma/2q/yh/ma2qyh1kzm5wx54ruxq7uf9h240.png'
+                   icon: url
                });
                markers.push(marker)
 
@@ -33,7 +33,7 @@ function initMap() {
 
 
 }
-google.maps.event.addDomListener(window, 'load', initMap);
+google.maps.event.addDomListener(window, 'load', initMap('https://habrastorage.org/webt/ki/ru/nw/kirunwnagzq2tnrgxcaqaktv9ia.png'));
 /*
 function initMap2() {
 
@@ -109,7 +109,7 @@ function async_check_coords() {
                     position: data.data[i],
                     map: map,
                     label: data.name[i].name,
-                    icon:'https://habrastorage.org/webt/ma/2q/yh/ma2qyh1kzm5wx54ruxq7uf9h240.png',
+                    icon:'https://habrastorage.org/webt/ki/ru/nw/kirunwnagzq2tnrgxcaqaktv9ia.png',
 
                 });
 
@@ -155,7 +155,7 @@ function addMarker(location) {
         animation: google.maps.Animation.DROP,
         position: location,
         map: map,
-        icon:'https://psv4.userapi.com/c834502/u187881541/docs/d8/78ba7c89e29c/organ.png?extra=CfoTufJ7Rgk41WOUqi7RXQAZTYEXYMz_Lp16fB0Y-I9XW0FShs1f8vkSsf9gPTXH__0jkIkcAQXZ2Zi36VGYAoO2zHuaFw2P1Oa-s4rJVffs9heQDAFOOvQiv2B9IZeW3jMwsDKVRlEHhg0-',
+        icon:'https://habrastorage.org/webt/ki/ru/nw/kirunwnagzq2tnrgxcaqaktv9ia.png',
 
 
     });
