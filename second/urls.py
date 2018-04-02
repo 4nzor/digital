@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.urls import path, re_path
-from . import views
+from second import views
 
 urlpatterns = [
     path('', views.index, name='sec_database'),
