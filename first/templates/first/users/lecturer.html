@@ -20,19 +20,27 @@
             {% csrf_token %}
             <div class="block_central">
                 <div class="photo_lecturer">
+                    <div class="bg_icon_photo2">
+                            <img id="avatar_image" src="../../../static/images/icon_prof.png">
+                        </div>
                     <img class="avatar_image2" id="avatar_image" src="" style="display: none">
                     {% if acc.avatar %}
-
                         <img class="avatar_image" id="avatar_image" src="{{ acc.avatar.url }}">
                     {% else %}
-                        <div class="bg_photo_lect"><i class="fa fa-user-circle"></i></div>
+                        <div class="bg_icon_photo">
+                            <img id="avatar_image" src="../../../static/images/icon_prof.png">
+                        </div>
                     {% endif %}
                     <label class="upl_photo_lec">
                         <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar()">
                         <span class="butt_upl_photo_lec"><i class="fa fa-upload"></i></span>
                         <p class="text_upl_photo_lect">UPLOAD</p>
-
                     </label>
+                    <div class="delete_photo_lect" onclick="ajax_avatar_del()">
+                        <div class="bg_del_prof_pho">
+                        </div>
+                        <i class="fa fa-times-circle icon_del_prof"></i>
+                    </div>
                 </div>
 
 

@@ -21,17 +21,27 @@
             {% csrf_token %}
             <div class="block_central">
                 <div class="photo_organizer">
+                    <div class="bg_icon_photo2">
+                        <img id="avatar_image" src="../../../static/images/icon_org.png">
+                    </div>
                     <img class="avatar_image2" id="avatar_image" src="" style="display: none">
                     {% if org.logo %}
                         <img class="avatar_image" id="avatar_image" src="{{ org.logo.url }}">
                     {% else %}
-                        <div class="bg_photo_organ"><i class="fa fa-user-circle"></i></div>
+                        <div class="bg_icon_photo">
+                            <img id="avatar_image" src="../../../static/images/icon_org.png">
+                        </div>
                     {% endif %}
                     <label class="upl_photo_organ">
                         <input type="file" name="photo" accept="image/*,image/jpeg" onchange="ajax_avatar_org()">
                         <span class="butt_upl_photo_organ"><i class="fa fa-upload"></i></span>
                         <p class="text_upl_photo_organ">UPLOAD</p>
                     </label>
+                    <div class="delete_photo_org" onclick="ajax_avatar_org_del()">
+                        <div class="bg_del_prof_pho">
+                        </div>
+                        <i class="fa fa-times-circle icon_del_prof"></i>
+                    </div>
                 </div>
 
 
@@ -52,7 +62,8 @@
             <div class="block_info_organizer">
                 <div class="inputs_organ">
                     <div class="organizer_name">
-                        <div class="organ_parag">NAME OF ORGANIZATION: <input type="text" class="organ_name" value="{{ org.full_name }}"
+                        <div class="organ_parag">NAME OF ORGANIZATION: <input type="text" class="organ_name"
+                                                                              value="{{ org.full_name }}"
                                                                               name="name" pattern="^[a-zA-Z0-9\s]+$">
                             <div class="info_organ"></div>
                         </div>
@@ -73,7 +84,8 @@
                         <div class="info_organ">{{ org.resperative }}</div>
                     </div>
 
-                    <div class="organ_parag">PHONE NUMBER: <input type="text" name="number" value="{{ org.phone_number }}"
+                    <div class="organ_parag">PHONE NUMBER: <input type="text" name="number"
+                                                                  value="{{ org.phone_number }}"
                                                                   class="organ_phon_num" pattern="^[a-zA-Z0-9\s]+$">
                         <div class="info_organ">{{ org.phone_number }}</div>
                     </div>
@@ -97,8 +109,7 @@
 
                     <div class="organ_parag">PREFERRED THEMES: <input type="text" name="thems"
                                                                       value="{{ org.lecture_themes }}"
-                                                                      class="organ_pref_them"
-                                                                      pattern="^[a-zA-Z0-9\s]+$">
+                                                                      class="organ_pref_them">
                         <div class="info_organ">{{ org.lecture_themes }}</div>
                     </div>
 

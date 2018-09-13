@@ -243,14 +243,31 @@ function ajax_avatar() {
                 $('.bg_photo_lect').remove();
                 $('.avatar_image2').attr("src", data.url);
                 $('.avatar_image2').css('display', 'block');
+                $('.bg_icon_photo').css("display","none");
             }
             else {
-
                 $('.avatar_image2').css('display', 'none');
-                $('.avatar_image').attr("src", data.url)
+                $('.avatar_image').attr("src", data.url);
+                $('.bg_icon_photo').css("display","none");
             }
 
 
+        }
+
+
+    });
+}
+
+function ajax_avatar_del() {
+    jQuery.ajax({
+        type: 'GET',
+        url: '/stipot/delete_avatar/',
+
+        success: function (data) {
+            $('.bg_icon_photo').css("display","block");
+            $('.bg_icon_photo2').css("display","block");
+            $('.avatar_image2').css("display","none");
+            $('.avatar_image').css("display","none");
         }
 
 
@@ -278,14 +295,32 @@ function ajax_avatar_org() {
                 $('.bg_photo_organ').remove();
                 $('.avatar_image2').attr("src", data.url);
                 $('.avatar_image2').css('display', 'block');
+                $('.bg_icon_photo').css("display","none");
             }
             else {
 
                 $('.avatar_image2').css('display', 'none');
-                $('.avatar_image').attr("src", data.url)
+                $('.avatar_image').attr("src", data.url);
+                $('.bg_icon_photo').css("display","none");
             }
 
 
+        }
+
+
+    });
+}
+
+function ajax_avatar_org_del() {
+    jQuery.ajax({
+        type: 'GET',
+        url: '/stipot/delete_avatar_org/',
+
+        success: function (data) {
+            $('.bg_icon_photo').css("display","block");
+            $('.bg_icon_photo2').css("display","block");
+            $('.avatar_image2').css("display","none");
+            $('.avatar_image').css("display","none");
         }
 
 

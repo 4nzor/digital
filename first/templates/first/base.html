@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{% static 'css/first/organizer.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/erorrs.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/first/calendar/calendar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/all_lectures.css' %}"/>
 
 </head>
 <body>
@@ -54,18 +55,18 @@
 
                     <ul class="submenu_profile">
                         {% if request.user.is_superuser == False %}
-                        <li class="profile_up_line"></li>
-                        <li><a href="{% profile %}">PROFILE</a></li>
+                            <li class="profile_up_line"></li>
+                            <li><a href="{% profile %}">PROFILE</a></li>
                             <div style="display: {% reg_or_lect %}">
-                        <li><a href="{% url 'lectures' %}">LECTURES</a></li>
+                                <li><a href="{% url 'lectures' %}">LECTURES</a></li>
                                 <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
                             </div>
                             <div style="display: {% lect_or_reg %}">
-                        <li><a href="{% url 'platforms' %}">PLATFORMs</a></li>
-
+                                <li><a href="{% url 'platforms' %}">PLATFORMs</a></li>
+                                <li><a href="{% url 'all_lecturers' %}">ALL LECTURERS</a></li>
                             </div>
-                        <li><a href="{% profile %}">SETTINGS</a></li>
-                    {% endif %}
+                            <li><a href="{% profile %}">SETTINGS</a></li>
+                        {% endif %}
                         <li><a href="{% url 'logout' %}">EXIT</a></li>
                     </ul>
 
@@ -79,7 +80,8 @@
                                        class="{% url_reg '/stipot/signin/' %}">SIGN IN</a>
             </div>
             <p class="line"></p>
-            <div class="register_reg"><a href="{% url 'register' %}" class="{% url_reg '/stipot/register/' %}">REGISTER</a>
+            <div class="register_reg"><a href="{% url 'register' %}"
+                                         class="{% url_reg '/stipot/register/' %}">REGISTER</a>
             </div>
         </div>
 
@@ -90,7 +92,7 @@
         {% if request.path != '/stipot/' %}
 
             <div class="block_logo_categ">
-                <img src="{%  static 'images/image_category.png'%}" alt="logo">
+                <img src="{% static 'images/image_category.png' %}" alt="logo">
                 <div class="text_logo">{% block text_categ %}{% endblock %}</div>
 
                 {% if request.path == 'stipot/register/' %}
@@ -119,24 +121,24 @@
 
 
 
-    {% if request.path != '/stipot/eventmap/' %}
-        {% if request.path != '/stipot/partners/' %}
-            <footer class="main_footer">
-                <div class="sctein">
-                    <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
-                </div>
-                <div class="copyright" style="display: none">
-                    <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
-                </div>
-            </footer>
+{% if request.path != '/stipot/eventmap/' %}
+    {% if request.path != '/stipot/partners/' %}
+        <footer class="main_footer">
+            <div class="sctein">
+                <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
+            </div>
+            <div class="copyright" style="display: none">
+                <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
+            </div>
+        </footer>
+    {% endif %}
 {% endif %}
-        {% endif %}
 
 <script src="https://use.fontawesome.com/484df5253e.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-<script src="{% static ''%}{% jquery_set_1_1 %}"></script>
+<script src="{% static '' %}{% jquery_set_1_1 %}"></script>
 <script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
 <script src="{% static 'js/common.js' %}"></script>
 <script src="{% static 'js/maps.js' %}"></script>

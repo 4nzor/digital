@@ -17,7 +17,7 @@
         <div class="app_block_lecturer">
             <div class="app_block_create_app">
                 <form action="." method="post">
-                {% csrf_token %}
+                    {% csrf_token %}
                     <div class="app_parag_create_app">create your application</div>
                     <div class="app_text_create_app">country: <select
                             onchange="get_platform(this.value,'{% url 'api:get_platform' %}')" name="country">
@@ -78,13 +78,19 @@
                 </div>
                 <div class="app_lect_your_apps">
                     {% for app in apps %}
-                        <p>{{ app }}</p>
+                        <div class="block_app_lect_apps">
+                            <p>{{ app }}</p>
+                            <span class="app_lect_line"></span>
+                        </div>
                     {% endfor %}
                 </div>
                 <div class="app_lect_considered_apps">
-                   {% for cons in cons_app %}
-                       <p> {{ cons }}</p>
-                   {% endfor %}
+                    {% for cons in cons_app %}
+                        <div class="block_app_lect_apps">
+                            <p> {{ cons }}</p>
+                            <span class="app_lect_line"></span>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

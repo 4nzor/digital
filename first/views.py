@@ -309,3 +309,21 @@ def upload_avatar_org(request):
     user.logo = request.FILES['photo']
     user.save()
     return JsonResponse({'url': user.logo.url, 'msg': msg})
+
+
+def delete_avatar(request):
+    user = Account.objects.get(username=request.user)
+    user.avatar.delete()
+    user.save()
+    return JsonResponse({"massage": "okey"})
+
+
+def delete_avatar_org(request):
+    user = Org.objects.get(username=request.user)
+    user.logo.delete()
+    user.save()
+    return JsonResponse({"massage": "okey"})
+
+
+def all_lecturers(request):
+    return render(request, 'first/users/all_lecturers.html')
