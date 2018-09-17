@@ -1,13 +1,13 @@
-function initMapSearch() {
+ymaps.ready(init);
 
-    var centr_search = {lat: 43.457, lng: 34.311};
-
-    var map_search = new google.maps.Map(document.getElementById('search_map'), {
-        zoom: 6,
-        maxZoom: 10,
-        center: centr_search
+function init() {
+    var myMap = new ymaps.Map("mapsearch", {
+        center: [55.76, 37.64],
+        zoom: 7
     });
-
+    var myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+        hintContent: 'Содержимое всплывающей подсказки',
+        balloonContent: 'Содержимое балуна'
+    });
+    myMap.geoObjects.add(myPlacemark);
 }
-
-google.maps.event.addDomListener(window, 'load', initMapSearch);

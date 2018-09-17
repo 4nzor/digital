@@ -24,13 +24,35 @@
             </div>
             <div class="quest_block_inputs">
                 <div class="quest_req_text">*all fields are required</div>
-                <form>
-                    <div class="quest_create_quest">
-                        <div class="quest_plus_first"></div>
-                        <div class="quest_plus_second"></div>
-                    </div>
-                    <input type="text" class="quest_input_mod">
+
+                {# если модератор #}
+
+                <form class="quest_form_cr">
+                    <input type="text" class="quest_cr_name" placeholder="Input question">
+                    <input type="submit" class="quest_create_quest" value="create">
                 </form>
+                <div class="quest_form_cr_line"></div>
+
+                {# если модератор - end #}
+
+                <form class="quest_form_quest" name="ques_f_quest">
+                    <div class="quest_input_bl">
+                        <input class="quest_input" type="text" placeholder="Country">
+
+                        {# если модератор #}
+
+                        <div class="quest_remove_inp">
+                            <div class="quest_icon_rem" data-tooltip="Remove input">
+                                <i class="fa fa-times"></i>
+                            </div>
+                        </div>
+
+                        {# если модератор - end #}
+
+                    </div>
+                    <input class="quest_form_quest_butt" type="submit" value="send inquiry">
+                </form>
+
             </div>
         </div>
     </div>

@@ -53,16 +53,25 @@
             </div>
         </div>
         <div class="search_map_block">
-            <div id="search_map">
-                <div class="map_text">
-                    #map
+            <div class="search_mob_open_close">
+                <div class="search_mob_open">
+                    Map
                 </div>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">
-                </script>
+                <div class="search_mob_close">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+            </div>
+            <div id="search_map">
+                <div class="map_search" id="mapsearch"></div>
             </div>
         </div>
     </div>
+
+    {#    <div class="search_map_block">#}
+    {#        <div id="search_map">#}
+    {#            <div class="map_search" id="mapsearch"></div>#}
+    {#        </div>#}
+    {#    </div>#}
 
 {% endblock %}
 

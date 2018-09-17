@@ -47,11 +47,9 @@
 
 {% endif %}
 
-<div class="menu_button_show"><i class="fa fa-chevron-up"></i></div>
-
 <div class="menu_content">
     <div class="main_menu">
-        <div class="main_menu_bg"></div>
+        <div class="menu_button_show"><i class="fa fa-chevron-up"></i></div>
         <div class="menu_button_hide">
             <div class="hide_first"></div>
             <div class="hide_second"></div>
@@ -65,10 +63,15 @@
             </div>
         </div>
         <ul>
+            <li><a href="{% url 'sec_profile' %}">Profile</a></li>
+
             <li><a href="{% url 'sec_search' %}">Search</a></li>
             <li><a href="{% url 'sec_questionnaire' %}">Qustionaire</a></li>
             <li><a href="{% url 'sec_about' %}">About</a></li>
             <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign in</a></li>
+
+{#            <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign out</a></li>#}
+
         </ul>
     </div>
 </div>
@@ -77,7 +80,8 @@
 
 {% endblock %}
 
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
 
 <script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
 <script src="{% static 'js/second/common.js' %}"></script>

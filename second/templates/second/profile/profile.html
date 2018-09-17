@@ -2,6 +2,8 @@
 
 {% extends 'second/base.html' %}
 
+{% load staticfiles %}
+
 <html lang="ru">
 
 <head>
@@ -10,9 +12,57 @@
 
 <body>
 
+{% block parag %}Welcome{% endblock %}
+
 {% block content %}
 
-    {% block parag %}Search{% endblock %}
+    <div class="profile_content">
+        <div class="profile_block">
+            <div class="name_profile">
+                <div class="photo_prof">
+                    <div class="bg_photo_prof">
+                        <img src="{% static 'images/profiles/flag_rus.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="text_name_prof">
+                    Russia
+                </div>
+            </div>
+
+            <div class="about_prof">
+                <div class="block_of_organizations">
+                    <div class="parag_block_orgs">
+                        List of organizations
+                    </div>
+                    <div class="blocks_orgs">
+
+                        <div class="orgs_block">
+                            <div class="parag_org_block">Name of organizarion
+                                <div class="parag_org_block_down_line"></div>
+                            </div>
+                            <div class="orgs_line_vert"></div>
+                        </div>
+
+                        <div class="orgs_contr_block">
+                            <div class="parag_org_contr_block">Control</div>
+                            <div class="parag_org_block_down_line"></div>
+                            <div class="contr_org">
+                                <div class="compl_org" data-tooltip="Complete">
+                                    <i class="fa fa-check"></i>
+                                </div>
+                                <div class="post_org" data-tooltip="Postpone">
+                                    <i class="fa fa-archive"></i>
+                                </div>
+                                <div class="reject_org" data-tooltip="Reject">
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
 
