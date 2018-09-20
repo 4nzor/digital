@@ -5,11 +5,13 @@ from django.contrib.auth.models import User
 from django.db import models
 import random
 
+from django_countries.fields import CountryField
 
-def avatar_upload_to(instance, filename):
+
+def flag_upload_to(instance, filename):
     rand = random.randrange(0, sys.maxsize)
     rand = str(rand)
-    return os.path.join('avatars/' + instance.username, rand + os.path.splitext(filename)[1])
+    return os.path.join('flag/' + instance.country, rand + os.path.splitext(filename)[1])
 
 
 class Mapcheck(models.Model):
@@ -25,3 +27,10 @@ class Mapcheck(models.Model):
     def __str__(self):
         return self.place
 
+
+class Flags(models.Model):
+    country = models.CharField(max_length=200)
+    code = models.CharField(max_length=3)
+
+    def __str__(self):
+        return self.country

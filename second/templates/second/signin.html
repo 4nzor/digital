@@ -21,9 +21,10 @@
             <div class="signin_logo">
                 <img src="{% static 'images/sign_in.png' %}">
             </div>
-            <form>
-                <input type="text" class="signin_log" placeholder="login">
-                <input type="password" class="signin_pass" placeholder="password">
+            <form action="." method="post">
+                {% csrf_token %}
+                <input type="text" class="signin_log" placeholder="login" name="login">
+                <input type="password" class="signin_pass" placeholder="password" name="password">
                 <div class="block_signin_label">
                     <label class="signin_check_rem">
                         <input type="checkbox" class="signin_check">
