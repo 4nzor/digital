@@ -36,8 +36,11 @@
                 {# если модератор - end #}
 
                 <form class="quest_form_quest" name="ques_f_quest">
+
+                    {# для вопросов в БД #}
+
                     <div class="quest_input_bl">
-                        <input class="quest_input" type="text" placeholder="Country">
+                        <input class="quest_input" type="text" placeholder="Country" maxlength="32">
 
                         {# если модератор #}
 
@@ -50,6 +53,9 @@
                         {# если модератор - end #}
 
                     </div>
+
+                    {# для вопросов в БД - end #}
+
                     <input class="quest_form_quest_butt" type="submit" value="send inquiry">
                 </form>
 

@@ -33,6 +33,7 @@ $(document).ready(function () {
         $('.about_block').fadeOut(250);
         $('.profile_block').fadeOut(250);
         $('.signin_block').fadeOut(250);
+        $('.rslts_block').fadeOut(250);
     });
 
     $(".menu_button_hide").click(function () {
@@ -45,6 +46,7 @@ $(document).ready(function () {
         $('.about_block').show();
         $('.profile_block').show();
         $('.signin_block').show();
+        $('.rslts_block').show();
     });
 
     $(".search_checked_map").click(function () {
@@ -86,7 +88,6 @@ $(document).ready(function () {
     })
 
 
-
     /* create input */
 
     // var cr_input = document.createElement('input');
@@ -95,7 +96,42 @@ $(document).ready(function () {
     //     $(".quest_block_inputs form").append('<input type="text">');
     // });
 
-    //* profile *//
+    //* results *//
+
+    var lihe = document.getElementById('lihe');
+
+    lihe.onmousedown = function (e) {
+
+        lihe.style.position = 'absolute';
+
+        moveAt(e);
+
+        document.body.appendChild(lihe);
+
+        lihe.style.zIndex = 10000;
+        lihe.style.left = 50 + "%";
+        lihe.style.marginLeft = -475 + "px";
+        lihe.style.cursor = "pointer";
+
+
+        function moveAt(e) {
+
+            lihe.style.top = e.pageY - lihe.offsetHeight / 2 + 'px';
+        }
+
+        document.onmousemove = function (e) {
+            moveAt(e);
+        };
+
+        lihe.onmouseup = function () {
+            document.onmousemove = null;
+            lihe.onmouseup = null;
+        }
+    };
+
+    lihe.ondragstart = function () {
+        return false;
+    };
 
 });
 
