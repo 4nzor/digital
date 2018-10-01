@@ -330,6 +330,11 @@
     }
 
     /*расширенный поиск*/
+    #search_map {
+        background: transparent;
+        border-left-width: 2px;
+    }
+
     /*поиск*/
     /*эбаут*/
     .about_content {
@@ -481,6 +486,22 @@
         font-size: 22px;
     }
 
+    .prof_prg {
+        font-size: 20px;
+        width: 270px;
+        min-width: 270px;
+    }
+
+    .prof_org {
+        font-size: 18px;
+        width: 270px;
+        min-width: 270px;
+    }
+
+    .contr_prg {
+        font-size: 20px;
+    }
+
     /*профиль*/
     /*квесчанери*/
     .quest_block {
@@ -565,5 +586,51 @@
     }
 
     /*квесчанери*/
+    /*сёрч разалтс*/
+    .rslts_parag {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .rslts_line_help {
+        display: none;
+    }
+
+    .rslts_block {
+        width: 100%;
+        height: 60%;
+        margin-left: 0;
+        margin-top: 30%;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    .rslts_list {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .rslts_parags_block {
+        width: 100%;
+    }
+
+    .rslts_list_block {
+        width: 100%;
+    }
+
+    .rslts_prg {
+        /*margin-left: 0;*/
+        /*margin-right: 20px;*/
+        font-size: 20px;
+        width: 270px;
+        min-width: 270px;
+    }
+    .rslts_org {
+        font-size: 18px;
+        width: 270px;
+        min-width: 270px;
+    }
+    /*сёрч разалтс*/
 }
 

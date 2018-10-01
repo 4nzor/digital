@@ -27,32 +27,41 @@
 
                 {# если модератор #}
 
-                <form class="quest_form_cr">
-                    <input type="text" class="quest_cr_name" placeholder="Input question">
-                    <input type="submit" class="quest_create_quest" value="create">
-                </form>
-                <div class="quest_form_cr_line"></div>
+                {#                <form class="quest_form_cr">#}
+                {#                    <input type="text" class="quest_cr_name" placeholder="Input question">#}
+                {#                    <input type="submit" class="quest_create_quest" value="create">#}
+                {#                </form>#}
+                {#                <div class="quest_form_cr_line"></div>#}
 
                 {# если модератор - end #}
 
-                <form class="quest_form_quest" name="ques_f_quest">
-
+                <form class="quest_form_quest" name="ques_f_quest" action="." method="POST">
+                    {% csrf_token %}
                     {# для вопросов в БД #}
-
-                    <div class="quest_input_bl">
-                        <input class="quest_input" type="text" placeholder="Country" maxlength="32">
-
-                        {# если модератор #}
-
-                        <div class="quest_remove_inp">
-                            <div class="quest_icon_rem" data-tooltip="Remove input">
-                                <i class="fa fa-times"></i>
+                <div class="parrent">
+                    {% for question in questions %}
+                        <div class="quest_input_bl">
+                        <input class="quest_input" type="text" placeholder="{{ question.question }}" maxlength="32"
+                               name="{{ question.name }}">
+                        {% if user.username == 'ctf' %}
+                            <div class="quest_remove_inp">
+                                <div class="quest_icon_rem" data-tooltip="Remove input">
+                                    <i class="fa fa-times"
+                                       onclick="hide_input('{{ question.name }}')"></i>
+                                </div>
                             </div>
+                        {% endif %}
                         </div>
+                    {% endfor %}
+                </div>
 
-                        {# если модератор - end #}
 
-                    </div>
+                    {# если модератор #}
+
+
+                    {# если модератор - end #}
+
+
 
                     {# для вопросов в БД - end #}
 
@@ -62,7 +71,7 @@
             </div>
         </div>
     </div>
-
+    <script src="{% static 'js/second/helpers.js' %}"></script>
 {% endblock %}
 
 </body>

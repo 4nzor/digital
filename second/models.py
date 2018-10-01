@@ -1,11 +1,9 @@
 import os
-
+from django.contrib.postgres.fields import JSONField
 import sys
 from django.contrib.auth.models import User
 from django.db import models
 import random
-
-from django_countries.fields import CountryField
 
 
 def flag_upload_to(instance, filename):
@@ -34,3 +32,40 @@ class Flags(models.Model):
 
     def __str__(self):
         return self.country
+
+
+class Question(models.Model):
+    question = models.CharField(max_length=200)
+    status = models.BooleanField(verbose_name="active", default=True)
+    name = models.CharField(max_length=200, blank=True, null=True)
+
+    def __str__(self):
+        return self.question
+
+
+class Organization(models.Model):
+    country = models.CharField(max_length=200, blank=True, null=True)
+    owner_name = models.CharField(max_length=200, blank=True, null=True)
+    org_name = models.CharField(max_length=200, blank=True, null=True)
+    location = models.CharField(max_length=200, blank=True, null=True)
+    site = models.CharField(max_length=200, blank=True, null=True)
+    contact_person = models.CharField(max_length=200, blank=True, null=True)
+    email = models.CharField(max_length=200, blank=True, null=True)
+    inst_type = models.CharField(max_length=200, blank=True, null=True)
+    short_description_org = models.TextField(blank=True, null=True)
+    short_description_infr = models.CharField(max_length=200, blank=True, null=True)
+    sci_area = models.CharField(max_length=200, blank=True, null=True)
+    activities = models.CharField(max_length=200, blank=True, null=True)
+    conditions_on_access = models.CharField(max_length=200, blank=True, null=True)
+    restrictions = models.CharField(max_length=200, blank=True, null=True)
+    inter_cooperation = models.CharField(max_length=200, blank=True, null=True)
+    is_confirm = models.BooleanField(default=False)
+    lat = models.FloatField(default=0)
+    lon = models.FloatField(default=0)
+
+    def __str__(self):
+        return self.org_name
+
+
+class C0untry(User):
+    orgs = models.ManyToManyField(Organization, blank=True)

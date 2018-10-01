@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'api',
     'django_countries',
     'second',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

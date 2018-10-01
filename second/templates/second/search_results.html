@@ -8,6 +8,8 @@
 
 <head>
     {% block title %}Results{% endblock %}
+
+
 </head>
 
 <body>
@@ -19,8 +21,7 @@
     <div class="rslts_content">
         <div class="rslts_block">
             <div class="rslts_parag">List of organizations</div>
-
-            <div class="rslts_line_help" id="lihe" onmousedown="">Move me</div>
+              <div class="rslts_line_help" id="lihe"  onmousedown="">Move me</div>
 
             <div class="rslts_list">
 
@@ -30,26 +31,36 @@
                         <div class="rslts_btt_line"></div>
                     </div>
                     <div class="rslts_prg">
-                        Country name
+                        Name
                         <div class="rslts_btt_line"></div>
                     </div>
                     <div class="rslts_prg">
-                        Country name
+                        Owner
                         <div class="rslts_btt_line"></div>
                     </div>
                     <div class="rslts_prg">
-                        Country name
+                        Email
                         <div class="rslts_btt_line"></div>
                     </div>
 
                 </div>
-
+                {% for result in results %}
                 <div class="rslts_list_block">
                     <div class="rslts_org">
-                        Russian Federation
+                        {{ result.country }}
+                    </div>
+
+                    <div class="rslts_org">
+                        {{ result.org_name }}
+                    </div>
+                <div class="rslts_org">
+                        {{ result.owner_name }}
+                    </div>
+                <div class="rslts_org">
+                        {{ result.email }}
                     </div>
                 </div>
-
+            {% endfor %}
             </div>
         </div>
     </div>
