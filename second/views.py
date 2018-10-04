@@ -1,7 +1,7 @@
 from django.db.models import Q
 from django.http import JsonResponse, HttpResponse
-from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login, logout
 from django.views.generic.base import View
 
 # Create your views here.
@@ -92,3 +92,8 @@ def hide_input(request):
     question_edit_status.status = False
     question_edit_status.save()
     return HttpResponse('ok')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('/database')

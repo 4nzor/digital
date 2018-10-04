@@ -1,5 +1,4 @@
 import os
-from django.contrib.postgres.fields import JSONField
 import sys
 from django.contrib.auth.models import User
 from django.db import models
@@ -27,6 +26,9 @@ class Mapcheck(models.Model):
 
 
 class Flags(models.Model):
+    class Meta:
+        verbose_name_plural = 'Flags'
+
     country = models.CharField(max_length=200)
     code = models.CharField(max_length=3)
 
@@ -44,9 +46,13 @@ class Question(models.Model):
 
 
 class Organization(models.Model):
+    class Meta:
+        verbose_name = 'Organization'
+        verbose_name_plural = 'Organizations'
+
     country = models.CharField(max_length=200, blank=True, null=True)
     owner_name = models.CharField(max_length=200, blank=True, null=True)
-    org_name = models.CharField(max_length=200, blank=True, null=True)
+    org_name = models.CharField(max_length=200, blank=True, null=True, verbose_name='organization name')
     location = models.CharField(max_length=200, blank=True, null=True)
     site = models.CharField(max_length=200, blank=True, null=True)
     contact_person = models.CharField(max_length=200, blank=True, null=True)
@@ -59,12 +65,12 @@ class Organization(models.Model):
     conditions_on_access = models.CharField(max_length=200, blank=True, null=True)
     restrictions = models.CharField(max_length=200, blank=True, null=True)
     inter_cooperation = models.CharField(max_length=200, blank=True, null=True)
-    is_confirm = models.BooleanField(default=False)
+    is_confirm = models.BooleanField(default=False, verbose_name='accepted')
     lat = models.FloatField(default=0)
     lon = models.FloatField(default=0)
 
-    def __str__(self):
-        return self.org_name
+    # def __str__(self):
+    #     return self.org_name
 
 
 class C0untry(User):

@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.contrib.sites.shortcuts import get_current_site
@@ -327,3 +327,8 @@ def delete_avatar_org(request):
 
 def all_lecturers(request):
     return render(request, 'first/users/all_lecturers.html')
+
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')

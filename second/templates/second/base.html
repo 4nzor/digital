@@ -65,13 +65,13 @@
         <ul>
             {% if user.is_authenticated %}
             <li><a href="{% url 'sec_profile' %}">Profile</a></li>
-            {% else %}
-            <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign in</a></li>
             {% endif %}
             <li><a href="{% url 'sec_search' %}">Search</a></li>
             <li><a href="{% url 'sec_questionnaire' %}">Qustionaire</a></li>
             <li><a href="{% url 'sec_about' %}">About</a></li>
-
+            {% if not user.is_authenticated %}
+            <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign in</a></li>
+            {% endif %}
 
 {#            <li class="menu_li_sign"><a href="{% url 'sec_signin' %}">Sign out</a></li>#}
 
