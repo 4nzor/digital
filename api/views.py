@@ -116,5 +116,4 @@ def morep(request, id):
         'lng': coords.lng,
         'titles_list': titles_list
     }
-    print(data)
     return JsonResponse(data)

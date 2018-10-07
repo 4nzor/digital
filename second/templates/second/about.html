@@ -26,34 +26,18 @@
             <div class="about_paragraphs">
                 <div class="accordion">
                     <ul>
-                        <li class="about_parag_obj">
-                            <input type="checkbox" checked>
-                            <h2 class="about_title_block">Objective</h2>
-                            <div class="msg">
+{% for about in abouts %}
 
-                            </div>
-                        </li>
+
+
                         <li class="about_parag">
                             <input type="checkbox" checked>
-                            <h2 class="about_title_block">How to use it</h2>
+                            <h2 class="about_title_block">{{ about.title }}</h2>
                             <div class="msg">
 
                             </div>
                         </li>
-                        <li class="about_parag">
-                            <input type="checkbox" checked>
-                            <h2 class="about_title_block">Disclaimer</h2>
-                            <div class="msg">
-
-                            </div>
-                        </li>
-                        <li class="about_parag">
-                            <input type="checkbox" checked>
-                            <h2 class="about_title_block">Terms of service</h2>
-                            <div class="msg">
-
-                            </div>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>

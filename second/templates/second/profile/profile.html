@@ -41,7 +41,7 @@
                             <div class="prof_parags_block">
 
                                 <div class="prof_prg">
-                                    Country name
+                                   Organization
                                     <div class="prof_btt_line"></div>
                                 </div>
 
@@ -50,10 +50,13 @@
                                     <div class="prof_btt_line"></div>
                                 </div>
                             </div>
+                            {% for app in apps %}
+
+
 
                             <div class="prof_list_block">
                                 <div class="prof_org">
-                                    Russian Federationsadasd asd
+                                    <a href="/admin/second/organization/{{ app.id }}/change/">{{ app.org_name }}</a>
                                 </div>
                                 <div class="cntr_cntr_org">
                                     <div class="contr_org">
@@ -69,101 +72,8 @@
                                     </div>
                                 </div>
                             </div>
+                        {% endfor %}
 
-                            <div class="prof_list_block">
-                                <div class="prof_org">
-                                    Russian Federation
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="prof_list_block">
-                                <div class="prof_org">
-                                    Russian Federation
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="prof_list_block">
-                                <div class="prof_org">
-                                    Russian Federation
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="prof_list_block">
-                                <div class="prof_org">
-                                    Russian Federation
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="prof_list_block">
-                                <div class="prof_org">
-                                    Russian Federation
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject">
-                                            <i class="fa fa-times"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>

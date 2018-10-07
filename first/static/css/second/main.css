@@ -637,7 +637,6 @@ ul {
     position: relative;
     width: 900px;
     height: 600px;
-    display: flex;
     flex-direction: column;
     overflow-x: auto;
     -moz-user-select: none;

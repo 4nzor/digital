@@ -6,7 +6,7 @@ from django.views.generic.base import View
 
 # Create your views here.
 from second.forms import OrgForm
-from second.models import Flags, Question, Organization
+from second.models import Flags, Question, Organization, About
 from second.serializers import SnippetSerializer
 
 
@@ -27,7 +27,6 @@ def search_results(request):
                                           Q(activities__icontains=request.GET['activities']),
                                           Q(conditions_on_access__icontains=request.GET['conditions_on_access']),
                                           )
-    print(results.all())
     return render(request, 'second/search_results.html', {'results': results})
 
 
@@ -58,7 +57,7 @@ class Questionnaire(View):
 
 
 def about(request):
-    return render(request, 'second/about.html')
+    return render(request, 'second/about.html', {'abouts': About.objects.all()})
 
 
 class Signin(View):
@@ -66,17 +65,16 @@ class Signin(View):
         return render(request, 'second/signin.html')
 
     def post(self, request):
-        print(request.POST.get('login'))
         user = authenticate(username=request.POST['login'],
                             password=request.POST['password'])
         login(request, user)
-        code = Flags.objects.get(country=request.POST['login']).code
-        return render(request, 'second/profile/profile.html', {'code': code, 'name': request.POST['login']})
+        return redirect('/database/profile')
 
 
 def profile(request):
     code = Flags.objects.get(country=request.user).code
-    return render(request, 'second/profile/profile.html', {'code': code, 'name': request.user})
+    applications = Organization.objects.filter(country=request.user)
+    return render(request, 'second/profile/profile.html', {'code': code, 'name': request.user, 'apps': applications})
 
 
 def get_points(request):

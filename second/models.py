@@ -66,6 +66,7 @@ class Organization(models.Model):
     restrictions = models.CharField(max_length=200, blank=True, null=True)
     inter_cooperation = models.CharField(max_length=200, blank=True, null=True)
     is_confirm = models.BooleanField(default=False, verbose_name='accepted')
+    hided = models.BooleanField(default=False)
     lat = models.FloatField(default=0)
     lon = models.FloatField(default=0)
 
@@ -75,3 +76,11 @@ class Organization(models.Model):
 
 class C0untry(User):
     orgs = models.ManyToManyField(Organization, blank=True)
+
+
+class About(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField(blank=True,null=True)
+
+    def __str__(self):
+        return self.title

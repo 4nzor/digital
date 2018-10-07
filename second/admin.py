@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from second.models import Mapcheck, Flags, Organization, Question
+from second.models import Mapcheck, Flags, Organization, Question, About
 import csv
 from django.http import HttpResponse
 
@@ -30,9 +30,11 @@ class OrgAdmin(admin.ModelAdmin):
     actions = [export_orgs_csv]
 
 
+
 @admin.register(Question)
 class QuestAdmin(admin.ModelAdmin):
     list_display = ['name', 'status']
 
 
 admin.site.register(Flags)
+admin.site.register(About)
