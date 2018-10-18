@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}All lectures{% endblock %}
+</head>
+
+<body>
+
+{% block content %}
+    {% block text_categ %}ALL LECTURES{% endblock %}
+
+    <div class="all_lectures_content">
+        <div class="bg_list_of_all_lect">
+            <div class="filter_of_lecturers">
+                <ul class="menu_flt">
+                    <li><input class="flt_lect_name" type="text" placeholder="input name"></li>
+                    <li><select class="flt_lect_countries" name="countries">
+                        <option selected value="{{ acc.country }}">{{ acc.country }}</option>
+                        {% include 'includes/countries.html' %}
+                    </select></li>
+                    <li><select class="flt_lect_sci_deg" name="countries">
+                        <option selected value="">SCIENCE DEGREE</option>
+                        <option selected value="Bachelor of Science">B.Sc./B.S.</option>
+                        <option selected value="Bachelor of Arts">A.B./B.A.</option>
+                        <option selected value="Bachelor of Fine Arts">B.F.A.</option>
+                        <option selected value="Bachelor of Business Administration">B.B.A.</option>
+                        <option selected value="Master of Science">M.S.</option>
+                        <option selected value="Master of Arts">M.A.</option>
+                        <option selected value="Master of Fine Arts">M.F.A.</option>
+                        <option selected value="Doctor of Medicine">M.D.</option>
+                        <option selected value="Juris Doctor">J.D.</option>
+                    </select>
+                    </li>
+                    <li><select class="flt_lect_aca_rank" name="countries">
+                        <option selected value="">ACADEMIC RANK</option>
+                        <option selected value="Postgraduate">Postgraduate</option>
+                        <option selected value="Postgraduate at the Department of">Postgraduate at the Department of
+                        </option>
+                        <option selected value="Dean">Dean</option>
+                        <option selected value="Director">Director</option>
+                        <option selected value="Doctoral Candidate">Doctoral Candidate</option>
+                        <option selected value="Associate Professor">Associate Professor</option>
+                        <option selected value="Associate Professor at the Department of">Associate Professor at the
+                            Department of
+                        </option>
+                        <option selected value="Docent">Docent</option>
+                        <option selected value="Head of Department (BrE) / Department Chair (AmE)">Head of Department
+                            (BrE) / Department Chair (AmE)
+                        </option>
+                        <option selected value="Head of the Department of">Head of the Department of</option>
+                        <option selected value="Head of the Division of">Head of the Division of</option>
+                    </select>
+                    </li>
+                    <li><select class="flt_lect_num_of_lect" name="countries">
+                        <option selected value="">NUMBERS OF LECTURES</option>
+                        <option selected value="to 10">To 5</option>
+                        <option selected value="from 5 to 20">From 5 to 20</option>
+                        <option selected value="from 20 to 50">From 20 to 50</option>
+                        <option selected value="from 50 to 100">From 50 to 100</option>
+                        <option selected value="more than 100">More than 100</option>
+                    </select>
+                    </li>
+                </ul>
+            </div>
+            <div class="flt_line"></div>
+            <div class="list_of_lecturers">
+                <p>asd</p>
+                <p>asd</p>
+                <p>asd</p>
+                <p>asd</p>
+                <p>asd</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

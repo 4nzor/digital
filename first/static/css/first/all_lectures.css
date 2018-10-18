@@ -1,0 +1,101 @@
+.all_lectures_content {
+    position: relative;
+    width: 900px;
+    min-height: 600px;
+    left: 50%;
+    z-index: 1100;
+    margin: 200px 0 50px -450px;
+}
+
+.bg_list_of_all_lect {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.filter_of_lecturers {
+    position: relative;
+    width: 860px;
+    height: 80px;
+    margin: 0 20px 20px 20px;
+    text-align: center;
+}
+
+.menu_flt {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.menu_flt li {
+    font-size: 20px;
+    margin: 35px 7.5px 0 7.5px;
+    cursor: pointer;
+    color: #595959;
+    display: inline-block;
+}
+
+.flt_lect_name {
+    text-transform: uppercase;
+    width: 105px;
+    border: none;
+    text-align: center;
+    color: #3F76A9;
+}
+
+.flt_lect_name::placeholder{
+    color: #595959;
+}
+
+.menu_flt li select {
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+}
+
+.menu_flt li select:hover{
+    color: #00BDE2;
+}
+
+.flt_lect_countries {
+    width: 100px;
+}
+
+.flt_lect_sci_deg {
+    width: 165px;
+}
+
+.flt_lect_aca_rank{
+    width: 160px;
+}
+
+.flt_lect_num_of_lect{
+    width: 225px;
+}
+
+.flt_line{
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #595959;
+    margin-bottom: 20px;
+}
+
+.list_of_lecturers {
+    position: relative;
+    width: 860px;
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
+    height: 460px;
+    overflow: auto;
+    text-transform: uppercase;
+}
+
+.list_of_lecturers p{
+    margin: 5px 0;
+}

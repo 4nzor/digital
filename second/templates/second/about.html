@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}About{% endblock %}
+</head>
+
+<body>
+
+{% block parag %}About{% endblock %}
+
+{% block content %}
+
+    <div class="about_content">
+        <div class="about_block">
+            <div class="about_text">
+                The database of national innovation related structures in
+                <a href="http://www.bsec-organization.org/">Black Sea Economic Cooperation (BSEC)</a> Member
+                States is an Initiative of the BSEC Working Group on Cooperation in Science & Technology.
+            </div>
+            <div class="about_paragraphs">
+                <div class="accordion">
+                    <ul>
+{% for about in abouts %}
+
+
+
+                        <li class="about_parag">
+                            <input type="checkbox" checked>
+                            <h2 class="about_title_block">{{ about.title }}</h2>
+                            <div class="msg">
+
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

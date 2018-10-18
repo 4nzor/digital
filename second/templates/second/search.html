@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Search{% endblock %}
+</head>
+
+<body>
+
+{% block parag %}Search{% endblock %}
+
+{% block content %}
+
+    <div class="search_content">
+        <div class="search_block">
+            <div class="search_logo">
+                <img src="{% static 'images/search.png' %}" alt="">
+            </div>
+            <div class="search_block_input">
+                <form action="/database/results" method="get">
+
+                    <div class="search_under_label"></div>
+                    <label class="search_checked_map">
+                        <input type="checkbox" class="search_check">
+                        <span class="search_check_map"></span>
+                        <p class="search_text_check_map">Map</p>
+                    </label>
+                    <label class="search_checked_advsearch">
+                        <input type="checkbox" class="search_check">
+                        <span class="search_check_advsearch"></span>
+                        <p class="search_text_check_advsearch">Advanced search</p>
+                    </label>
+                    <input type="text" placeholder="NAME" name="org_name">
+                    <input required type="text" placeholder="COUNTRY" name="country">
+                    <input type="text" placeholder="SCIENTIFIC AREA" name="sci_area" >
+                    <div class="search_adv_block">
+                        <input type="text" placeholder="FUNDING ORGANIZATION" name="">
+                        <input type="text" placeholder="CITY" name="location" >
+                        <input type="text" placeholder="CONTACT PERSON"  name="contact_person">
+                        <input type="text" placeholder="INSTITUTION TYPE" name="inst_type">
+                        <input type="text" placeholder="CONDITIONS FOR ACCESS" name="conditions_on_access">
+                        <input type="text" placeholder="ACTIVITIES UNDERTAKEN" name="activities">
+                        <input type="text" placeholder="KEYWORDS" name="">
+                    </div>
+                    <div class="search_bg_sum">
+                        <input type="submit" value="display results" class="search_block_submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="search_map_block">
+            <div class="search_mob_open_close">
+                <div class="search_mob_open">
+                    Map
+                </div>
+                <div class="search_mob_close">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+            </div>
+            <div id="search_map">
+                <div class="map_search" id="mapsearch"></div>
+            </div>
+        </div>
+    </div>
+
+    {#    <div class="search_map_block">#}
+    {#        <div id="search_map">#}
+    {#            <div class="map_search" id="mapsearch"></div>#}
+    {#        </div>#}
+    {#    </div>#}
+
+{% endblock %}
+
+</body>
+</html>

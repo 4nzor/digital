@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Partners{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}PARTNERS{% endblock %}
+
+    <div class="partners_content">
+        <div class="block_partners">
+            <div class="int_part">
+                <div class="text_int_part">
+                    <span>INTERNATIONAL</span> PARTNERS
+                </div>
+                <div class="img_int_part">
+                    <a href="http://www.bsec-organization.org/Pages/homepage.aspx" target="_blank"><img
+                            src="../../static/images/partners/bsec.png" alt=""></a>
+                </div>
+            </div>
+            <div class="nat_part" style="display: none">
+                <div class="text_nat_part">
+                    <span>NATIONAL</span> PARTNERS
+                </div>
+                <div class="img_nat_part">
+                    <a href="https://xn--80abucjiibhv9a.xn--p1ai/" class="first_logo" target="_blank"><img
+                            src="../../static/images/partners/rossot.png" alt=""></a>
+                    <a href="http://rs.gov.ru/ru" class="second_logo" target="_blank"><img
+                            src="../../static/images/partners/min_obr_i_nauki.png" alt=""></a>
+                    <a href="https://www.tubitak.gov.tr/" class="third_logo" target="_blank"><img
+                            src="../../static/images/partners/tubitak.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+{% extends 'second/base.html' %}
+
+{% load staticfiles %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Profile{% endblock %}
+</head>
+
+<body>
+
+{% block parag %}Welcome{% endblock %}
+
+{% block content %}
+
+    <div class="profile_content">
+        <div class="profile_block">
+            <div class="name_profile">
+                <div class="photo_prof">
+                    <div class="bg_photo_prof">
+                        <img src="https://www.countryflags.io/{{ code }}/flat/64.png">
+                    </div>
+                </div>
+                <div class="text_name_prof">
+                    {{ name }}
+                </div>
+            </div>
+
+            <div class="about_prof">
+                <div class="block_of_organizations">
+                    <div class="parag_block_orgs">
+                        List of organizations
+                    </div>
+                    <div class="blocks_orgs">
+
+                        <div class="prof_list">
+
+                            <div class="prof_parags_block">
+
+                                <div class="prof_prg">
+                                   Organization
+                                    <div class="prof_btt_line"></div>
+                                </div>
+
+                                <div class="contr_prg">
+                                    Control
+                                    <div class="prof_btt_line"></div>
+                                </div>
+                            </div>
+                            {% for app in apps %}
+
+
+
+                            <div class="prof_list_block">
+                                <div class="prof_org">
+                                    <a href="/admin/second/organization/{{ app.id }}/change/">{{ app.org_name }}</a>
+                                </div>
+                                <div class="cntr_cntr_org">
+                                    <div class="contr_org">
+                                        <div class="compl_org" data-tooltip="Complete">
+                                            <i class="fa fa-check"></i>
+                                        </div>
+                                        <div class="post_org" data-tooltip="Postpone">
+                                            <i class="fa fa-archive"></i>
+                                        </div>
+                                        <div class="reject_org" data-tooltip="Reject">
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+</body>
+</html>

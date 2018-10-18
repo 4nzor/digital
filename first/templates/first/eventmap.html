@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+{% load profile %}
+<html lang="ru">
+
+<head>
+    {% block title %}Event map{% endblock %}
+</head>
+
+<body>
+{% block content %}
+    <div class="eventmap_container">
+        <div class="block_events_map">
+            <div class="erorr_load_map">
+                <p>SORRY, IF MAP DOESN'T LOAD</p>
+                <p>PLEASE, RELOAD PAGE</p>
+            </div>
+            <div id="map">
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSaOzdz7VbGKPqjAhjOZOrvFSH8iqTa9Q&callback=initMap">
+                </script>
+            </div>
+        </div>
+        <div class="block_events">
+            <div class="events_parag">EVENTS
+            </div>
+            {% for lect in lecture %}
+
+                <div class="eventmap_event_lecture">
+                    <div class="name_of_event">{{ lect.lecture_title }}</div>
+                    <div class="adress_event"></div>
+                    <label class="button_eventmap_more" id="{{ lect.id }}" onclick="more_app()" onmousedown="return false"
+                           onselectstart="return false">more <i
+                            class="fa fa-angle-left i_more"></i></label>
+                </div>
+            {% endfor %}
+            {% for plat in platform %}
+                <div class="eventmap_event_platform">
+                    <div class="name_of_event">{{ plat.name }}</div>
+                    <div class="adress_event"></div>
+                    <label class="button_eventmap_more" id="{{ plat.id }}" onclick="more_platf(id)" onmousedown="return false"
+                           onselectstart="return false">more <i
+                            class="fa fa-angle-left i_more"></i></label>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

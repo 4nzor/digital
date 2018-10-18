@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}Stipot{% endblock %}
+</head>
+
+
+{% load profile %}
+<body>
+{% block content %}
+
+    <div class="main_content">
+        <div class="backg_world"><img src="../../static/images/world.png"></div>
+        <div class="stipot_content">
+            <div class="block_stipot">
+                <div class="backg_stipot"></div>
+                <div class="bott_line"></div>
+                <div class="stipot_text">
+                    <p class="parag">GOING <a href="{% url 'eventmap' %}">ABROAD</a>? DELIVER A <a
+                            href="{% url 'register' %}">LECTURE</a>.</p>
+                    <p>SHARE YOUR <a href="{% url 'eventmap' %}">KNOWLEDGE</a> & <a
+                            href="{% url 'eventmap' %}">EXPERTISE</a></p>
+                    <p>IN SCIENCE, TECHNOLOGY AND INNOVATION</p>
+                    <p><a href="{% url 'eventmap' %}">WITH THE WORLD</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

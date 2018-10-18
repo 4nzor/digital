@@ -1,0 +1,93 @@
+.block_erorr_sign_in{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11000;
+}
+
+.block_erorr_register{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11000;
+}
+
+.bg_erorrs{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #8A8A8A;
+    opacity: 0.9;
+    z-index: 11005;
+}
+
+.icon_erorrs{
+    position: relative;
+    left: 50%;
+    width: 190px;
+    height: 190px;
+    margin-left: -95px;
+    margin-top: 150px;
+    border-radius: 200px;
+    font-size: 200px;
+    background-color: #ffffff;
+    color: #3F76A9;
+    z-index: 11020;
+}
+
+.icon_erorrs i{
+    position: absolute;
+    top: -5px;
+    left: 10px;
+}
+
+.text_erorrs{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    z-index: 11010;
+}
+
+.text_erorrs p{
+    margin-bottom: 20px;
+}
+
+.text_act_erorrs{
+    color: #3F76A9;
+}
+
+.note_erorrs{
+    margin-top: 40px;
+}
+
+.butt_close_erorrs{
+    position: relative;
+    left: 50%;
+    width: 300px;
+    height: 60px;
+    margin-top: 150px;
+    margin-left: -150px;
+    padding-top: 10px;
+    background-color: #3F76A9;
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    z-index: 11010;
+    cursor: pointer;
+     transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.butt_close_erorrs:hover{
+    color: #3F76A9;
+    background-color: #ffffff;
+}

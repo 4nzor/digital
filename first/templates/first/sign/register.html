@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+{% load static %}
+<html lang="ru">
+
+<head>
+    {% block title %}Register{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}REGISTER{% endblock %}
+
+    <div class="register_content">
+        <div class="block_register">
+            <form action="" class="register_form" method="post">
+                {% csrf_token %}
+
+                <div class="input_register">
+                    <div class="register_text">FULL NAME:</div>
+                    <input required type="text" class="register_funa" name="full_name" pattern="^[a-zA-Z/s]+$" placeholder="USE A-Z">
+
+                    <div class="block_whoiam">
+
+                        <div class="register_text_whoiam">I'M</div>
+
+                        <label class="iam_lect">
+                            <input type="radio" class="reg_check_lect" checked="checked" name="reg_whoiam"
+                                   value="lecture">
+                            <span class="check_lect_reg"></span>
+                            <p class="reg_text_lect">LECTURER</p>
+                        </label>
+
+                        <label class="iam_organ">
+                            <input type="radio" class="reg_check_organ" id="check_organ" name="reg_whoiam" value="org">
+                            <span class="check_organ_reg"></span>
+                            <p class="reg_text_organ">ORGANIZER</p>
+                        </label>
+
+                    </div>
+
+                    <div class="block_sexus">
+
+                        <div class="register_text_sexus">sex:</div>
+
+                        <label class="reg_male">
+                            <input type="radio" class="reg_check_male" checked="checked" name="reg_sexus"
+                                   value="lecture">
+                            <span class="check_male_reg"></span>
+                            <p class="reg_text_male">male</p>
+                        </label>
+
+                        <label class="reg_female">
+                            <input type="radio" class="reg_check_female" name="reg_sexus" value="org">
+                            <span class="check_female_reg"></span>
+                            <p class="reg_text_female">female</p>
+                        </label>
+
+                    </div>
+
+                    <div class="register_text">CREATE YOUR USERNAME:</div>
+                    <input required type="text" class="register_usna" name="username" onblur="check_user(value,'{% url 'api:check_user' %}')" pattern="^[a-zA-Z0-9]+$" placeholder="USE A-Z AND/or 0-9">
+                    <div class="register_text">CREAT PASSWORD:</div>
+                    <input required type="password" class="register_pass" name="pass" pattern="^[a-zA-Z0-9]+$" placeholder="USE A-Z AND/or 0-9">
+                    <div class="register_text">CONFIRM PASSWORD:</div>
+                    <input required type="password" class="register_con_pass" pattern="^[a-zA-Z0-9]+$">
+                    <div class="register_text">YOUR CURRENT EMAIL:</div>
+                    <input required type="email" class="register_email" name="email">
+                    <div class="register_text">CONFIRM YOUR CURRENT EMAIL:</div>
+                    <input required type="email" class="register_con_email">
+                </div>
+
+                <div class="register_signup">
+                    <input type="submit" value="SIGN UP">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="block_erorr_sign_in" style="display: none">
+        <div class="bg_erorrs">
+        </div>
+        <div class="icon_erorrs">
+            <i class="fa fa-exclamation-circle"></i>
+        </div>
+        <div class="text_erorrs">
+            <p class="text_act_erorrs">ERORR:</p>
+            <p>THIS USERNAME ALREADY EXIST</p>
+        </div>
+        <div class="butt_close_erorrs">CLOSE</div>
+    </div>
+
+    {% if success %}
+        <div class="block_activate_profile">
+            <div class="bg_activprof">
+            </div>
+            <div class="icon_activprof">
+                <img src="../../../static/images/mails/letter.png" alt="">
+            </div>
+            <div class="text_activprof">
+                <p class="text_act_activprof">thank for the registration!</p>
+                <p>to complete the registration, confirm your email</p>
+            </div>
+            <div class="icons_mail">
+                <div class="text_quick_link">
+                    quick links:
+                </div>
+                <a href="https://login.yahoo.com" target="_blank"><img src="{% static 'images/mails/yahoo.png'%}" alt=""></a>
+                <a href="https://outlook.live.com" target="_blank"><img src="../../../static/images/mails/msn.png"
+                                                                        alt=""></a>
+                <a href="https://mail.google.com" target="_blank"><img src="{% static 'images/mails/gmail.png'%}" alt=""></a>
+                <a href="https://mail.aol.com" target="_blank"><img src="{% static 'images/mails/aol.png'%}" alt=""></a>
+                <a href="https://www.inbox.com/" target="_blank"><img src="{% static 'images/mails/inbox.png'%}"
+                                                                      alt=""></a>
+            </div>
+            <div class="button_close_activprof">
+                CLOSE
+            </div>
+        </div>
+    {% endif %}
+
+{% endblock %}
+</body>
+</html>

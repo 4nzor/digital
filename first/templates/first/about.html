@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+{% extends 'first/base.html' %}
+
+<html lang="ru">
+
+<head>
+    {% block title %}About{% endblock %}
+</head>
+
+<body>
+{% block content %}
+
+    {% block text_categ %}ABOUT{% endblock %}
+
+    <div class="about_content">
+        <div class="about_block">
+            <div class="text_about">
+                <p class="first_parag"><a href="{% url 'stipot' %}">STIPOT</a> IS A FRAMEWORK TO FOSTER KNOWLEDGE
+                    EXCHANGE
+                    AND RAISE AWARENESS OF THE FUTURE
+                    CHALLENGES TO SCIENCE, TECHNOLOGY AND INNOVATION.</p>
+                <p class="second_parag">THIS PORTAL ALLOWS SCIENTISTS TO SHARE THEIR KNOWLEDGE & EXPERTISE IN SCIENCE,
+                    TECHNOLOGY AND INNOVATION BY DELIVERING A LECTURE IN ANY FILED OF KNOWLEDGE THEY HAVE EXPERTISE IN,
+                    WHILE TRAVELING ABROAD.</p>
+                <p class="third_parag">SCIENCE IS A UNIVERSAL LANGUAGE, LET'S USE IT TO SHAPE THE WORLD!</p>
+                <p class="fourth_parag">GOING <a href="{% url 'eventmap' %}">ABROAD</a>? DELIVER A <a
+                        href="{% url 'register' %}">LECTURE</a>.</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,149 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+{% load forstatic %}
+<html lang="en">
+{% load profile %}
+<head>
+    <meta charset="utf-8"/>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.7.0/css/font-awesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-5.0.8/css/fontawesome.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/media.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/profile.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/lecturer.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/organizer.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/erorrs.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/calendar/calendar.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/all_lectures.css' %}"/>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+{% if request.path != '/404/' %}
+{% endif %}
+
+{% if request.path != '/stipot/eventmap/' %}
+
+    {% if user.is_authenticated %}
+
+        <div class="container_profile">
+            <ul class="menu_profile">
+                <li>
+                    <a href="" class="text_profile">
+                        <span class="name_profile">WELCOME, {% get_full_name %}</span>
+                        <div class="icon_profile"><i class="fa fa-user"></i></div>
+                    </a>
+
+                    <ul class="submenu_profile">
+                        {% if request.user.is_superuser == False %}
+                            <li class="profile_up_line"></li>
+                            <li><a href="{% profile %}">PROFILE</a></li>
+                            <div style="display: {% reg_or_lect %}">
+                                <li><a href="{% url 'lectures' %}">LECTURES</a></li>
+                                <li><a href="{% url 'applications' %}">APPLICATIONS</a></li>
+                            </div>
+                            <div style="display: {% lect_or_reg %}">
+                                <li><a href="{% url 'platforms' %}">PLATFORMs</a></li>
+                                <li><a href="{% url 'all_lecturers' %}">ALL LECTURERS</a></li>
+                            </div>
+                            <li><a href="{% profile %}">SETTINGS</a></li>
+                        {% endif %}
+                        <li><a href="{% url 'logout' %}">EXIT</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+    {% else %}
+
+        <div class="block_registration">
+            <div class="signin_reg"><a href="{% url 'signin' %}"
+                                       class="{% url_reg '/stipot/signin/' %}">SIGN IN</a>
+            </div>
+            <p class="line"></p>
+            <div class="register_reg"><a href="{% url 'register' %}"
+                                         class="{% url_reg '/stipot/register/' %}">REGISTER</a>
+            </div>
+        </div>
+
+    {% endif %}
+
+    {% if request.path != '/stipot/404/' %}
+
+        {% if request.path != '/stipot/' %}
+
+            <div class="block_logo_categ">
+                <img src="{% static 'images/image_category.png' %}" alt="logo">
+                <div class="text_logo">{% block text_categ %}{% endblock %}</div>
+
+                {% if request.path == 'stipot/register/' %}
+                    <div class="required">*ALL FIELDS ARE REQUIRED</div>
+                {% endif %}
+
+            </div>
+
+        {% endif %}
+
+    {% endif %}
+{% endif %}
+
+<div class="main_menu">
+    <ul>
+        <li><a href="{% url 'stipot' %}" class="{% url_menu '/stipot/' %}">STIPOT</a></li>
+        <li><a href="{% url 'about' %}" class="{% url_menu '/stipot/about/' %}">ABOUT</a></li>
+        <li><a href="{% url 'eventmap' %}" class="{% url_menu '/stipot/eventmap/' %}">EVENT MAP</a></li>
+        <li><a href="{% url 'faq' %}" class="{% url_menu '/stipot/faq/' %}">FAQ</a></li>
+        <li><a href="{% url 'partners' %}" class="{% url_menu '/stipot/partners/' %}">PARTNERS</a></li>
+    </ul>
+</div>
+
+{% block content %}
+{% endblock %}
+
+
+
+{% if request.path != '/stipot/eventmap/' %}
+    {% if request.path != '/stipot/partners/' %}
+        <footer class="main_footer">
+            <div class="sctein">
+                <span class="science_footer">SCIENCE</span> TECHNOLOGY <span class="inno_footer">INNOVATION</span>
+            </div>
+            <div class="copyright" style="display: none">
+                <p>&copy; 2017 MINISTRY OF EDUCATION AND SCIENCE OF THE RUSSIAN FEDERATION</p>
+            </div>
+        </footer>
+    {% endif %}
+{% endif %}
+
+<script src="https://use.fontawesome.com/484df5253e.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script src="{% static '' %}{% jquery_set_1_1 %}"></script>
+<script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/maps.js' %}"></script>
+<script src="{% static 'js/stipot_api.js' %}"></script>
+<script src="{% static 'js/calendar.js' %}"></script>
+
+</body>
+</html>

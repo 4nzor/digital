@@ -1,0 +1,655 @@
+@media (max-width: 900px) {
+    /*главная*/
+    .home_block {
+        width: 100%;
+        left: 0;
+        margin-left: auto;
+    }
+
+    .home_logo {
+        margin-top: 10%;
+    }
+
+    .home_logo img {
+        width: 225px;
+    }
+
+    .home_text_logo {
+        margin-top: 10%;
+        font-size: 24px;
+        width: 100%;
+        padding: 10px 25px 10px 25px;
+        margin-left: auto;
+    }
+
+    .line_top {
+        height: 2px;
+        width: 85%;
+        margin-right: 20px;
+    }
+
+    .line_bottom {
+        height: 2px;
+        width: 85%;
+        margin-left: 20px;
+    }
+
+    .line_right {
+        width: 2px;
+        height: 60px;
+        margin-right: 20px;
+    }
+
+    .line_left {
+        width: 2px;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .home_text_region {
+        font-size: 24px;
+        margin-left: auto;
+        margin-bottom: 10%;
+    }
+
+    /*главная*/
+    /*меню*/
+    .main_menu_bg {
+        width: 100%;
+    }
+
+    .menu_button_hide {
+        margin-top: 50px;
+    }
+
+    .menu_text_logo {
+        font-size: 24px;
+        width: 100%;
+        margin-top: 0;
+        margin-left: auto;
+        padding: 0 10px 0 10px;
+    }
+
+    .menu_text_info {
+        font-size: 20px;
+        width: 100%;
+        margin-left: auto;
+        padding: 0 10px 0 10px;
+    }
+
+    .main_menu ul {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        padding: 0 15px 0 15px;
+    }
+
+    .main_menu li {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main_menu ul li {
+        width: 100%;
+        padding: 15px 0 15px 0;
+    }
+
+    .main_menu ul li a {
+        font-size: 30px;
+        padding: 15px 0 15px 0;
+    }
+
+    /*меню*/
+    /*поиск*/
+    .logo_parag_img {
+        display: none;
+    }
+
+    .logo_parag_content {
+        margin-left: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo_parag_text {
+        position: relative;
+        font-size: 35px;
+        width: 100%;
+        margin-left: auto;
+        left: 0;
+    }
+
+    .search_logo {
+        margin-top: 30%;
+        right: 0;
+        margin-left: auto;
+    }
+
+    .search_logo img {
+        width: 75px;
+        margin-left: 20px;
+    }
+
+    .search_submit_active {
+        top: 0px;
+    }
+
+    .search_block {
+        width: 100%;
+        left: 0;
+        transition: width .3s ease;
+        -moz-transition: width .3s ease;
+        -ms-transition: width .3s ease;
+        -o-transition: width .3s ease;
+    }
+
+    .search_block_input,
+    .search_adv_block,
+    .search_adv_active {
+        width: 100%;
+        margin-left: auto;
+        left: 0;
+        padding: 0 15px 0 15px;
+    }
+
+    .search_adv_block {
+        top: 190px;
+    }
+
+    .search_adv_active {
+        left: 0;
+        height: 100px;
+        display: block;
+    }
+
+    .search_block_input {
+        height: 100%;
+    }
+
+    .search_block_input input {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .search_block_input input::placeholder {
+        font-size: 22px;
+    }
+
+    .search_under_label {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+    }
+
+    .search_bg_sum {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 50px;
+    }
+
+    .search_bg_sum input {
+        font-size: 22px;
+    }
+
+    .search_submit_active {
+        margin-top: 350px;
+    }
+
+    .search_block_submit {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .search_checked_advsearch {
+        width: 50%;
+    }
+
+    .search_checked_map {
+        width: 50%;
+    }
+
+    /*мапа*/
+    .search_check_map {
+        height: 40px;
+        width: 40px;
+        margin-left: 15px;
+        left: 0;
+    }
+
+    .search_check_map::after {
+        left: 12px;
+        top: 2px;
+        width: 15px;
+        height: 30px;
+    }
+
+    .search_text_check_map {
+        position: absolute;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        left: 0;
+        margin-left: 70px;
+    }
+
+    .search_map_block {
+        width: 100%;
+        right: -100%;
+    }
+
+    .map_block_active {
+        right: 0;
+    }
+
+    .search_mob_open_close {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: -50px;
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .search_mob_open {
+        position: absolute;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        border-radius: 5px 0 0 5px;
+        background-color: #0070BF;
+        color: #fff;
+        z-index: 1150;
+        font-size: 20px;
+        padding: 10px 0 0 6px;
+        font-family: "Roboto thin";
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        -o-transition: all .3s ease;
+    }
+
+    .search_mob_open_active {
+        left: 0;
+    }
+
+    .search_mob_close {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 0 5px 5px 0;
+        background-color: #0070BF;
+        color: #fff;
+        z-index: 1150;
+    }
+
+    .search_mob_close i {
+        position: absolute;
+        margin: 10px 0 0 12.5px;
+        font-size: 30px;
+    }
+
+    /*мапа*/
+    /*расширенный поиск*/
+    .search_check_advsearch {
+        height: 40px;
+        width: 40px;
+        margin-left: 125px;
+        left: 0;
+    }
+
+    .search_check_advsearch::after {
+        left: 12px;
+        top: 2px;
+        width: 15px;
+        height: 30px;
+    }
+
+    .search_text_check_advsearch {
+        position: absolute;
+        font-size: 20px;
+        width: 120px;
+        height: 40px;
+        left: 0;
+        top: 0;
+        margin-left: 180px;
+        margin-top: 0;
+        line-height: 15pt;
+    }
+
+    .search_content {
+        width: 100%;
+        transition: widht .3s ease;
+    }
+
+    /*расширенный поиск*/
+    #search_map {
+        background: transparent;
+        border-left-width: 2px;
+    }
+
+    /*поиск*/
+    /*эбаут*/
+    .about_content {
+        width: 100%;
+    }
+
+    .about_block {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        padding: 0 15px 0 15px;
+    }
+
+    .about_text {
+        margin-top: 30%;
+        font-size: 20px;
+    }
+
+    .accordion ul li h2 {
+        font-size: 26px;
+        text-align: center;
+        padding: 15px 0 15px 0;
+    }
+
+    .msg {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*эбаут*/
+    /*авторизация*/
+    .signin_block {
+        width: 100%;
+        height: 100%;
+        margin-top: 20%;
+        margin-left: auto;
+        left: 0;
+        padding: 0 15px 0 15px;
+    }
+
+    .signin_block input {
+        height: 40px;
+        margin-top: 10px;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .block_signin_label {
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .signin_block input::placeholder {
+        font-size: 22px;
+    }
+
+    .signin_logo {
+        position: relative;
+        margin-top: 30%;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    .signin_logo img {
+        width: 75px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .check_signin_rem {
+        height: 40px;
+        width: 40px;
+    }
+
+    .text_signin_rem {
+        font-size: 20px;
+        top: 0;
+        left: 0;
+        margin-left: 55px;
+        margin-top: 5px;
+    }
+
+    .signin_submit {
+        margin-bottom: 0px;
+    }
+
+    .signin-block__forgot {
+        margin: 10px 0 15% 0;
+    }
+
+    .signin-block__go-back {
+        margin: 10px 0 15% 0;
+    }
+
+    .check_signin_rem::after {
+        left: 12px;
+        top: 1px;
+        width: 15px;
+        height: 30px;
+    }
+
+    /*авторизация*/
+    /*профиль*/
+    .profile_block {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30%;
+        margin-bottom: 120px;
+        left: 0;
+        height: 100%;
+        padding: 0 15px 0 15px;
+    }
+
+    .name_profile {
+        width: 100%;
+        height: 40px;
+    }
+
+    .photo_prof {
+        width: 80px;
+        height: 80px;
+        top: -20px;
+        left: -20px;
+    }
+
+    .bg_photo_prof {
+        width: 70px;
+        height: 70px;
+        left: 5px;
+        top: 5px;
+    }
+
+    .text_name_prof {
+        font-size: 25px;
+        top: 2px;
+        margin-left: 30px;
+    }
+
+    .about_prof {
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .bg_photo_prof img {
+        height: 70px;
+    }
+
+    .blocks_orgs {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .parag_block_orgs {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .prof_prg {
+        font-size: 20px;
+        width: 270px;
+        min-width: 270px;
+    }
+
+    .prof_org {
+        font-size: 18px;
+        width: 270px;
+        min-width: 270px;
+    }
+
+    .contr_prg {
+        font-size: 20px;
+    }
+
+    /*профиль*/
+    /*квесчанери*/
+    .quest_block {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30%;
+        left: 0;
+        padding: 0 15px 0 15px;
+    }
+
+    .quest_text {
+        font-size: 22px;
+    }
+
+    .quest_req_text {
+        width: 50%;
+        margin-left: 15px;
+    }
+
+    .quest_block_inputs {
+        width: 100%;
+        left: 0;
+        margin: 0 0 75px 0;
+    }
+
+    /*.quest_form_cr {*/
+    /*grid-template-rows: 50% 50%;*/
+    /*grid-template-columns: 100%;*/
+    /*width: 100%;*/
+    /*}*/
+    .quest_form_cr input {
+        margin: 0px;
+    }
+
+    .quest_block_inputs input {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 22px;
+    }
+
+    .quest_form_quest {
+        width: 100%;
+        left: 0;
+        margin: 0 0;
+        min-height: 100px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px;
+    }
+
+    .quest_form_quest input {
+        width: 100%;
+        height: 40px;
+        font-size: 22px;
+        margin: 0 0 0 0;
+    }
+
+    .quest_form_quest_butt {
+        top: 0;
+    }
+
+    .quest_req_text {
+        font-size: 22px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .quest_input {
+        padding: 0 15px 0 15px;
+    }
+
+    .quest_input_bl {
+        width: 100%;
+        height: 50px;
+    }
+
+    .quest_icon_rem {
+        top: 15px;
+        right: 10px;
+    }
+
+    .quest_icon_rem:after,
+    .quest_icon_rem:before {
+        display: none;
+    }
+
+    .quest_block_inputs input::placeholder {
+        font-size: 20px;
+    }
+
+    /*квесчанери*/
+    /*сёрч разалтс*/
+    .rslts_parag {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .rslts_line_help {
+        display: none;
+    }
+
+    .rslts_block {
+        width: 100%;
+        height: 60%;
+        margin-left: 0;
+        margin-top: 30%;
+        left: 0;
+        padding: 0 15px;
+    }
+
+    .rslts_list {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        display: inherit;
+    }
+
+    .rslts_parags_block {
+        width: 100%;
+    }
+
+    .rslts_list_block {
+        width: 100%;
+    }
+
+    .rslts_prg {
+        /*margin-left: 0;*/
+        /*margin-right: 20px;*/
+        font-size: 20px;
+        width: 270px;
+        min-width: 270px;
+    }
+
+    .rslts_org {
+        font-size: 18px;
+        width: 270px;
+        min-width: 270px;
+
+    }
+
+    /*сёрч разалтс*/
+}
+
