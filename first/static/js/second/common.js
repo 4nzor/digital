@@ -85,8 +85,29 @@ $(document).ready(function () {
     $(".search_mob_close").click(function () {
         $(".search_block").removeClass('search_block_active');
         $(".search_map_block").removeClass('map_block_active');
-    })
+    });
 
+    $(".signin-block__forgot").click(function () {
+        $(this).css('right', '200px');
+        $(this).fadeOut(200);
+        $(".signin_submit").css('display', 'none');
+        $(".signin_pass").css('display', 'none');
+        $(".block_signin_label").css('display', 'none');
+        $(".signin-block__go-back").fadeIn(200);
+        $(".signin-block__go-back").css('left', '0');
+        $(".signin-block__forgot-submit").css('display', 'block');
+    });
+
+    $(".signin-block__go-back").click(function () {
+        $(this).fadeOut(200);
+        $(this).css('left', '200px');
+        $(".signin_submit").css('display', 'block');
+        $(".signin_pass").css('display', 'block');
+        $(".block_signin_label").css('display', 'block');
+        $(".signin-block__forgot").fadeIn(200);
+        $(".signin-block__forgot").css('right','0');
+        $(".signin-block__forgot-submit").css('display', 'none');
+    });
 
     /* create input */
 

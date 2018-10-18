@@ -647,14 +647,14 @@ ul {
 .rslts_parags_block,
 .rslts_list_block,
 .prof_parags_block,
-.prof_list_block{
+.prof_list_block {
     position: relative;
     display: flex;
     flex-direction: row;
 }
 
 .rslts_btt_line,
-.prof_btt_line{
+.prof_btt_line {
     bottom: 0;
     width: 100%;
     height: 2px;
@@ -663,7 +663,7 @@ ul {
 }
 
 .rslts_prg,
-.prof_prg{
+.prof_prg {
     position: relative;
     min-width: 350px;
     width: 350px;
@@ -672,7 +672,7 @@ ul {
 }
 
 .rslts_org,
-.prof_org{
+.prof_org {
     position: relative;
     min-width: 350px;
     width: 350px;
@@ -817,28 +817,27 @@ ul {
 
 .quest_form_quest {
     position: relative;
-    width: 900px;
+    width: 600px;
     left: 50%;
     min-height: 60px;
-    margin: 10px 0 0 -450px;
+    margin: 10px 0 50px -300px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80px;
 }
 
 .quest_input_bl {
     position: relative;
-    width: 450px;
+    width: 600px;
     height: 80px;
 }
 
 .quest_form_quest input {
     position: relative;
     margin: 10px;
+    width: 100%;
 }
 
 .quest_input {
+    position: relative;
     padding: 0 50px 0 20px;
 }
 
@@ -1104,12 +1103,20 @@ div.msg, ul li i:before, ul li i:after {
     margin-bottom: 10px;
 }
 
+.signin_block__error-inp {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #E84C3D;
+}
+
 .signin_block input {
     width: 100%;
     height: 60px;
     margin-top: 20px;
     font-size: 28px;
     padding: 0 20px;
+    text-align: center;
 }
 
 .signin_block input::placeholder {
@@ -1182,20 +1189,46 @@ div.msg, ul li i:before, ul li i:after {
     transform: rotate(45deg);
 }
 
-.signin_submit {
+.signin_submit,
+.signin-block__forgot-submit {
     position: relative;
     color: #ffffff;
     background-color: #0070C0;
     border: none;
-    margin-bottom: 100px;
     transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     -ms-transition: all .5s ease;
 }
 
-.signin_submit:hover {
+.signin-block__forgot-submit {
+    display: none;
+}
+
+.signin_submit:hover,
+.signin-block__forgot-submit:hover {
     background-color: #8A8A8A;
+}
+
+.signin-block__forgot,
+.signin-block__go-back {
+    position: absolute;
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 22px;
+    color: #0070C0;
+    cursor: pointer;
+    transition: all .8s ease;
+}
+
+.signin-block__forgot {
+    right: 0;
+}
+
+.signin-block__go-back {
+    left: 200px;
+    display: none;
 }
 
 /* ---> sign in end <--- */
@@ -1339,7 +1372,7 @@ div.msg, ul li i:before, ul li i:after {
     width: 160px;
 }
 
-.contr_prg{
+.contr_prg {
     position: relative;
     min-width: 150px;
     width: 150px;
@@ -1347,7 +1380,7 @@ div.msg, ul li i:before, ul li i:after {
     margin: 0 10px
 }
 
-.cntr_cntr_org{
+.cntr_cntr_org {
     position: relative;
     min-width: 150px;
     width: 150px;
