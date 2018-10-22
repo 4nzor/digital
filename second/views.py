@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render, redirect
@@ -65,21 +66,25 @@ class Signin(View):
         return render(request, 'second/signin.html')
 
     def post(self, request):
-        user = authenticate(username=request.POST['login'],
-                            password=request.POST['password'])
-        login(request, user)
-        return redirect('/database/profile')
+        try:
+            user = authenticate(username=request.POST['login'],
+                                password=request.POST['password'])
+            login(request, user)
+            return redirect('/database/profile')
+        except:
+            return render(request, 'second/signin.html', {'error': 'error'})
 
 
+@login_required
 def profile(request):
     code = Flags.objects.get(country=request.user).code
-    applications = Organization.objects.filter(country=request.user)
+    applications = Organization.objects.filter(country=request.user, hided=False)
     return render(request, 'second/profile/profile.html', {'code': code, 'name': request.user, 'apps': applications})
 
 
 def get_points(request):
     if request.method == 'GET':
-        snippets = Organization.objects.all()
+        snippets = Organization.objects.filter(is_confirm=True, hided=False)
         serializer = SnippetSerializer(snippets, many=True)
         return JsonResponse(serializer.data, safe=False)
 
@@ -95,3 +100,22 @@ def hide_input(request):
 def logout_view(request):
     logout(request)
     return redirect('/database')
+
+
+def control(request):
+    command = request.POST['command']
+    id = request.POST['id']
+    org = Organization.objects.get(id=id)
+    if command == 'complete':
+        org.is_confirm = True
+        org.hided = True
+        org.save()
+    if command == 'hide':
+        org.hided = True
+        org.save()
+
+    if command == 'reject':
+        org.is_confirm = False
+        org.hided = True
+        org.save()
+    return JsonResponse({'Status': 200})

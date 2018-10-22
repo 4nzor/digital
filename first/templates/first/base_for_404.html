@@ -1,0 +1,58 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+{% load forstatic %}
+<html lang="en">
+{% load profile %}
+<head>
+    <meta charset="utf-8"/>
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="{% static 'css/first/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/first/main.css' %}"/>
+
+
+</head>
+<body>
+
+
+{% block content %}
+{% endblock %}
+
+
+
+{% if request.path != '/stipot/eventmap/' %}
+    {% if request.path != '/stipot/partners/' %}
+        <footer class="main_footer">
+
+
+        </footer>
+    {% endif %}
+{% endif %}
+
+<script src="https://use.fontawesome.com/484df5253e.js"></script>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script src="{% static '' %}{% jquery_set_1_1 %}"></script>
+<script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/maps.js' %}"></script>
+<script src="{% static 'js/stipot_api.js' %}"></script>
+<script src="{% static 'js/calendar.js' %}"></script>
+
+</body>
+</html>

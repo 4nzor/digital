@@ -54,19 +54,19 @@
 
 
 
-                            <div class="prof_list_block">
+                            <div class="prof_list_block" id="{{ app.id }}">
                                 <div class="prof_org">
                                     <a href="/admin/second/organization/{{ app.id }}/change/">{{ app.org_name }}</a>
                                 </div>
                                 <div class="cntr_cntr_org">
                                     <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete">
+                                        <div class="compl_org" data-tooltip="Complete" onclick="control('complete',id)" id="{{ app.id }}">
                                             <i class="fa fa-check"></i>
                                         </div>
-                                        <div class="post_org" data-tooltip="Postpone">
+                                        <div class="post_org" data-tooltip="Postpone" onclick="control('hide',id)" id="{{ app.id }}">
                                             <i class="fa fa-archive"></i>
                                         </div>
-                                        <div class="reject_org" data-tooltip="Reject">
+                                        <div class="reject_org" data-tooltip="Reject" onclick="control('reject',id)" id="{{ app.id }}">
                                             <i class="fa fa-times"></i>
                                         </div>
                                     </div>

@@ -44,7 +44,7 @@
                                 <input class="quest_input" type="text" placeholder="{{ question.question }}"
                                        maxlength="32"
                                        name="{{ question.name }}">
-                                {% if user.username == 'ctf' %}
+                                {% if user.username == 'moderator' %}
                                     <div class="quest_remove_inp">
                                         <div class="quest_icon_rem" data-tooltip="Remove input">
                                             <i class="fa fa-times"

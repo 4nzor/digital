@@ -21,15 +21,12 @@
             <div class="signin_logo">
                 <img src="{% static 'images/sign_in.png' %}">
             </div>
-            <form action="." method="post">
+            {% if error%}
+
+            <div class="signin_block__error-inp">Error: Incorrect login or password!</div>
+            {% endif %}
+            <form class="form_sign" action="." method="post">
                 {% csrf_token %}
-
-                {# error #}
-
-{#                <div class="signin_block__error-inp">Error: Incorrect login or password!</div>#}
-
-                {# error end #}
-
                 <input type="text" class="signin_log" placeholder="login" name="login">
                 <input type="password" class="signin_pass" placeholder="password" name="password">
                 <div class="block_signin_label">

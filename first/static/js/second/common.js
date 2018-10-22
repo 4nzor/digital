@@ -90,6 +90,7 @@ $(document).ready(function () {
     $(".signin-block__forgot").click(function () {
         $(this).css('right', '200px');
         $(this).fadeOut(200);
+        $('.form_sign').attr('action', '/database/restore_password');
         $(".signin_submit").css('display', 'none');
         $(".signin_pass").css('display', 'none');
         $(".block_signin_label").css('display', 'none');
@@ -101,6 +102,7 @@ $(document).ready(function () {
     $(".signin-block__go-back").click(function () {
         $(this).fadeOut(200);
         $(this).css('left', '200px');
+        $('.form_sign').attr('action', '.');
         $(".signin_submit").css('display', 'block');
         $(".signin_pass").css('display', 'block');
         $(".block_signin_label").css('display', 'block');
