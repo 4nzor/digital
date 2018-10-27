@@ -157,5 +157,11 @@ $(document).ready(function () {
     };
 
 });
+$(".id").hide();
+$(".lat").hide();
+$(".lon").hide();
+$(".is_confirm").hide();
+$(".hided").hide();
+
 
 

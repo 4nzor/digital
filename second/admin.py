@@ -1,10 +1,12 @@
-from django.contrib import admin
-import xlwt
-from second.models import Mapcheck, Flags, Organization, Question, About
 import csv
-from django.http import HttpResponse
+
 import xlwt
-admin.site.register(Mapcheck)
+from django.contrib import admin
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404
+
+from second.models import Flags, Organization, Question, About
+from second.views import show_details
 
 
 def export_orgs_csv(modeladmin, request, queryset):
@@ -22,7 +24,6 @@ export_orgs_csv.short_description = "Save as CSV"
 
 
 def export_xls(modeladmin, request, queryset):
-
     response = HttpResponse(content_type='application/ms-excel')
     response['Content-Disposition'] = 'attachment; filename=Data.xls'
     wb = xlwt.Workbook(encoding='utf-8')
@@ -49,9 +50,7 @@ def export_xls(modeladmin, request, queryset):
     for obj in queryset:
         row_num += 1
         row = [
-            obj.pk,
-            obj.country,
-            obj.owner_name,
+            obj.pk, obj.country, obj.owner_name,
         ]
         for col_num in range(len(row)):
             ws.write(row_num, col_num, row[col_num], font_style)
@@ -62,14 +61,29 @@ def export_xls(modeladmin, request, queryset):
 
 export_xls.short_description = u"Export XLS"
 
+
 @admin.register(Organization)
 class OrgAdmin(admin.ModelAdmin):
     list_display = ['org_name', 'country', 'is_confirm']
     list_filter = ['country', 'is_confirm']
     list_per_page = 20
     save_as = True
-    actions = [export_orgs_csv,export_xls]
+    actions = [export_orgs_csv, export_xls]
+    search_fields = ['country', 'org_name']
 
+    def get_osm_info(self):
+        return ''
+
+    def change_view(self, request, object_id, form_url='', extra_context=None):
+        org = get_object_or_404(Organization, id=object_id)
+        if (request.user.username == org.country) | (request.user.username == 'moderator') | (
+                request.user.is_superuser):
+            extra_context = extra_context or {}
+            extra_context['osm_data'] = self.get_osm_info()
+            return super(OrgAdmin, self).change_view(request, object_id,
+                                                     form_url, extra_context=extra_context)
+        else:
+            return show_details(request, object_id)
 
 
 @admin.register(Question)

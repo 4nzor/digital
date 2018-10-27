@@ -50,28 +50,28 @@ class Organization(models.Model):
         verbose_name = 'Organization'
         verbose_name_plural = 'Organizations'
 
-    country = models.CharField(max_length=200, blank=True, null=True)
-    owner_name = models.CharField(max_length=200, blank=True, null=True)
-    org_name = models.CharField(max_length=200, blank=True, null=True, verbose_name='organization name')
-    location = models.CharField(max_length=200, blank=True, null=True)
-    site = models.CharField(max_length=200, blank=True, null=True)
-    contact_person = models.CharField(max_length=200, blank=True, null=True)
-    email = models.CharField(max_length=200, blank=True, null=True)
-    inst_type = models.CharField(max_length=200, blank=True, null=True)
-    short_description_org = models.TextField(blank=True, null=True)
-    short_description_infr = models.CharField(max_length=200, blank=True, null=True)
-    sci_area = models.CharField(max_length=200, blank=True, null=True)
-    activities = models.CharField(max_length=200, blank=True, null=True)
-    conditions_on_access = models.CharField(max_length=200, blank=True, null=True)
-    restrictions = models.CharField(max_length=200, blank=True, null=True)
-    inter_cooperation = models.CharField(max_length=200, blank=True, null=True)
+    country = models.CharField(max_length=200, blank=True, null=True, verbose_name='Name of the Country')
+    owner_name = models.CharField(max_length=200, blank=True, null=True, verbose_name='Name and Contact Details')
+    org_name = models.CharField(max_length=200, blank=True, null=True, verbose_name='Name of organization/ owner')
+    location = models.CharField(max_length=200, blank=True, null=True, verbose_name='Location of the center (city)')
+    site = models.CharField(max_length=200, blank=True, null=True, verbose_name='Web-site')
+    contact_person = models.CharField(max_length=200, blank=True, null=True, verbose_name='Contact person')
+    email = models.CharField(max_length=200, blank=True, null=True, verbose_name='Email Tel Fax')
+    inst_type = models.CharField(max_length=200, blank=True, null=True, verbose_name='Institution type')
+    short_description_org = models.TextField(blank=True, null=True, verbose_name='Short description of organization')
+    short_description_infr = models.CharField(max_length=200, blank=True, null=True, verbose_name='Short description of research infrastructure')
+    sci_area = models.CharField(max_length=200, blank=True, null=True, verbose_name='Scientific area (thematic areas to be defined)')
+    activities = models.CharField(max_length=200, blank=True, null=True, verbose_name='Activities undertaken and services provided for users')
+    conditions_on_access = models.CharField(max_length=200, blank=True, null=True, verbose_name='Conditions for access to the equipment or facilities for research infrastructure staff')
+    restrictions = models.CharField(max_length=200, blank=True, null=True, verbose_name='Restrictions on access to the equipment or facility')
+    inter_cooperation = models.CharField(max_length=200, blank=True, null=True, verbose_name='International cooperation activities')
     is_confirm = models.BooleanField(default=False, verbose_name='accepted')
-    hided = models.BooleanField(default=False,verbose_name='hidden')
+    hided = models.BooleanField(default=False, verbose_name='hidden')
     lat = models.FloatField(default=0)
     lon = models.FloatField(default=0)
 
-    # def __str__(self):
-    #     return self.org_name
+    def get_fields_and_values(self):
+        return [(field, field.value_to_string(self)) for field in Organization._meta.fields]
 
 
 class C0untry(User):
@@ -80,7 +80,7 @@ class C0untry(User):
 
 class About(models.Model):
     title = models.CharField(max_length=100)
-    content = models.TextField(blank=True,null=True)
+    content = models.TextField(blank=True, null=True)
 
     def __str__(self):
         return self.title

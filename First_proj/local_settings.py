@@ -72,6 +72,7 @@ TEMPLATES = [
 
             'libraries': {
                 'profile': 'first.templatetags.profile',
+                'get_verboses_name' : 'second.templatetags.get_verboses_name'
 
             }
 

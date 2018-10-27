@@ -18,15 +18,20 @@
 
     <div class="profile_content">
         <div class="profile_block">
+        <div style="color:#0070C0 "><a href="{% url 'logout' %}">Logout</a></div>
             <div class="name_profile">
+
                 <div class="photo_prof">
+
                     <div class="bg_photo_prof">
                         <img src="https://www.countryflags.io/{{ code }}/flat/64.png">
+
                     </div>
                 </div>
                 <div class="text_name_prof">
                     {{ name }}
                 </div>
+
             </div>
 
             <div class="about_prof">
@@ -41,7 +46,7 @@
                             <div class="prof_parags_block">
 
                                 <div class="prof_prg">
-                                   Organization
+                                    Organization
                                     <div class="prof_btt_line"></div>
                                 </div>
 
@@ -51,28 +56,28 @@
                                 </div>
                             </div>
                             {% for app in apps %}
-
-
-
-                            <div class="prof_list_block" id="{{ app.id }}">
-                                <div class="prof_org">
-                                    <a href="/admin/second/organization/{{ app.id }}/change/">{{ app.org_name }}</a>
-                                </div>
-                                <div class="cntr_cntr_org">
-                                    <div class="contr_org">
-                                        <div class="compl_org" data-tooltip="Complete" onclick="control('complete',id)" id="{{ app.id }}">
-                                            <i class="fa fa-check"></i>
-                                        </div>
-                                        <div class="post_org" data-tooltip="Postpone" onclick="control('hide',id)" id="{{ app.id }}">
-                                            <i class="fa fa-archive"></i>
-                                        </div>
-                                        <div class="reject_org" data-tooltip="Reject" onclick="control('reject',id)" id="{{ app.id }}">
-                                            <i class="fa fa-times"></i>
+                                <div class="prof_list_block" id="{{ app.id }}">
+                                    <div class="prof_org">
+                                        <a href="{% url 'show_details' app.id %}">{{ app.org_name }}</a>
+                                    </div>
+                                    <div class="cntr_cntr_org">
+                                        <div class="contr_org">
+                                            <div class="compl_org" data-tooltip="Complete"
+                                                 onclick="control('complete',id)" id="{{ app.id }}">
+                                                <i class="fa fa-check"></i>
+                                            </div>
+                                            <div class="post_org" data-tooltip="Postpone" onclick="control('hide',id)"
+                                                 id="{{ app.id }}">
+                                                <i class="fa fa-archive"></i>
+                                            </div>
+                                            <div class="reject_org" data-tooltip="Reject" onclick="control('reject',id)"
+                                                 id="{{ app.id }}">
+                                                <i class="fa fa-times"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        {% endfor %}
+                            {% endfor %}
 
 
                         </div>

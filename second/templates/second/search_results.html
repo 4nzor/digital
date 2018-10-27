@@ -21,7 +21,7 @@
     <div class="rslts_content">
         <div class="rslts_block">
             <div class="rslts_parag">List of organizations</div>
-              <div class="rslts_line_help" id="lihe"  onmousedown="">Move me</div>
+            <div class="rslts_line_help" id="lihe" onmousedown="">Move me</div>
 
             <div class="rslts_list">
 
@@ -45,22 +45,22 @@
 
                 </div>
                 {% for result in results %}
-                <div class="rslts_list_block">
-                    <div class="rslts_org">
-                        {{ result.country }}
-                    </div>
+                    <div class="rslts_list_block">
+                        <div class="rslts_org">
+                            {{ result.country }}
+                        </div>
 
-                    <div class="rslts_org">
-                        {{ result.org_name }}
+                        <div class="rslts_org">
+                            <a href="{% url 'show_details' result.id %}">{{ result.org_name }}</a>
+                        </div>
+                        <div class="rslts_org">
+                            {{ result.owner_name }}
+                        </div>
+                        <div class="rslts_org">
+                            {{ result.email }}
+                        </div>
                     </div>
-                <div class="rslts_org">
-                        {{ result.owner_name }}
-                    </div>
-                <div class="rslts_org">
-                        {{ result.email }}
-                    </div>
-                </div>
-            {% endfor %}
+                {% endfor %}
             </div>
         </div>
     </div>

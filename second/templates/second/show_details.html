@@ -1,0 +1,19 @@
+{% extends 'second/base.html' %}
+{% load get_verboses_name %}
+{% block content %}
+    <div class="about_text">
+        <div class="show_details" style="padding-bottom: 18px;padding-left: 50px">
+            {% for fld, val in org.get_fields_and_values %}
+
+                <p class="{{ fld.name }}"><strong>{% get_verbose_field_name org fld.name %}</strong> :{{ val }} </p>
+
+            {% endfor %}
+
+        </div>
+        {% if request.user.username == org.country or  request.user.username == 'moderator' or request.user.is_superuser %}
+            <a type="button" class="show_details_quest_butt" href="/admin/second/organization/{{ org.id }}/change/"
+               style="color: white">Change </a>
+        {% endif %}
+    </div>
+
+{% endblock %}

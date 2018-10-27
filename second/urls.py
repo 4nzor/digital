@@ -15,5 +15,6 @@ urlpatterns = [
     path('gendata/', generate_data.generate_fake_data),
     path('hide_input/',views.hide_input),
     path('logout/',views.logout_view , name='logout'),
-    path('control/',views.control)
+    path('control/',views.control),
+    path('show_details/<id>/' , views.show_details , name = 'show_details')
 ]

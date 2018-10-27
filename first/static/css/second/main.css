@@ -782,7 +782,23 @@ ul {
     color: #fff;
     border: none;
 }
-
+.show_details_quest_butt {
+    position: relative;
+    width: 430px;
+    height: 60px;
+    padding: 12px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    background-color: #0070C0;
+    cursor: pointer;
+    transition: all .7s ease;
+    -o-transition: all .7s ease;
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+}
 .quest_create_quest {
     margin: 10px;
 }

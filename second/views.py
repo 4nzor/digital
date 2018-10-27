@@ -1,7 +1,7 @@
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.http import JsonResponse, HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth import authenticate, login, logout
 from django.views.generic.base import View
 
@@ -77,9 +77,14 @@ class Signin(View):
 
 @login_required
 def profile(request):
-    code = Flags.objects.get(country=request.user).code
-    applications = Organization.objects.filter(country=request.user, hided=False)
-    return render(request, 'second/profile/profile.html', {'code': code, 'name': request.user, 'apps': applications})
+    try:
+        code = Flags.objects.get(country=request.user).code
+        applications = Organization.objects.filter(country=request.user, hided=False)
+        return render(request, 'second/profile/profile.html',
+                      {'code': code, 'name': request.user, 'apps': applications})
+    except Flags.DoesNotExist:
+        logout(request)
+        return render(request, 'second/signin.html', {'error': 'error'})
 
 
 def get_points(request):
@@ -119,3 +124,8 @@ def control(request):
         org.hided = True
         org.save()
     return JsonResponse({'Status': 200})
+
+
+def show_details(request, id):
+    org = get_object_or_404(Organization, id=id)
+    return render(request, 'second/show_details.html',{'org' : org})
