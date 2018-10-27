@@ -37,7 +37,11 @@ function init() {
             },
             properties: {
                 clusterCaption: data[j].org_name,
-                balloonContentBody: data[j].country
+                balloonContentBody:
+
+                '<a href="'+data[j].site+ '">'+data[j].site+'</a>'+
+                     '<br>' +
+                '<a href="/database/show_details/'+data[j].id+'">See more</a>'
             }
         });
     }

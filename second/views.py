@@ -70,26 +70,32 @@ class Signin(View):
             user = authenticate(username=request.POST['login'],
                                 password=request.POST['password'])
             login(request, user)
-            return redirect('/database/profile')
+            if request.user.is_superuser:
+                return redirect('/admin')
+            else:
+                return redirect('/database/profile')
         except:
             return render(request, 'second/signin.html', {'error': 'error'})
 
 
 @login_required
 def profile(request):
-    try:
-        code = Flags.objects.get(country=request.user).code
-        applications = Organization.objects.filter(country=request.user, hided=False)
-        return render(request, 'second/profile/profile.html',
-                      {'code': code, 'name': request.user, 'apps': applications})
-    except Flags.DoesNotExist:
-        logout(request)
-        return render(request, 'second/signin.html', {'error': 'error'})
+    if request.user.is_superuser:
+        return redirect('/admin')
+    else:
+        try:
+            code = Flags.objects.get(country=request.user).code
+            applications = Organization.objects.filter(country=request.user, hided=False)
+            return render(request, 'second/profile/profile.html',
+                          {'code': code, 'name': request.user, 'apps': applications})
+        except Flags.DoesNotExist:
+            logout(request)
+            return render(request, 'second/signin.html', {'error': 'error'})
 
 
 def get_points(request):
     if request.method == 'GET':
-        snippets = Organization.objects.filter(is_confirm=True, hided=False)
+        snippets = Organization.objects.filter(is_confirm=True)
         serializer = SnippetSerializer(snippets, many=True)
         return JsonResponse(serializer.data, safe=False)
 

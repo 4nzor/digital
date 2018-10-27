@@ -21,8 +21,7 @@
             <div class="signin_logo">
                 <img src="{% static 'images/sign_in.png' %}">
             </div>
-            {% if error%}
-
+            {% if error is not None%}
             <div class="signin_block__error-inp">Error: Incorrect login or password!</div>
             {% endif %}
             <form class="form_sign" action="." method="post">
